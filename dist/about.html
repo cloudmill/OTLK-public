@@ -203,16 +203,14 @@
 									</div>
 									<div class="header-menu__col">
 										<div class="header-menu__grid">
-											<div class="header-menu__item">
-												<div class="header-menu__heading">О компании</div>
+											<div class="header-menu__item"><a class="header-menu__heading" href="#">О компании</a>
 												<ul class="header-menu__list">
 													<li class="header-menu__list-item"><a class="header-menu__link" href="#">Органы управления и контроля</a></li>
 													<li class="header-menu__list-item"><a class="header-menu__link" href="#">Реестродержатель</a></li>
 													<li class="header-menu__list-item"><a class="header-menu__link" href="#">Документы</a></li>
 												</ul>
 											</div>
-											<div class="header-menu__item">
-												<div class="header-menu__heading">Корпоративная социальная ответственность</div>
+											<div class="header-menu__item"><a class="header-menu__heading" href="#">Корпоративная социальная ответственность</a>
 												<ul class="header-menu__list">
 													<li class="header-menu__list-item"><a class="header-menu__link" href="#">Экология</a></li>
 													<li class="header-menu__list-item"><a class="header-menu__link" href="#">Благотворительность</a></li>
@@ -220,16 +218,14 @@
 													<li class="header-menu__list-item"><a class="header-menu__link" href="#">Карьера</a></li>
 												</ul>
 											</div>
-											<div class="header-menu__item">
-												<div class="header-menu__heading">Закупки</div>
+											<div class="header-menu__item"><a class="header-menu__heading" href="#">Закупки</a>
 												<ul class="header-menu__list">
 													<li class="header-menu__list-item"><a class="header-menu__link" href="#">Календарь мероприятий</a></li>
 													<li class="header-menu__list-item"><a class="header-menu__link" href="#">План закупок</a></li>
 													<li class="header-menu__list-item"><a class="header-menu__link" href="#">Личный кабинет поставщика</a></li>
 												</ul>
 											</div>
-											<div class="header-menu__item">
-												<div class="header-menu__heading">One million club</div>
+											<div class="header-menu__item"><a class="header-menu__heading" href="#">One million club</a>
 												<ul class="header-menu__list">
 													<li class="header-menu__list-item"><a class="header-menu__link" href="#">Календарь мероприятий</a></li>
 													<li class="header-menu__list-item"><a class="header-menu__link" href="#">Отраслевые новости</a></li>
@@ -308,7 +304,7 @@
 					<div class="search-modal">
 						<div class="container">
 							<div class="search-modal__row">
-								<div class="search-modal__col"><input class="input" placeholder="Что вы хотите найти?" /></div>
+								<div class="search-modal__col"><input class="input" placeholder="Что вы хотите найти?" data-search-input="" /></div>
 								<div class="search-modal__col">
 									<div class="search-modal__button"><button class="button">Поиск</button></div>
 									<div class="search-modal__close" data-search-close=""><svg class="search-modal__svg" width="58" height="58" viewBox="0 0 58 58" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -357,7 +353,7 @@
 								</div>
 							</div>
 							<div class="about-page__intro-title">ОТЛК ЕРА</div>
-							<div class="about-page__intro-heading" data-aos="about-text">Лидер трансъевразийских железнодорожных контейнерных перевозок</div>
+							<div class="about-page__intro-heading" data-aos="about-text" data-aos-duration="500" data-aos-delay="300">Лидер трансъевразийских железнодорожных контейнерных перевозок</div>
 						</div>
 					</section>
 					<section class="about-page__container about-page__about">
@@ -620,80 +616,70 @@
 					</section>
 					<section class="about-page__slider">
 						<div class="about-page__slider-container">
-							<div class="swiper-container about-page__slider-slider" data-slider-id="about" data-slider-prev="1" data-slider-next="2">
-								<div class="swiper-wrapper">
-									<div class="swiper-slide about-page__slider-slide">
-										<div class="about-page__slider-row">
-											<div class="about-page__slider-col">
+							<div class="about-page__slider-row">
+								<div class="about-page__slider-col">
+									<div class="swiper-container about-page__slider-slider" data-slider-id="about-image" data-slider-prev="1" data-slider-next="2">
+										<div class="swiper-wrapper">
+											<div class="swiper-slide about-page__slider-img">
 												<div class="about-page__slider-image">
 													<picture class="picture about-page__slider-picture">
 														<source type="image/webp" srcset="assets/images/about-slide-1.webp, assets/images/about-slide-1_2x.webp 2x" /><img class="picture__img" src="assets/images/about-slide-1.jpg" srcset="assets/images/about-slide-1_2x.jpg 2x" />
 													</picture>
 												</div>
 											</div>
-											<div class="about-page__slider-col">
-												<div class="about-page__slider-title">скорость</div>
-												<div class="about-page__slider-text">5-7 дней от границы КНР до границы Европы.<br>В 3-5 раз быстрее доставки по морю.</div>
+											<div class="swiper-slide about-page__slider-img">
+												<div class="about-page__slider-image">
+													<picture class="picture about-page__slider-picture">
+														<source type="image/webp" srcset="assets/images/about-slide-2.webp, assets/images/about-slide-2_2x.webp 2x" /><img class="picture__img" src="assets/images/about-slide-2.jpg" srcset="assets/images/about-slide-2_2x.jpg 2x" />
+													</picture>
+												</div>
+											</div>
+											<div class="swiper-slide about-page__slider-img">
+												<div class="about-page__slider-image">
+													<picture class="picture about-page__slider-picture">
+														<source type="image/webp" srcset="assets/images/about-slide-3.webp, assets/images/about-slide-3_2x.webp 2x" /><img class="picture__img" src="assets/images/about-slide-3.jpg" srcset="assets/images/about-slide-3_2x.jpg 2x" />
+													</picture>
+												</div>
+											</div>
+											<div class="swiper-slide about-page__slider-img">
+												<div class="about-page__slider-image">
+													<picture class="picture about-page__slider-picture">
+														<source type="image/webp" srcset="assets/images/about-slide-4.webp, assets/images/about-slide-4_2x.webp 2x" /><img class="picture__img" src="assets/images/about-slide-4.jpg" srcset="assets/images/about-slide-4_2x.jpg 2x" />
+													</picture>
+												</div>
+											</div>
+											<div class="swiper-slide about-page__slider-img">
+												<div class="about-page__slider-image">
+													<picture class="picture about-page__slider-picture">
+														<source type="image/webp" srcset="assets/images/about-slide-5.webp, assets/images/about-slide-5_2x.webp 2x" /><img class="picture__img" src="assets/images/about-slide-5.jpg" srcset="assets/images/about-slide-5_2x.jpg 2x" />
+													</picture>
+												</div>
 											</div>
 										</div>
 									</div>
-									<div class="swiper-slide about-page__slider-slide">
-										<div class="about-page__slider-row">
-											<div class="about-page__slider-col">
-												<div class="about-page__slider-image">
-													<picture class="picture about-page__slider-picture">
-														<source type="image/webp" srcset="assets/images/about-slide-1.webp, assets/images/about-slide-1_2x.webp 2x" /><img class="picture__img" src="assets/images/about-slide-1.jpg" srcset="assets/images/about-slide-1_2x.jpg 2x" />
-													</picture>
-												</div>
-											</div>
-											<div class="about-page__slider-col">
-												<div class="about-page__slider-title">скорость</div>
+								</div>
+								<div class="about-page__slider-col">
+									<div class="swiper-container" data-slider-id="about" data-slider-prev="1" data-slider-next="2">
+										<div class="swiper-wrapper about-page__slider-wrapper">
+											<div class="swiper-slide about-page__slider-slide">
+												<div class="about-page__slider-title"><span class="about-page__slider-span">скорость</span></div>
 												<div class="about-page__slider-text">5-7 дней от границы КНР до границы Европы.<br>В 3-5 раз быстрее доставки по морю.</div>
 											</div>
-										</div>
-									</div>
-									<div class="swiper-slide about-page__slider-slide">
-										<div class="about-page__slider-row">
-											<div class="about-page__slider-col">
-												<div class="about-page__slider-image">
-													<picture class="picture about-page__slider-picture">
-														<source type="image/webp" srcset="assets/images/about-slide-1.webp, assets/images/about-slide-1_2x.webp 2x" /><img class="picture__img" src="assets/images/about-slide-1.jpg" srcset="assets/images/about-slide-1_2x.jpg 2x" />
-													</picture>
-												</div>
+											<div class="swiper-slide about-page__slider-slide">
+												<div class="about-page__slider-title"><span class="about-page__slider-span">Стабильность</span></div>
+												<div class="about-page__slider-text">20-30 поездов отправляются ежесуточно</div>
 											</div>
-											<div class="about-page__slider-col">
-												<div class="about-page__slider-title">скорость</div>
-												<div class="about-page__slider-text">5-7 дней от границы КНР до границы Европы.<br>В 3-5 раз быстрее доставки по морю.</div>
+											<div class="swiper-slide about-page__slider-slide">
+												<div class="about-page__slider-title"><span class="about-page__slider-span">Безопасность</span></div>
+												<div class="about-page__slider-text">99,997% сохранность груза</div>
 											</div>
-										</div>
-									</div>
-									<div class="swiper-slide about-page__slider-slide">
-										<div class="about-page__slider-row">
-											<div class="about-page__slider-col">
-												<div class="about-page__slider-image">
-													<picture class="picture about-page__slider-picture">
-														<source type="image/webp" srcset="assets/images/about-slide-1.webp, assets/images/about-slide-1_2x.webp 2x" /><img class="picture__img" src="assets/images/about-slide-1.jpg" srcset="assets/images/about-slide-1_2x.jpg 2x" />
-													</picture>
-												</div>
+											<div class="swiper-slide about-page__slider-slide">
+												<div class="about-page__slider-title"><span class="about-page__slider-span">Надежность</span></div>
+												<div class="about-page__slider-text">Перевозки вне зависимости от погодных условий</div>
 											</div>
-											<div class="about-page__slider-col">
-												<div class="about-page__slider-title">скорость</div>
-												<div class="about-page__slider-text">5-7 дней от границы КНР до границы Европы.<br>В 3-5 раз быстрее доставки по морю.</div>
-											</div>
-										</div>
-									</div>
-									<div class="swiper-slide about-page__slider-slide">
-										<div class="about-page__slider-row">
-											<div class="about-page__slider-col">
-												<div class="about-page__slider-image">
-													<picture class="picture about-page__slider-picture">
-														<source type="image/webp" srcset="assets/images/about-slide-1.webp, assets/images/about-slide-1_2x.webp 2x" /><img class="picture__img" src="assets/images/about-slide-1.jpg" srcset="assets/images/about-slide-1_2x.jpg 2x" />
-													</picture>
-												</div>
-											</div>
-											<div class="about-page__slider-col">
-												<div class="about-page__slider-title">скорость</div>
-												<div class="about-page__slider-text">5-7 дней от границы КНР до границы Европы.<br>В 3-5 раз быстрее доставки по морю.</div>
+											<div class="swiper-slide about-page__slider-slide">
+												<div class="about-page__slider-title"><span class="about-page__slider-span">Цифровизация</span></div>
+												<div class="about-page__slider-text">Документооборота и сервисов</div>
 											</div>
 										</div>
 									</div>
@@ -769,42 +755,42 @@
 							<div class="about-page__history-top">
 								<div class="about-page__history-thumbs swiper-container swiper-container--slide-width-auto swiper-container--slide-height-max" data-thumb-thumbs="">
 									<div class="swiper-wrapper about-page__history-wrapper">
-										<div class="swiper-slide">
+										<div class="swiper-slide about-page__history-item">
 											<div class="about-page__history-thumb active" data-thumb-item="">
 												<div class="about-page__history-year">2015</div>
 											</div>
 										</div>
-										<div class="swiper-slide">
+										<div class="swiper-slide about-page__history-item">
 											<div class="about-page__history-thumb" data-thumb-item="">
 												<div class="about-page__history-year">2016</div>
 											</div>
 										</div>
-										<div class="swiper-slide">
+										<div class="swiper-slide about-page__history-item">
 											<div class="about-page__history-thumb" data-thumb-item="">
 												<div class="about-page__history-year">2017</div>
 											</div>
 										</div>
-										<div class="swiper-slide">
+										<div class="swiper-slide about-page__history-item">
 											<div class="about-page__history-thumb" data-thumb-item="">
 												<div class="about-page__history-year">2018</div>
 											</div>
 										</div>
-										<div class="swiper-slide">
+										<div class="swiper-slide about-page__history-item">
 											<div class="about-page__history-thumb" data-thumb-item="">
 												<div class="about-page__history-year">2019</div>
 											</div>
 										</div>
-										<div class="swiper-slide">
+										<div class="swiper-slide about-page__history-item">
 											<div class="about-page__history-thumb" data-thumb-item="">
 												<div class="about-page__history-year">2020</div>
 											</div>
 										</div>
-										<div class="swiper-slide">
+										<div class="swiper-slide about-page__history-item">
 											<div class="about-page__history-thumb" data-thumb-item="">
 												<div class="about-page__history-year">2021</div>
 											</div>
 										</div>
-										<div class="swiper-slide">
+										<div class="swiper-slide about-page__history-item">
 											<div class="about-page__history-thumb" data-thumb-item="">
 												<div class="about-page__history-year">2022</div>
 											</div>
@@ -824,10 +810,12 @@
 							</div>
 							<div class="about-page__history-container">
 								<div class="swiper-container about-page__history-slider" data-thumb-slider="">
-									<div class="swiper-wrapper">
+									<div class="swiper-wrapper about-page__history-wrapper">
 										<div class="swiper-slide about-page__history-slide" data-thumb-slide="">
 											<div class="about-page__history-row">
-												<div class="about-page__history-title">2015</div>
+												<div class="about-page__history-col">
+													<div class="about-page__history-title"><span class="about-page__history-span">2015</span></div>
+												</div>
 												<div class="about-page__history-text">
 													<p>Период активной деятельности нашего совместного предприятия как отдельной и независимой бизнес-единицы на рынке перевозок контейнеров начался в 2016 году. Это был год, когда акционерами Компании были согласованы и утверждены ключевые принципы и стратегические направления развития.</p>
 													<p>Несмотря на сложный период становления базовых регламентов деятельности, нам удалось уже в первый год удвоить объём перевозок по сравнению с 2015 годом и нарастить хорошую клиентскую базу для последующих периодов.</p>
@@ -836,7 +824,9 @@
 										</div>
 										<div class="swiper-slide about-page__history-slide" data-thumb-slide="">
 											<div class="about-page__history-row">
-												<div class="about-page__history-title">2016</div>
+												<div class="about-page__history-col">
+													<div class="about-page__history-title"><span class="about-page__history-span">2016</span></div>
+												</div>
 												<div class="about-page__history-text">
 													<p>Период активной деятельности нашего совместного предприятия как отдельной и независимой бизнес-единицы на рынке перевозок контейнеров начался в 2016 году. Это был год, когда акционерами Компании были согласованы и утверждены ключевые принципы и стратегические направления развития.</p>
 													<p>Несмотря на сложный период становления базовых регламентов деятельности, нам удалось уже в первый год удвоить объём перевозок по сравнению с 2015 годом и нарастить хорошую клиентскую базу для последующих периодов.</p>
@@ -845,7 +835,9 @@
 										</div>
 										<div class="swiper-slide about-page__history-slide" data-thumb-slide="">
 											<div class="about-page__history-row">
-												<div class="about-page__history-title">2017</div>
+												<div class="about-page__history-col">
+													<div class="about-page__history-title"><span class="about-page__history-span">2017</span></div>
+												</div>
 												<div class="about-page__history-text">
 													<p>Период активной деятельности нашего совместного предприятия как отдельной и независимой бизнес-единицы на рынке перевозок контейнеров начался в 2016 году. Это был год, когда акционерами Компании были согласованы и утверждены ключевые принципы и стратегические направления развития.</p>
 													<p>Несмотря на сложный период становления базовых регламентов деятельности, нам удалось уже в первый год удвоить объём перевозок по сравнению с 2015 годом и нарастить хорошую клиентскую базу для последующих периодов.</p>
@@ -854,7 +846,9 @@
 										</div>
 										<div class="swiper-slide about-page__history-slide" data-thumb-slide="">
 											<div class="about-page__history-row">
-												<div class="about-page__history-title">2018</div>
+												<div class="about-page__history-col">
+													<div class="about-page__history-title"><span class="about-page__history-span">2018</span></div>
+												</div>
 												<div class="about-page__history-text">
 													<p>Период активной деятельности нашего совместного предприятия как отдельной и независимой бизнес-единицы на рынке перевозок контейнеров начался в 2016 году. Это был год, когда акционерами Компании были согласованы и утверждены ключевые принципы и стратегические направления развития.</p>
 													<p>Несмотря на сложный период становления базовых регламентов деятельности, нам удалось уже в первый год удвоить объём перевозок по сравнению с 2015 годом и нарастить хорошую клиентскую базу для последующих периодов.</p>
@@ -863,7 +857,9 @@
 										</div>
 										<div class="swiper-slide about-page__history-slide" data-thumb-slide="">
 											<div class="about-page__history-row">
-												<div class="about-page__history-title">2019</div>
+												<div class="about-page__history-col">
+													<div class="about-page__history-title"><span class="about-page__history-span">2019</span></div>
+												</div>
 												<div class="about-page__history-text">
 													<p>Период активной деятельности нашего совместного предприятия как отдельной и независимой бизнес-единицы на рынке перевозок контейнеров начался в 2016 году. Это был год, когда акционерами Компании были согласованы и утверждены ключевые принципы и стратегические направления развития.</p>
 													<p>Несмотря на сложный период становления базовых регламентов деятельности, нам удалось уже в первый год удвоить объём перевозок по сравнению с 2015 годом и нарастить хорошую клиентскую базу для последующих периодов.</p>
@@ -872,7 +868,9 @@
 										</div>
 										<div class="swiper-slide about-page__history-slide" data-thumb-slide="">
 											<div class="about-page__history-row">
-												<div class="about-page__history-title">2020</div>
+												<div class="about-page__history-col">
+													<div class="about-page__history-title"><span class="about-page__history-span">2020</span></div>
+												</div>
 												<div class="about-page__history-text">
 													<p>Период активной деятельности нашего совместного предприятия как отдельной и независимой бизнес-единицы на рынке перевозок контейнеров начался в 2016 году. Это был год, когда акционерами Компании были согласованы и утверждены ключевые принципы и стратегические направления развития.</p>
 													<p>Несмотря на сложный период становления базовых регламентов деятельности, нам удалось уже в первый год удвоить объём перевозок по сравнению с 2015 годом и нарастить хорошую клиентскую базу для последующих периодов.</p>
@@ -881,7 +879,9 @@
 										</div>
 										<div class="swiper-slide about-page__history-slide" data-thumb-slide="">
 											<div class="about-page__history-row">
-												<div class="about-page__history-title">2021</div>
+												<div class="about-page__history-col">
+													<div class="about-page__history-title"><span class="about-page__history-span">2021</span></div>
+												</div>
 												<div class="about-page__history-text">
 													<p>Период активной деятельности нашего совместного предприятия как отдельной и независимой бизнес-единицы на рынке перевозок контейнеров начался в 2016 году. Это был год, когда акционерами Компании были согласованы и утверждены ключевые принципы и стратегические направления развития.</p>
 													<p>Несмотря на сложный период становления базовых регламентов деятельности, нам удалось уже в первый год удвоить объём перевозок по сравнению с 2015 годом и нарастить хорошую клиентскую базу для последующих периодов.</p>
@@ -890,7 +890,9 @@
 										</div>
 										<div class="swiper-slide about-page__history-slide" data-thumb-slide="">
 											<div class="about-page__history-row">
-												<div class="about-page__history-title">2022</div>
+												<div class="about-page__history-col">
+													<div class="about-page__history-title"><span class="about-page__history-span">2022</span></div>
+												</div>
 												<div class="about-page__history-text">
 													<p>Период активной деятельности нашего совместного предприятия как отдельной и независимой бизнес-единицы на рынке перевозок контейнеров начался в 2016 году. Это был год, когда акционерами Компании были согласованы и утверждены ключевые принципы и стратегические направления развития.</p>
 													<p>Несмотря на сложный период становления базовых регламентов деятельности, нам удалось уже в первый год удвоить объём перевозок по сравнению с 2015 годом и нарастить хорошую клиентскую базу для последующих периодов.</p>
