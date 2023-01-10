@@ -314,7 +314,7 @@
 													</svg></div>
 												<div class="link__text">Ко всем событиям</div>
 											</a>
-											<div class="event-page__sidebar-wrapper"><button class="button"><span class="button__span"><span class="button__text">Оставить заявку</span></span></button></div>
+											<div class="event-page__sidebar-wrapper"><button class="button" data-scroll="#bottom"><span class="button__span"><span class="button__text">Оставить заявку</span></span></button></div>
 										</div>
 									</div>
 									<div class="event-page__col">
@@ -385,7 +385,7 @@
 														<div class="event-page__item-row">
 															<div class="event-page__item-col">
 																<div class="event-page__item-label">день 1</div>
-																<div class="event-page__item-label">18.07.2022</div>
+																<div class="event-page__item-time">18.07.2022</div>
 															</div>
 															<div class="event-page__item-col">
 																<ul class="event-page__schedule">
@@ -457,7 +457,7 @@
 														<div class="event-page__item-row">
 															<div class="event-page__item-col">
 																<div class="event-page__item-label">день 2</div>
-																<div class="event-page__item-label">19.07.2022</div>
+																<div class="event-page__item-time">19.07.2022</div>
 															</div>
 															<div class="event-page__item-col">
 																<ul class="event-page__schedule">
@@ -519,7 +519,7 @@
 														<div class="event-page__item-row">
 															<div class="event-page__item-col">
 																<div class="event-page__item-label">день 3</div>
-																<div class="event-page__item-label">20.07.2022</div>
+																<div class="event-page__item-time">20.07.2022</div>
 															</div>
 															<div class="event-page__item-col">
 																<ul class="event-page__schedule">
@@ -555,11 +555,7 @@
 												<div class="event-page__slider-top">
 													<h3 class="section__heading">Спикеры</h3>
 													<div class="event-page__slider-buttons" data-slider-buttons="3">
-														<div class="calendar-page__steper"><button class="calendar-page__steper-button calendar-page__slider-item" data-slider-button="2"><svg class="calendar-page__steper-svg" width="12" height="12" viewbox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-																	<path d="M1.5 3.75L6 8.25L10.5 3.75" stroke="white" stroke-width="1.5"></path>
-																</svg></button><button class="calendar-page__steper-button calendar-page__slider-item right" data-slider-button="3"><svg class="calendar-page__steper-svg" width="12" height="12" viewbox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-																	<path d="M1.5 3.75L6 8.25L10.5 3.75" stroke="white" stroke-width="1.5"></path>
-																</svg></button></div>
+														<div class="calendar-page__steper"><button class="calendar-page__steper-button calendar-page__slider-item" data-slider-button="2"><span class="calendar-page__steper-span"><span class="calendar-page__steper-hover"><svg class="calendar-page__steper-svg" width="12" height="12" viewbox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1.5 3.75L6 8.25L10.5 3.75" stroke="white" stroke-width="1.5"></path></svg></span></span></button><button class="calendar-page__steper-button calendar-page__slider-item right" data-slider-button="3"><span class="calendar-page__steper-span"><span class="calendar-page__steper-hover"><svg class="calendar-page__steper-svg" width="12" height="12" viewbox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1.5 3.75L6 8.25L10.5 3.75" stroke="white" stroke-width="1.5"></path></svg></span></span></button></div>
 													</div>
 												</div>
 												<div class="section__inner">
@@ -649,7 +645,7 @@
 							<div class="bottom__container">
 								<div class="bottom__row">
 									<div class="bottom__col">
-										<h3 class="section__heading">Заявка<br class="bottom__br">на участие</h3>
+										<h3 class="section__heading">Заявка&nbsp;<br class="bottom__br">на участие</h3>
 									</div>
 									<div class="bottom__col">
 										<form action="/" data-form="1">
@@ -682,7 +678,7 @@
 																</label></div>
 														</li>
 														<li class="bottom__checkboxes-item">
-															<div class="checkbox"><label class="checkbox__label"><input class="checkbox__input" type="checkbox" required="required" id="follow" />
+															<div class="checkbox"><label class="checkbox__label"><input class="checkbox__input" type="checkbox" id="follow" />
 																	<div class="checkbox__box"><svg class="checkbox__svg" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
 																			<path d="M3 9L8 14L17 5" stroke="white" stroke-width="1.5"></path>
 																		</svg></div>
@@ -703,8 +699,8 @@
 				<div class="response-modal" data-response="1">
 					<div class="response-modal__container">
 						<div class="response-modal__title">Заявка отправлена</div>
-						<div class="response-modal__text">На ваш адрес электронной почты придет письмо<br />с подтверждением</div>
-						<div class="response-modal__button"><button class="button"><span class="button__span"><span class="button__text">Понятно</span></span></button></div>
+						<div class="response-modal__text">На ваш адрес электронной почты придет письмо&nbsp;<br />с подтверждением</div>
+						<div class="response-modal__button"><button class="button" data-fancybox-close=""><span class="button__span"><span class="button__text">Понятно</span></span></button></div>
 					</div>
 					<div class="modal__close" data-fancybox-close=""><span class="modal__span"><span class="modal__hover"><svg class="modal__svg" width="58" height="58" viewBox="0 0 58 58" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M21.9287 21.9288L36.0708 36.071" stroke="#181D1D" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round"></path><path d="M21.9287 36.071L36.0708 21.9288" stroke="#181D1D" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round"></path></svg></span></span></div>
 				</div>
