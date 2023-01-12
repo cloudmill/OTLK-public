@@ -24,11 +24,13 @@
 						<div class="header__inner">
 							<div class="header__desktop">
 								<div class="header__row">
-									<div class="header__col"><button class="header__box header__lang">
-											<div class="header__lang-text">ru</div>
-											<div class="header__lang-icon"><svg class="header__lang-svg" width="12" height="12" viewbox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-													<path d="M1.5 3.75L6 8.25L10.5 3.75" stroke="white" stroke-width="1.5"></path>
-												</svg></div>
+									<div class="header__col"><button class="header__lang">
+											<div class="header__box">
+												<div class="header__lang-text">ru</div>
+												<div class="header__lang-icon"><svg class="header__lang-svg" width="12" height="12" viewbox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<path d="M1.5 3.75L6 8.25L10.5 3.75" stroke="white" stroke-width="1.5"></path>
+													</svg></div>
+											</div>
 											<div class="header__lang-dropdown">
 												<div class="header__lang-container">
 													<div class="header__lang-item"><a class="header__lang-link" href="#">EN</a></div>
@@ -301,6 +303,11 @@
 			</header>
 			<main class="main">
 				<div class="error-page">
+					<div class="error-page__bg">
+						<picture class="picture error-page__picture">
+							<source type="image/webp" srcset="assets/images/404-bg.webp, assets/images/404-bg_2x.webp 2x" /><img class="picture__img" src="assets/images/404-bg.jpg" srcset="assets/images/404-bg_2x.jpg 2x" />
+						</picture>
+					</div>
 					<section class="error-page__section">
 						<div class="container">
 							<div class="error-page__title">404</div>

@@ -24,11 +24,13 @@
 						<div class="header__inner">
 							<div class="header__desktop">
 								<div class="header__row">
-									<div class="header__col"><button class="header__box header__lang">
-											<div class="header__lang-text">ru</div>
-											<div class="header__lang-icon"><svg class="header__lang-svg" width="12" height="12" viewbox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-													<path d="M1.5 3.75L6 8.25L10.5 3.75" stroke="white" stroke-width="1.5"></path>
-												</svg></div>
+									<div class="header__col"><button class="header__lang">
+											<div class="header__box">
+												<div class="header__lang-text">ru</div>
+												<div class="header__lang-icon"><svg class="header__lang-svg" width="12" height="12" viewbox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<path d="M1.5 3.75L6 8.25L10.5 3.75" stroke="white" stroke-width="1.5"></path>
+													</svg></div>
+											</div>
 											<div class="header__lang-dropdown">
 												<div class="header__lang-container">
 													<div class="header__lang-item"><a class="header__lang-link" href="#">EN</a></div>
@@ -351,7 +353,7 @@
 															</div>
 														</li>
 													</ul>
-													<div class="purchase__card-button"><button class="button"><span class="button__span"><span class="button__text">Задать вопрос по процедуре</span></span></button></div>
+													<div class="purchase__card-button"><button class="button" data-fancy-button="ask"><span class="button__span"><span class="button__text">Задать вопрос по процедуре</span></span></button></div>
 												</div>
 											</div>
 										</div>
@@ -550,6 +552,36 @@
 							</div>
 						</div>
 					</section>
+				</div>
+				<div class="modal form-modal" data-fancy-modal="ask">
+					<div class="modal__container">
+						<form class="form-modal__form" action="/">
+							<div class="modal__title">Задать вопрос<br />по процедуре</div>
+							<div class="form-modal__wrapper">
+								<div class="form-modal__item">
+									<div class="input-wrapper"><input class="input" data-input="" required="required" placeholder="ФИО" /></div>
+								</div>
+								<div class="form-modal__item">
+									<div class="input-wrapper"><textarea class="textarea textarea--big" data-input="" placeholder="Текст вопроса" required="required"></textarea></div>
+								</div>
+								<div class="form-modal__inner">
+									<div class="checkbox"><label class="checkbox__label"><input class="checkbox__input" type="checkbox" required="required" id="policy" />
+											<div class="checkbox__box"><svg class="checkbox__svg" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path d="M3 9L8 14L17 5" stroke="white" stroke-width="1.5"></path>
+												</svg></div>
+											<div class="checkbox__text">Согласие с политикой в отношении <a class="checkbox__link" href="#">обработки персональных данных</a></div>
+										</label></div>
+								</div>
+								<div class="form-modal__inner"><button class="button"><span class="button__span"><span class="button__text">Отправить</span></span></button></div>
+							</div>
+						</form>
+						<div class="form-modal__response">
+							<div class="modal__title form-modal__title">Вопрос отправлен</div>
+							<div class="form-modal__text">Спасибо, мы получили ваш вопрос и опубликуем ответ в течении 3-х дней.</div>
+							<div class="form-modal__button" data-fancybox-close=""><button class="button"><span class="button__span"><span class="button__text">Закрыть</span></span></button></div>
+						</div>
+					</div>
+					<div class="modal__close" data-fancybox-close=""><span class="modal__span"><span class="modal__hover"><svg class="modal__svg" width="58" height="58" viewBox="0 0 58 58" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M21.9287 21.9288L36.0708 36.071" stroke="#181D1D" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round"></path><path d="M21.9287 36.071L36.0708 21.9288" stroke="#181D1D" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round"></path></svg></span></span></div>
 				</div>
 			</main>
 			<footer class="footer">
