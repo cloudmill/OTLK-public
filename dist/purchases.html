@@ -12,7 +12,7 @@
 		<meta property="og:image" content="assets/images/opengraph.jpg">
 		<script defer="defer" src="assets/vendor.js"></script>
 		<script defer="defer" src="assets/app.js"></script>
-		<link href="899.css" rel="stylesheet">
+		<link href="397.css" rel="stylesheet">
 		<link href="app.css" rel="stylesheet">
 	</head>
 
@@ -298,59 +298,97 @@
 								<ul class="breadcrumbs__list">
 									<li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">Главная</a></li>
 									<li class="breadcrumbs__item">
-										<div class="breadcrumbs__text">Годовой план закупок</div>
+										<div class="breadcrumbs__text">Закупки</div>
 									</li>
 								</ul>
 							</div>
-							<h1 class="section__title">Годовой план закупок</h1>
+							<div class="nav">
+								<ul class="nav__list">
+									<li class="nav__item">
+										<div class="nav__link nav__link--active">все Закупки</div>
+									</li>
+									<li class="nav__item"><a class="nav__link" href="#">Годовой план закупок</a></li>
+								</ul>
+							</div>
 							<div class="section__offset">
 								<div class="nav nav--small">
 									<ul class="nav__list">
-										<li class="nav__item"><a class="nav__link" href="#">все Закупки</a></li>
 										<li class="nav__item">
-											<div class="nav__link nav__link--active">Годовой план закупок</div>
+											<div class="nav__link nav__link--active">Активные процедуры</div>
 										</li>
+										<li class="nav__item"><a class="nav__link" href="#">архив</a></li>
 									</ul>
 								</div>
 							</div>
+							<div class="purchase-page__intro">
+								<h1 class="section__title">Закупки</h1>
+							</div>
 							<div class="section__inner">
-								<div class="only-desktop">
-									<div class="purchases-page__grid">
-										<div class="purchases-page__grid-item">
-											<div class="purchases-page__grid-heading">Тип процедуры</div>
-											<div class="purchases-page__grid-comp">SELECT</div>
+								<form class="purchases-page__search" action="/">
+									<div class="purchases-page__grid-heading">Номер или наименование закупки</div>
+									<div class="purchases-page__search-row">
+										<div class="purchases-page__search-col" data-search-container="">
+											<div class="input-wrapper"><input class="input" data-input="" required="required" placeholder="Введите номер или наименование" data-search-input="" /></div>
+											<div class="delete-icon hidden" data-search-clear=""><svg class="delete-icon__svg" width="58" height="58" viewBox="0 0 58 58" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path d="M21.9287 21.9288L36.0708 36.071" stroke="#181D1D" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round"></path>
+													<path d="M21.9287 36.071L36.0708 21.9288" stroke="#181D1D" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round"></path>
+												</svg></div>
 										</div>
-										<div class="purchases-page__grid-item">
-											<div class="purchases-page__grid-heading">Тип процедуры</div>
-											<div class="purchases-page__grid-comp">SELECT</div>
-										</div>
-										<div class="purchases-page__grid-item">
-											<div class="purchases-page__grid-heading">Тип процедуры</div>
-											<div class="purchases-page__grid-comp">SELECT</div>
-										</div>
-										<div class="purchases-page__grid-item">
-											<div class="purchases-page__grid-heading">Тип процедуры</div>
-											<div class="purchases-page__grid-comp">SELECT</div>
-										</div>
-										<div class="purchases-page__grid-item">
-											<div class="purchases-page__grid-heading">Тип процедуры</div>
-											<div class="purchases-page__grid-comp">SELECT</div>
-										</div>
-										<div class="purchases-page__grid-item">
-											<div class="purchases-page__grid-heading">Тип процедуры</div>
-											<div class="purchases-page__grid-comp">SELECT</div>
+										<div class="purchases-page__search-col"><button class="button"><span class="button__span"><span class="button__text">Поиск</span></span></button></div>
+									</div>
+								</form>
+								<div class="purchases-page__offset">
+									<div class="only-desktop">
+										<div class="purchases-page__grid">
+											<div class="purchases-page__grid-item">
+												<div class="purchases-page__grid-heading">Тип процедуры</div>
+												<div class="purchases-page__grid-comp">
+													<div class="select-wrapper">
+														<div class="select"><select class="select__select" data-select-placeholder="Выбрать" style="width: 100%">
+																<option value="" disabled="disabled" selected="selected"></option>
+																<option value="Аукцион">Аукцион</option>
+																<option value="Запрос котировок">Запрос котировок</option>
+																<option value="Конкурс">Конкурс</option>
+																<option value="Конкурентные переговоры">Конкурентные переговоры</option>
+																<option value="Закупка путем размещения оферты">Закупка путем размещения оферты</option>
+															</select></div>
+													</div>
+												</div>
+											</div>
+											<div class="purchases-page__grid-item">
+												<div class="purchases-page__grid-heading">Период приема заявок</div>
+												<div class="purchases-page__grid-comp">
+													<div class="datepicker" data-range-parent=""><input class="datepicker__input" value="__.__.___ — __.__.___" data-range-picker="">
+														<div class="datepicker__icon"><svg class="datepicker__svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+																<path d="M8 3.19995V6.19995" stroke="#006525" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="square" stroke-linejoin="round"></path>
+																<path d="M16 3.19995V6.19995" stroke="#006525" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="square" stroke-linejoin="round"></path>
+																<path d="M4.7998 9.59998H19.1998" stroke="#006525" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="square" stroke-linejoin="round"></path>
+																<path d="M15.6947 13.7H15.7037" stroke="#006525" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+																<path d="M15.6947 16.7H15.7037" stroke="#006525" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+																<path d="M11.9955 13.7H12.0045" stroke="#006525" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+																<path d="M11.9955 16.7H12.0045" stroke="#006525" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+																<path d="M8.29431 13.7H8.30329" stroke="#006525" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+																<path d="M8.29431 16.7H8.30329" stroke="#006525" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+																<rect x="3.6001" y="4.79993" width="16.8" height="16.8" stroke="#006525" stroke-width="1.5"></rect>
+															</svg></div>
+													</div>
+												</div>
+											</div>
+											<div class="purchases-page__grid-item"><button class="button-icon">
+													<div class="button-icon__icon"><span class="button-icon__span"><span class="button-icon__hover"><svg class="button-icon__svg" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M7.59108 4.23333C8.31608 4.01667 9.11608 3.875 9.99941 3.875C13.9911 3.875 17.2244 7.10833 17.2244 11.1C17.2244 15.0917 13.9911 18.325 9.99941 18.325C6.00775 18.325 2.77441 15.0917 2.77441 11.1C2.77441 9.61667 3.22441 8.23333 3.99108 7.08333" stroke="#181D1D" stroke-width="1.5" stroke-linecap="square"></path><path d="M6.55762 4.43341L8.96595 1.66675" stroke="#181D1D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M6.55762 4.43335L9.36595 6.48335" stroke="#181D1D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg></span></span></div><span class="button-icon__span"><div class="button-icon__text">Сбросить выбранное</div></span>
+												</button></div>
 										</div>
 									</div>
+									<div class="only-mobile"><button class="button-icon">
+											<div class="button-icon__icon"><span class="button-icon__span"><span class="button-icon__hover"><svg class="button-icon__svg" width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6.19046 8.28288L2.95996 4.84785V2H14.0415V4.84785L10.811 8.28288C10.1931 8.91991 9.84714 9.77939 9.84714 10.6743V12.1989L7.16642 13.7301V10.6822C7.16642 9.78228 6.81553 8.91919 6.19188 8.28072L6.19046 8.28288Z" stroke="#181D1D" stroke-linecap="round"></path></svg></span></span></div><span class="button-icon__span"><div class="button-icon__text">Фильтры</div></span>
+										</button></div>
 								</div>
-								<div class="only-mobile"><button class="button-icon">
-										<div class="button-icon__icon"><span class="button-icon__span"><span class="button-icon__hover"><svg class="button-icon__svg" width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6.19046 8.28288L2.95996 4.84785V2H14.0415V4.84785L10.811 8.28288C10.1931 8.91991 9.84714 9.77939 9.84714 10.6743V12.1989L7.16642 13.7301V10.6822C7.16642 9.78228 6.81553 8.91919 6.19188 8.28072L6.19046 8.28288Z" stroke="#181D1D" stroke-linecap="round"></path></svg></span></span></div><span class="button-icon__span"><div class="button-icon__text">Фильтры</div></span>
-									</button></div>
 							</div>
 							<div class="section__inner">
 								<div class="purchases-page__top">
 									<div class="purchases-page__row">
 										<div class="purchases-page__row-col">
-											<div class="purchases-page__label">Номер закупки</div>
+											<div class="purchases-page__label">Номер закупки, статус</div>
 										</div>
 										<div class="purchases-page__row-col">
 											<div class="purchases-page__label">Тип и наименование</div>
@@ -362,421 +400,1081 @@
 								</div>
 								<div class="purchases-page__list">
 									<div class="purchases-page__item purchases-page__button">
-										<div class="purchases-page__row">
-											<div class="purchases-page__row-col">
-												<div class="purchases-page__label only-mobile">Номер закупки</div>
-												<div>1</div>
-											</div>
-											<div class="purchases-page__row-col">
-												<div class="purchases-page__label only-mobile">Тип и наименование</div>
-												<div class="purchases-page__wrapper">
-													<div class="purchases-page__title">Открытый конкурс в электронной форме № 6/ОКЭ-АО «ОТЛК ЕРА»/2021 на право заключения договора на оказание аудиторских услуг по РСБУ и МСФО для нужд АО «ОТЛК ЕРА» за 2021 год</div>
-												</div>
-											</div>
-											<div class="purchases-page__row-col">
-												<div class="purchases-page__label only-mobile">Прием заявок завершается</div>
-												<div class="purchases-page__inner">
-													<div class="purchases-page__link-wrapper">
-														<div class="purchases-page__link-date">
-															<div class="purchases-page__date">14.10.2022</div>
-															<div class="purchases-page__date purchases-page__time">03:07:00 Мск</div>
+										<div class="only-desktop"><a class="purchases-page__row" href="#">
+												<div class="purchases-page__row-col">
+													<div class="purchases-page__label only-mobile">Номер закупки, статус</div>
+													<div class="purchases-page__item-wrapper">
+														<div>1</div>
+														<div class="purchases-page__item-status">
+															<div class="purchases-page__status">
+																<div class="purchases-page__status-icon"><svg class="purchases-page__status-svg" width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+																		<rect width="27" height="27" rx="8" fill="#53EE8C"></rect>
+																		<path d="M21.3337 12.7501V9.25008C21.3337 6.33341 20.167 5.16675 17.2503 5.16675H13.7503C10.8337 5.16675 9.66699 6.33341 9.66699 9.25008V10.1667H12.2503C15.167 10.1667 16.3337 11.3334 16.3337 14.2501V16.8334H17.2503C20.167 16.8334 21.3337 15.6667 21.3337 12.7501Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+																		<path d="M16.3337 17.7501V14.2501C16.3337 11.3334 15.167 10.1667 12.2503 10.1667H8.75033C5.83366 10.1667 4.66699 11.3334 4.66699 14.2501V17.7501C4.66699 20.6667 5.83366 21.8334 8.75033 21.8334H12.2503C15.167 21.8334 16.3337 20.6667 16.3337 17.7501Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+																		<path d="M8.06641 16L9.69141 17.625L12.9331 14.375" stroke="white" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round"></path>
+																	</svg></div>
+																<div class="purchases-page__item-text">Прием заявок</div>
+															</div>
 														</div>
-														<div class="purchases-page__caption">Заявок отправлено: <span>23</span></div>
 													</div>
-													<div class="purchases-page__icon"><svg class="purchases-page__svg" width="12" height="12" viewbox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-															<path d="M1.5 3.75L6 8.25L10.5 3.75" stroke="white" stroke-width="1.5"></path>
-														</svg></div>
-													<div class="only-mobile"><a class="link link--black" href="#">
-															<div class="link__icon"><svg class="link__svg" width="12" height="12" viewbox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-																	<path d="M1.5 3.75L6 8.25L10.5 3.75" stroke="white" stroke-width="1.5"></path>
-																</svg></div>
-															<div class="link__text">Подробнее</div>
-														</a></div>
+												</div>
+												<div class="purchases-page__row-col">
+													<div class="purchases-page__label only-mobile">Тип и наименование</div>
+													<div class="purchases-page__wrapper">
+														<div class="purchases-page__title">Открытый конкурс в электронной форме № 6/ОКЭ-АО «ОТЛК ЕРА»/2021 на право заключения договора на оказание аудиторских услуг по РСБУ и МСФО для нужд АО «ОТЛК ЕРА» за 2021 год</div>
+													</div>
+												</div>
+												<div class="purchases-page__row-col">
+													<div class="purchases-page__label only-mobile">Прием заявок завершается</div>
+													<div class="purchases-page__inner">
+														<div class="purchases-page__link-wrapper">
+															<div class="purchases-page__link-date">
+																<div class="purchases-page__date">14.10.2022</div>
+																<div class="purchases-page__date purchases-page__time">03:07:00 Мск</div>
+															</div>
+															<div class="purchases-page__caption">Заявок отправлено: <span>23</span></div>
+														</div>
+														<div class="purchases-page__icon"><svg class="purchases-page__svg" width="12" height="12" viewbox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+																<path d="M1.5 3.75L6 8.25L10.5 3.75" stroke="white" stroke-width="1.5"></path>
+															</svg></div>
+													</div>
+												</div>
+											</a></div>
+										<div class="only-mobile">
+											<div class="purchases-page__row">
+												<div class="purchases-page__row-col">
+													<div class="purchases-page__label only-mobile">Номер закупки, статус</div>
+													<div class="purchases-page__item-wrapper">
+														<div>1</div>
+														<div class="purchases-page__item-status">
+															<div class="purchases-page__status">
+																<div class="purchases-page__status-icon"><svg class="purchases-page__status-svg" width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+																		<rect width="27" height="27" rx="8" fill="#53EE8C"></rect>
+																		<path d="M21.3337 12.7501V9.25008C21.3337 6.33341 20.167 5.16675 17.2503 5.16675H13.7503C10.8337 5.16675 9.66699 6.33341 9.66699 9.25008V10.1667H12.2503C15.167 10.1667 16.3337 11.3334 16.3337 14.2501V16.8334H17.2503C20.167 16.8334 21.3337 15.6667 21.3337 12.7501Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+																		<path d="M16.3337 17.7501V14.2501C16.3337 11.3334 15.167 10.1667 12.2503 10.1667H8.75033C5.83366 10.1667 4.66699 11.3334 4.66699 14.2501V17.7501C4.66699 20.6667 5.83366 21.8334 8.75033 21.8334H12.2503C15.167 21.8334 16.3337 20.6667 16.3337 17.7501Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+																		<path d="M8.06641 16L9.69141 17.625L12.9331 14.375" stroke="white" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round"></path>
+																	</svg></div>
+																<div class="purchases-page__item-text">Прием заявок</div>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="purchases-page__row-col">
+													<div class="purchases-page__label only-mobile">Тип и наименование</div>
+													<div class="purchases-page__wrapper">
+														<div class="purchases-page__title">Открытый конкурс в электронной форме № 6/ОКЭ-АО «ОТЛК ЕРА»/2021 на право заключения договора на оказание аудиторских услуг по РСБУ и МСФО для нужд АО «ОТЛК ЕРА» за 2021 год</div>
+													</div>
+												</div>
+												<div class="purchases-page__row-col">
+													<div class="purchases-page__label only-mobile">Прием заявок завершается</div>
+													<div class="purchases-page__inner">
+														<div class="purchases-page__link-wrapper">
+															<div class="purchases-page__link-date">
+																<div class="purchases-page__date">14.10.2022</div>
+																<div class="purchases-page__date purchases-page__time">03:07:00 Мск</div>
+															</div>
+															<div class="purchases-page__caption">Заявок отправлено: <span>23</span></div>
+														</div>
+														<div class="purchases-page__icon"><svg class="purchases-page__svg" width="12" height="12" viewbox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+																<path d="M1.5 3.75L6 8.25L10.5 3.75" stroke="white" stroke-width="1.5"></path>
+															</svg></div>
+														<div class="only-mobile"><a class="link link--black" href="#">
+																<div class="link__icon"><svg class="link__svg" width="12" height="12" viewbox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+																		<path d="M1.5 3.75L6 8.25L10.5 3.75" stroke="white" stroke-width="1.5"></path>
+																	</svg></div>
+																<div class="link__text">Подробнее</div>
+															</a></div>
+													</div>
 												</div>
 											</div>
 										</div>
 									</div>
 									<div class="purchases-page__item purchases-page__button">
-										<div class="purchases-page__row">
-											<div class="purchases-page__row-col">
-												<div class="purchases-page__label only-mobile">Номер закупки</div>
-												<div>1</div>
-											</div>
-											<div class="purchases-page__row-col">
-												<div class="purchases-page__label only-mobile">Тип и наименование</div>
-												<div class="purchases-page__wrapper">
-													<div class="purchases-page__title">Открытый конкурс в электронной форме № 6/ОКЭ-АО «ОТЛК ЕРА»/2021 на право заключения договора на оказание аудиторских услуг по РСБУ и МСФО для нужд АО «ОТЛК ЕРА» за 2021 год</div>
-												</div>
-											</div>
-											<div class="purchases-page__row-col">
-												<div class="purchases-page__label only-mobile">Прием заявок завершается</div>
-												<div class="purchases-page__inner">
-													<div class="purchases-page__link-wrapper">
-														<div class="purchases-page__link-date">
-															<div class="purchases-page__date">14.10.2022</div>
-															<div class="purchases-page__date purchases-page__time">03:07:00 Мск</div>
+										<div class="only-desktop"><a class="purchases-page__row" href="#">
+												<div class="purchases-page__row-col">
+													<div class="purchases-page__label only-mobile">Номер закупки, статус</div>
+													<div class="purchases-page__item-wrapper">
+														<div>1</div>
+														<div class="purchases-page__item-status">
+															<div class="purchases-page__status">
+																<div class="purchases-page__status-icon"><svg class="purchases-page__status-svg" width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+																		<rect width="27" height="27" rx="8" fill="#53EE8C"></rect>
+																		<path d="M21.3337 12.7501V9.25008C21.3337 6.33341 20.167 5.16675 17.2503 5.16675H13.7503C10.8337 5.16675 9.66699 6.33341 9.66699 9.25008V10.1667H12.2503C15.167 10.1667 16.3337 11.3334 16.3337 14.2501V16.8334H17.2503C20.167 16.8334 21.3337 15.6667 21.3337 12.7501Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+																		<path d="M16.3337 17.7501V14.2501C16.3337 11.3334 15.167 10.1667 12.2503 10.1667H8.75033C5.83366 10.1667 4.66699 11.3334 4.66699 14.2501V17.7501C4.66699 20.6667 5.83366 21.8334 8.75033 21.8334H12.2503C15.167 21.8334 16.3337 20.6667 16.3337 17.7501Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+																		<path d="M8.06641 16L9.69141 17.625L12.9331 14.375" stroke="white" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round"></path>
+																	</svg></div>
+																<div class="purchases-page__item-text">Прием заявок</div>
+															</div>
 														</div>
-														<div class="purchases-page__caption">Заявок отправлено: <span>23</span></div>
 													</div>
-													<div class="purchases-page__icon"><svg class="purchases-page__svg" width="12" height="12" viewbox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-															<path d="M1.5 3.75L6 8.25L10.5 3.75" stroke="white" stroke-width="1.5"></path>
-														</svg></div>
-													<div class="only-mobile"><a class="link link--black" href="#">
-															<div class="link__icon"><svg class="link__svg" width="12" height="12" viewbox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-																	<path d="M1.5 3.75L6 8.25L10.5 3.75" stroke="white" stroke-width="1.5"></path>
-																</svg></div>
-															<div class="link__text">Подробнее</div>
-														</a></div>
+												</div>
+												<div class="purchases-page__row-col">
+													<div class="purchases-page__label only-mobile">Тип и наименование</div>
+													<div class="purchases-page__wrapper">
+														<div class="purchases-page__title">Открытый конкурс в электронной форме № 6/ОКЭ-АО «ОТЛК ЕРА»/2021 на право заключения договора на оказание аудиторских услуг по РСБУ и МСФО для нужд АО «ОТЛК ЕРА» за 2021 год</div>
+													</div>
+												</div>
+												<div class="purchases-page__row-col">
+													<div class="purchases-page__label only-mobile">Прием заявок завершается</div>
+													<div class="purchases-page__inner">
+														<div class="purchases-page__link-wrapper">
+															<div class="purchases-page__link-date">
+																<div class="purchases-page__date">14.10.2022</div>
+																<div class="purchases-page__date purchases-page__time">03:07:00 Мск</div>
+															</div>
+															<div class="purchases-page__caption">Заявок отправлено: <span>23</span></div>
+														</div>
+														<div class="purchases-page__icon"><svg class="purchases-page__svg" width="12" height="12" viewbox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+																<path d="M1.5 3.75L6 8.25L10.5 3.75" stroke="white" stroke-width="1.5"></path>
+															</svg></div>
+													</div>
+												</div>
+											</a></div>
+										<div class="only-mobile">
+											<div class="purchases-page__row">
+												<div class="purchases-page__row-col">
+													<div class="purchases-page__label only-mobile">Номер закупки, статус</div>
+													<div class="purchases-page__item-wrapper">
+														<div>1</div>
+														<div class="purchases-page__item-status">
+															<div class="purchases-page__status">
+																<div class="purchases-page__status-icon"><svg class="purchases-page__status-svg" width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+																		<rect width="27" height="27" rx="8" fill="#53EE8C"></rect>
+																		<path d="M21.3337 12.7501V9.25008C21.3337 6.33341 20.167 5.16675 17.2503 5.16675H13.7503C10.8337 5.16675 9.66699 6.33341 9.66699 9.25008V10.1667H12.2503C15.167 10.1667 16.3337 11.3334 16.3337 14.2501V16.8334H17.2503C20.167 16.8334 21.3337 15.6667 21.3337 12.7501Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+																		<path d="M16.3337 17.7501V14.2501C16.3337 11.3334 15.167 10.1667 12.2503 10.1667H8.75033C5.83366 10.1667 4.66699 11.3334 4.66699 14.2501V17.7501C4.66699 20.6667 5.83366 21.8334 8.75033 21.8334H12.2503C15.167 21.8334 16.3337 20.6667 16.3337 17.7501Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+																		<path d="M8.06641 16L9.69141 17.625L12.9331 14.375" stroke="white" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round"></path>
+																	</svg></div>
+																<div class="purchases-page__item-text">Прием заявок</div>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="purchases-page__row-col">
+													<div class="purchases-page__label only-mobile">Тип и наименование</div>
+													<div class="purchases-page__wrapper">
+														<div class="purchases-page__title">Открытый конкурс в электронной форме № 6/ОКЭ-АО «ОТЛК ЕРА»/2021 на право заключения договора на оказание аудиторских услуг по РСБУ и МСФО для нужд АО «ОТЛК ЕРА» за 2021 год</div>
+													</div>
+												</div>
+												<div class="purchases-page__row-col">
+													<div class="purchases-page__label only-mobile">Прием заявок завершается</div>
+													<div class="purchases-page__inner">
+														<div class="purchases-page__link-wrapper">
+															<div class="purchases-page__link-date">
+																<div class="purchases-page__date">14.10.2022</div>
+																<div class="purchases-page__date purchases-page__time">03:07:00 Мск</div>
+															</div>
+															<div class="purchases-page__caption">Заявок отправлено: <span>23</span></div>
+														</div>
+														<div class="purchases-page__icon"><svg class="purchases-page__svg" width="12" height="12" viewbox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+																<path d="M1.5 3.75L6 8.25L10.5 3.75" stroke="white" stroke-width="1.5"></path>
+															</svg></div>
+														<div class="only-mobile"><a class="link link--black" href="#">
+																<div class="link__icon"><svg class="link__svg" width="12" height="12" viewbox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+																		<path d="M1.5 3.75L6 8.25L10.5 3.75" stroke="white" stroke-width="1.5"></path>
+																	</svg></div>
+																<div class="link__text">Подробнее</div>
+															</a></div>
+													</div>
 												</div>
 											</div>
 										</div>
 									</div>
 									<div class="purchases-page__item purchases-page__button">
-										<div class="purchases-page__row">
-											<div class="purchases-page__row-col">
-												<div class="purchases-page__label only-mobile">Номер закупки</div>
-												<div>1</div>
-											</div>
-											<div class="purchases-page__row-col">
-												<div class="purchases-page__label only-mobile">Тип и наименование</div>
-												<div class="purchases-page__wrapper">
-													<div class="purchases-page__title">Открытый конкурс в электронной форме № 6/ОКЭ-АО «ОТЛК ЕРА»/2021 на право заключения договора на оказание аудиторских услуг по РСБУ и МСФО для нужд АО «ОТЛК ЕРА» за 2021 год</div>
-												</div>
-											</div>
-											<div class="purchases-page__row-col">
-												<div class="purchases-page__label only-mobile">Прием заявок завершается</div>
-												<div class="purchases-page__inner">
-													<div class="purchases-page__link-wrapper">
-														<div class="purchases-page__link-date">
-															<div class="purchases-page__date">14.10.2022</div>
-															<div class="purchases-page__date purchases-page__time">03:07:00 Мск</div>
+										<div class="only-desktop"><a class="purchases-page__row" href="#">
+												<div class="purchases-page__row-col">
+													<div class="purchases-page__label only-mobile">Номер закупки, статус</div>
+													<div class="purchases-page__item-wrapper">
+														<div>1</div>
+														<div class="purchases-page__item-status">
+															<div class="purchases-page__status">
+																<div class="purchases-page__status-icon"><svg class="purchases-page__status-svg" width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+																		<rect width="27" height="27" rx="8" fill="#53EE8C"></rect>
+																		<path d="M21.3337 12.7501V9.25008C21.3337 6.33341 20.167 5.16675 17.2503 5.16675H13.7503C10.8337 5.16675 9.66699 6.33341 9.66699 9.25008V10.1667H12.2503C15.167 10.1667 16.3337 11.3334 16.3337 14.2501V16.8334H17.2503C20.167 16.8334 21.3337 15.6667 21.3337 12.7501Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+																		<path d="M16.3337 17.7501V14.2501C16.3337 11.3334 15.167 10.1667 12.2503 10.1667H8.75033C5.83366 10.1667 4.66699 11.3334 4.66699 14.2501V17.7501C4.66699 20.6667 5.83366 21.8334 8.75033 21.8334H12.2503C15.167 21.8334 16.3337 20.6667 16.3337 17.7501Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+																		<path d="M8.06641 16L9.69141 17.625L12.9331 14.375" stroke="white" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round"></path>
+																	</svg></div>
+																<div class="purchases-page__item-text">Прием заявок</div>
+															</div>
 														</div>
-														<div class="purchases-page__caption">Заявок отправлено: <span>23</span></div>
 													</div>
-													<div class="purchases-page__icon"><svg class="purchases-page__svg" width="12" height="12" viewbox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-															<path d="M1.5 3.75L6 8.25L10.5 3.75" stroke="white" stroke-width="1.5"></path>
-														</svg></div>
-													<div class="only-mobile"><a class="link link--black" href="#">
-															<div class="link__icon"><svg class="link__svg" width="12" height="12" viewbox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-																	<path d="M1.5 3.75L6 8.25L10.5 3.75" stroke="white" stroke-width="1.5"></path>
-																</svg></div>
-															<div class="link__text">Подробнее</div>
-														</a></div>
+												</div>
+												<div class="purchases-page__row-col">
+													<div class="purchases-page__label only-mobile">Тип и наименование</div>
+													<div class="purchases-page__wrapper">
+														<div class="purchases-page__title">Открытый конкурс в электронной форме № 6/ОКЭ-АО «ОТЛК ЕРА»/2021 на право заключения договора на оказание аудиторских услуг по РСБУ и МСФО для нужд АО «ОТЛК ЕРА» за 2021 год</div>
+													</div>
+												</div>
+												<div class="purchases-page__row-col">
+													<div class="purchases-page__label only-mobile">Прием заявок завершается</div>
+													<div class="purchases-page__inner">
+														<div class="purchases-page__link-wrapper">
+															<div class="purchases-page__link-date">
+																<div class="purchases-page__date">14.10.2022</div>
+																<div class="purchases-page__date purchases-page__time">03:07:00 Мск</div>
+															</div>
+															<div class="purchases-page__caption">Заявок отправлено: <span>23</span></div>
+														</div>
+														<div class="purchases-page__icon"><svg class="purchases-page__svg" width="12" height="12" viewbox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+																<path d="M1.5 3.75L6 8.25L10.5 3.75" stroke="white" stroke-width="1.5"></path>
+															</svg></div>
+													</div>
+												</div>
+											</a></div>
+										<div class="only-mobile">
+											<div class="purchases-page__row">
+												<div class="purchases-page__row-col">
+													<div class="purchases-page__label only-mobile">Номер закупки, статус</div>
+													<div class="purchases-page__item-wrapper">
+														<div>1</div>
+														<div class="purchases-page__item-status">
+															<div class="purchases-page__status">
+																<div class="purchases-page__status-icon"><svg class="purchases-page__status-svg" width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+																		<rect width="27" height="27" rx="8" fill="#53EE8C"></rect>
+																		<path d="M21.3337 12.7501V9.25008C21.3337 6.33341 20.167 5.16675 17.2503 5.16675H13.7503C10.8337 5.16675 9.66699 6.33341 9.66699 9.25008V10.1667H12.2503C15.167 10.1667 16.3337 11.3334 16.3337 14.2501V16.8334H17.2503C20.167 16.8334 21.3337 15.6667 21.3337 12.7501Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+																		<path d="M16.3337 17.7501V14.2501C16.3337 11.3334 15.167 10.1667 12.2503 10.1667H8.75033C5.83366 10.1667 4.66699 11.3334 4.66699 14.2501V17.7501C4.66699 20.6667 5.83366 21.8334 8.75033 21.8334H12.2503C15.167 21.8334 16.3337 20.6667 16.3337 17.7501Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+																		<path d="M8.06641 16L9.69141 17.625L12.9331 14.375" stroke="white" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round"></path>
+																	</svg></div>
+																<div class="purchases-page__item-text">Прием заявок</div>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="purchases-page__row-col">
+													<div class="purchases-page__label only-mobile">Тип и наименование</div>
+													<div class="purchases-page__wrapper">
+														<div class="purchases-page__title">Открытый конкурс в электронной форме № 6/ОКЭ-АО «ОТЛК ЕРА»/2021 на право заключения договора на оказание аудиторских услуг по РСБУ и МСФО для нужд АО «ОТЛК ЕРА» за 2021 год</div>
+													</div>
+												</div>
+												<div class="purchases-page__row-col">
+													<div class="purchases-page__label only-mobile">Прием заявок завершается</div>
+													<div class="purchases-page__inner">
+														<div class="purchases-page__link-wrapper">
+															<div class="purchases-page__link-date">
+																<div class="purchases-page__date">14.10.2022</div>
+																<div class="purchases-page__date purchases-page__time">03:07:00 Мск</div>
+															</div>
+															<div class="purchases-page__caption">Заявок отправлено: <span>23</span></div>
+														</div>
+														<div class="purchases-page__icon"><svg class="purchases-page__svg" width="12" height="12" viewbox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+																<path d="M1.5 3.75L6 8.25L10.5 3.75" stroke="white" stroke-width="1.5"></path>
+															</svg></div>
+														<div class="only-mobile"><a class="link link--black" href="#">
+																<div class="link__icon"><svg class="link__svg" width="12" height="12" viewbox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+																		<path d="M1.5 3.75L6 8.25L10.5 3.75" stroke="white" stroke-width="1.5"></path>
+																	</svg></div>
+																<div class="link__text">Подробнее</div>
+															</a></div>
+													</div>
 												</div>
 											</div>
 										</div>
 									</div>
 									<div class="purchases-page__item purchases-page__button">
-										<div class="purchases-page__row">
-											<div class="purchases-page__row-col">
-												<div class="purchases-page__label only-mobile">Номер закупки</div>
-												<div>1</div>
-											</div>
-											<div class="purchases-page__row-col">
-												<div class="purchases-page__label only-mobile">Тип и наименование</div>
-												<div class="purchases-page__wrapper">
-													<div class="purchases-page__title">Открытый конкурс в электронной форме № 6/ОКЭ-АО «ОТЛК ЕРА»/2021 на право заключения договора на оказание аудиторских услуг по РСБУ и МСФО для нужд АО «ОТЛК ЕРА» за 2021 год</div>
-												</div>
-											</div>
-											<div class="purchases-page__row-col">
-												<div class="purchases-page__label only-mobile">Прием заявок завершается</div>
-												<div class="purchases-page__inner">
-													<div class="purchases-page__link-wrapper">
-														<div class="purchases-page__link-date">
-															<div class="purchases-page__date">14.10.2022</div>
-															<div class="purchases-page__date purchases-page__time">03:07:00 Мск</div>
+										<div class="only-desktop"><a class="purchases-page__row" href="#">
+												<div class="purchases-page__row-col">
+													<div class="purchases-page__label only-mobile">Номер закупки, статус</div>
+													<div class="purchases-page__item-wrapper">
+														<div>1</div>
+														<div class="purchases-page__item-status">
+															<div class="purchases-page__status">
+																<div class="purchases-page__status-icon"><svg class="purchases-page__status-svg" width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+																		<rect width="27" height="27" rx="8" fill="#53EE8C"></rect>
+																		<path d="M21.3337 12.7501V9.25008C21.3337 6.33341 20.167 5.16675 17.2503 5.16675H13.7503C10.8337 5.16675 9.66699 6.33341 9.66699 9.25008V10.1667H12.2503C15.167 10.1667 16.3337 11.3334 16.3337 14.2501V16.8334H17.2503C20.167 16.8334 21.3337 15.6667 21.3337 12.7501Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+																		<path d="M16.3337 17.7501V14.2501C16.3337 11.3334 15.167 10.1667 12.2503 10.1667H8.75033C5.83366 10.1667 4.66699 11.3334 4.66699 14.2501V17.7501C4.66699 20.6667 5.83366 21.8334 8.75033 21.8334H12.2503C15.167 21.8334 16.3337 20.6667 16.3337 17.7501Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+																		<path d="M8.06641 16L9.69141 17.625L12.9331 14.375" stroke="white" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round"></path>
+																	</svg></div>
+																<div class="purchases-page__item-text">Прием заявок</div>
+															</div>
 														</div>
-														<div class="purchases-page__caption">Заявок отправлено: <span>23</span></div>
 													</div>
-													<div class="purchases-page__icon"><svg class="purchases-page__svg" width="12" height="12" viewbox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-															<path d="M1.5 3.75L6 8.25L10.5 3.75" stroke="white" stroke-width="1.5"></path>
-														</svg></div>
-													<div class="only-mobile"><a class="link link--black" href="#">
-															<div class="link__icon"><svg class="link__svg" width="12" height="12" viewbox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-																	<path d="M1.5 3.75L6 8.25L10.5 3.75" stroke="white" stroke-width="1.5"></path>
-																</svg></div>
-															<div class="link__text">Подробнее</div>
-														</a></div>
+												</div>
+												<div class="purchases-page__row-col">
+													<div class="purchases-page__label only-mobile">Тип и наименование</div>
+													<div class="purchases-page__wrapper">
+														<div class="purchases-page__title">Открытый конкурс в электронной форме № 6/ОКЭ-АО «ОТЛК ЕРА»/2021 на право заключения договора на оказание аудиторских услуг по РСБУ и МСФО для нужд АО «ОТЛК ЕРА» за 2021 год</div>
+													</div>
+												</div>
+												<div class="purchases-page__row-col">
+													<div class="purchases-page__label only-mobile">Прием заявок завершается</div>
+													<div class="purchases-page__inner">
+														<div class="purchases-page__link-wrapper">
+															<div class="purchases-page__link-date">
+																<div class="purchases-page__date">14.10.2022</div>
+																<div class="purchases-page__date purchases-page__time">03:07:00 Мск</div>
+															</div>
+															<div class="purchases-page__caption">Заявок отправлено: <span>23</span></div>
+														</div>
+														<div class="purchases-page__icon"><svg class="purchases-page__svg" width="12" height="12" viewbox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+																<path d="M1.5 3.75L6 8.25L10.5 3.75" stroke="white" stroke-width="1.5"></path>
+															</svg></div>
+													</div>
+												</div>
+											</a></div>
+										<div class="only-mobile">
+											<div class="purchases-page__row">
+												<div class="purchases-page__row-col">
+													<div class="purchases-page__label only-mobile">Номер закупки, статус</div>
+													<div class="purchases-page__item-wrapper">
+														<div>1</div>
+														<div class="purchases-page__item-status">
+															<div class="purchases-page__status">
+																<div class="purchases-page__status-icon"><svg class="purchases-page__status-svg" width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+																		<rect width="27" height="27" rx="8" fill="#53EE8C"></rect>
+																		<path d="M21.3337 12.7501V9.25008C21.3337 6.33341 20.167 5.16675 17.2503 5.16675H13.7503C10.8337 5.16675 9.66699 6.33341 9.66699 9.25008V10.1667H12.2503C15.167 10.1667 16.3337 11.3334 16.3337 14.2501V16.8334H17.2503C20.167 16.8334 21.3337 15.6667 21.3337 12.7501Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+																		<path d="M16.3337 17.7501V14.2501C16.3337 11.3334 15.167 10.1667 12.2503 10.1667H8.75033C5.83366 10.1667 4.66699 11.3334 4.66699 14.2501V17.7501C4.66699 20.6667 5.83366 21.8334 8.75033 21.8334H12.2503C15.167 21.8334 16.3337 20.6667 16.3337 17.7501Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+																		<path d="M8.06641 16L9.69141 17.625L12.9331 14.375" stroke="white" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round"></path>
+																	</svg></div>
+																<div class="purchases-page__item-text">Прием заявок</div>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="purchases-page__row-col">
+													<div class="purchases-page__label only-mobile">Тип и наименование</div>
+													<div class="purchases-page__wrapper">
+														<div class="purchases-page__title">Открытый конкурс в электронной форме № 6/ОКЭ-АО «ОТЛК ЕРА»/2021 на право заключения договора на оказание аудиторских услуг по РСБУ и МСФО для нужд АО «ОТЛК ЕРА» за 2021 год</div>
+													</div>
+												</div>
+												<div class="purchases-page__row-col">
+													<div class="purchases-page__label only-mobile">Прием заявок завершается</div>
+													<div class="purchases-page__inner">
+														<div class="purchases-page__link-wrapper">
+															<div class="purchases-page__link-date">
+																<div class="purchases-page__date">14.10.2022</div>
+																<div class="purchases-page__date purchases-page__time">03:07:00 Мск</div>
+															</div>
+															<div class="purchases-page__caption">Заявок отправлено: <span>23</span></div>
+														</div>
+														<div class="purchases-page__icon"><svg class="purchases-page__svg" width="12" height="12" viewbox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+																<path d="M1.5 3.75L6 8.25L10.5 3.75" stroke="white" stroke-width="1.5"></path>
+															</svg></div>
+														<div class="only-mobile"><a class="link link--black" href="#">
+																<div class="link__icon"><svg class="link__svg" width="12" height="12" viewbox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+																		<path d="M1.5 3.75L6 8.25L10.5 3.75" stroke="white" stroke-width="1.5"></path>
+																	</svg></div>
+																<div class="link__text">Подробнее</div>
+															</a></div>
+													</div>
 												</div>
 											</div>
 										</div>
 									</div>
 									<div class="purchases-page__item purchases-page__button">
-										<div class="purchases-page__row">
-											<div class="purchases-page__row-col">
-												<div class="purchases-page__label only-mobile">Номер закупки</div>
-												<div>1</div>
-											</div>
-											<div class="purchases-page__row-col">
-												<div class="purchases-page__label only-mobile">Тип и наименование</div>
-												<div class="purchases-page__wrapper">
-													<div class="purchases-page__title">Открытый конкурс в электронной форме № 6/ОКЭ-АО «ОТЛК ЕРА»/2021 на право заключения договора на оказание аудиторских услуг по РСБУ и МСФО для нужд АО «ОТЛК ЕРА» за 2021 год</div>
-												</div>
-											</div>
-											<div class="purchases-page__row-col">
-												<div class="purchases-page__label only-mobile">Прием заявок завершается</div>
-												<div class="purchases-page__inner">
-													<div class="purchases-page__link-wrapper">
-														<div class="purchases-page__link-date">
-															<div class="purchases-page__date">14.10.2022</div>
-															<div class="purchases-page__date purchases-page__time">03:07:00 Мск</div>
+										<div class="only-desktop"><a class="purchases-page__row" href="#">
+												<div class="purchases-page__row-col">
+													<div class="purchases-page__label only-mobile">Номер закупки, статус</div>
+													<div class="purchases-page__item-wrapper">
+														<div>1</div>
+														<div class="purchases-page__item-status">
+															<div class="purchases-page__status">
+																<div class="purchases-page__status-icon"><svg class="purchases-page__status-svg" width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+																		<rect width="27" height="27" rx="8" fill="#53EE8C"></rect>
+																		<path d="M21.3337 12.7501V9.25008C21.3337 6.33341 20.167 5.16675 17.2503 5.16675H13.7503C10.8337 5.16675 9.66699 6.33341 9.66699 9.25008V10.1667H12.2503C15.167 10.1667 16.3337 11.3334 16.3337 14.2501V16.8334H17.2503C20.167 16.8334 21.3337 15.6667 21.3337 12.7501Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+																		<path d="M16.3337 17.7501V14.2501C16.3337 11.3334 15.167 10.1667 12.2503 10.1667H8.75033C5.83366 10.1667 4.66699 11.3334 4.66699 14.2501V17.7501C4.66699 20.6667 5.83366 21.8334 8.75033 21.8334H12.2503C15.167 21.8334 16.3337 20.6667 16.3337 17.7501Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+																		<path d="M8.06641 16L9.69141 17.625L12.9331 14.375" stroke="white" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round"></path>
+																	</svg></div>
+																<div class="purchases-page__item-text">Прием заявок</div>
+															</div>
 														</div>
-														<div class="purchases-page__caption">Заявок отправлено: <span>23</span></div>
 													</div>
-													<div class="purchases-page__icon"><svg class="purchases-page__svg" width="12" height="12" viewbox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-															<path d="M1.5 3.75L6 8.25L10.5 3.75" stroke="white" stroke-width="1.5"></path>
-														</svg></div>
-													<div class="only-mobile"><a class="link link--black" href="#">
-															<div class="link__icon"><svg class="link__svg" width="12" height="12" viewbox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-																	<path d="M1.5 3.75L6 8.25L10.5 3.75" stroke="white" stroke-width="1.5"></path>
-																</svg></div>
-															<div class="link__text">Подробнее</div>
-														</a></div>
+												</div>
+												<div class="purchases-page__row-col">
+													<div class="purchases-page__label only-mobile">Тип и наименование</div>
+													<div class="purchases-page__wrapper">
+														<div class="purchases-page__title">Открытый конкурс в электронной форме № 6/ОКЭ-АО «ОТЛК ЕРА»/2021 на право заключения договора на оказание аудиторских услуг по РСБУ и МСФО для нужд АО «ОТЛК ЕРА» за 2021 год</div>
+													</div>
+												</div>
+												<div class="purchases-page__row-col">
+													<div class="purchases-page__label only-mobile">Прием заявок завершается</div>
+													<div class="purchases-page__inner">
+														<div class="purchases-page__link-wrapper">
+															<div class="purchases-page__link-date">
+																<div class="purchases-page__date">14.10.2022</div>
+																<div class="purchases-page__date purchases-page__time">03:07:00 Мск</div>
+															</div>
+															<div class="purchases-page__caption">Заявок отправлено: <span>23</span></div>
+														</div>
+														<div class="purchases-page__icon"><svg class="purchases-page__svg" width="12" height="12" viewbox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+																<path d="M1.5 3.75L6 8.25L10.5 3.75" stroke="white" stroke-width="1.5"></path>
+															</svg></div>
+													</div>
+												</div>
+											</a></div>
+										<div class="only-mobile">
+											<div class="purchases-page__row">
+												<div class="purchases-page__row-col">
+													<div class="purchases-page__label only-mobile">Номер закупки, статус</div>
+													<div class="purchases-page__item-wrapper">
+														<div>1</div>
+														<div class="purchases-page__item-status">
+															<div class="purchases-page__status">
+																<div class="purchases-page__status-icon"><svg class="purchases-page__status-svg" width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+																		<rect width="27" height="27" rx="8" fill="#53EE8C"></rect>
+																		<path d="M21.3337 12.7501V9.25008C21.3337 6.33341 20.167 5.16675 17.2503 5.16675H13.7503C10.8337 5.16675 9.66699 6.33341 9.66699 9.25008V10.1667H12.2503C15.167 10.1667 16.3337 11.3334 16.3337 14.2501V16.8334H17.2503C20.167 16.8334 21.3337 15.6667 21.3337 12.7501Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+																		<path d="M16.3337 17.7501V14.2501C16.3337 11.3334 15.167 10.1667 12.2503 10.1667H8.75033C5.83366 10.1667 4.66699 11.3334 4.66699 14.2501V17.7501C4.66699 20.6667 5.83366 21.8334 8.75033 21.8334H12.2503C15.167 21.8334 16.3337 20.6667 16.3337 17.7501Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+																		<path d="M8.06641 16L9.69141 17.625L12.9331 14.375" stroke="white" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round"></path>
+																	</svg></div>
+																<div class="purchases-page__item-text">Прием заявок</div>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="purchases-page__row-col">
+													<div class="purchases-page__label only-mobile">Тип и наименование</div>
+													<div class="purchases-page__wrapper">
+														<div class="purchases-page__title">Открытый конкурс в электронной форме № 6/ОКЭ-АО «ОТЛК ЕРА»/2021 на право заключения договора на оказание аудиторских услуг по РСБУ и МСФО для нужд АО «ОТЛК ЕРА» за 2021 год</div>
+													</div>
+												</div>
+												<div class="purchases-page__row-col">
+													<div class="purchases-page__label only-mobile">Прием заявок завершается</div>
+													<div class="purchases-page__inner">
+														<div class="purchases-page__link-wrapper">
+															<div class="purchases-page__link-date">
+																<div class="purchases-page__date">14.10.2022</div>
+																<div class="purchases-page__date purchases-page__time">03:07:00 Мск</div>
+															</div>
+															<div class="purchases-page__caption">Заявок отправлено: <span>23</span></div>
+														</div>
+														<div class="purchases-page__icon"><svg class="purchases-page__svg" width="12" height="12" viewbox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+																<path d="M1.5 3.75L6 8.25L10.5 3.75" stroke="white" stroke-width="1.5"></path>
+															</svg></div>
+														<div class="only-mobile"><a class="link link--black" href="#">
+																<div class="link__icon"><svg class="link__svg" width="12" height="12" viewbox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+																		<path d="M1.5 3.75L6 8.25L10.5 3.75" stroke="white" stroke-width="1.5"></path>
+																	</svg></div>
+																<div class="link__text">Подробнее</div>
+															</a></div>
+													</div>
 												</div>
 											</div>
 										</div>
 									</div>
 									<div class="purchases-page__item purchases-page__button">
-										<div class="purchases-page__row">
-											<div class="purchases-page__row-col">
-												<div class="purchases-page__label only-mobile">Номер закупки</div>
-												<div>1</div>
-											</div>
-											<div class="purchases-page__row-col">
-												<div class="purchases-page__label only-mobile">Тип и наименование</div>
-												<div class="purchases-page__wrapper">
-													<div class="purchases-page__title">Открытый конкурс в электронной форме № 6/ОКЭ-АО «ОТЛК ЕРА»/2021 на право заключения договора на оказание аудиторских услуг по РСБУ и МСФО для нужд АО «ОТЛК ЕРА» за 2021 год</div>
-												</div>
-											</div>
-											<div class="purchases-page__row-col">
-												<div class="purchases-page__label only-mobile">Прием заявок завершается</div>
-												<div class="purchases-page__inner">
-													<div class="purchases-page__link-wrapper">
-														<div class="purchases-page__link-date">
-															<div class="purchases-page__date">14.10.2022</div>
-															<div class="purchases-page__date purchases-page__time">03:07:00 Мск</div>
+										<div class="only-desktop"><a class="purchases-page__row" href="#">
+												<div class="purchases-page__row-col">
+													<div class="purchases-page__label only-mobile">Номер закупки, статус</div>
+													<div class="purchases-page__item-wrapper">
+														<div>1</div>
+														<div class="purchases-page__item-status">
+															<div class="purchases-page__status">
+																<div class="purchases-page__status-icon"><svg class="purchases-page__status-svg" width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+																		<rect width="27" height="27" rx="8" fill="#53EE8C"></rect>
+																		<path d="M21.3337 12.7501V9.25008C21.3337 6.33341 20.167 5.16675 17.2503 5.16675H13.7503C10.8337 5.16675 9.66699 6.33341 9.66699 9.25008V10.1667H12.2503C15.167 10.1667 16.3337 11.3334 16.3337 14.2501V16.8334H17.2503C20.167 16.8334 21.3337 15.6667 21.3337 12.7501Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+																		<path d="M16.3337 17.7501V14.2501C16.3337 11.3334 15.167 10.1667 12.2503 10.1667H8.75033C5.83366 10.1667 4.66699 11.3334 4.66699 14.2501V17.7501C4.66699 20.6667 5.83366 21.8334 8.75033 21.8334H12.2503C15.167 21.8334 16.3337 20.6667 16.3337 17.7501Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+																		<path d="M8.06641 16L9.69141 17.625L12.9331 14.375" stroke="white" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round"></path>
+																	</svg></div>
+																<div class="purchases-page__item-text">Прием заявок</div>
+															</div>
 														</div>
-														<div class="purchases-page__caption">Заявок отправлено: <span>23</span></div>
 													</div>
-													<div class="purchases-page__icon"><svg class="purchases-page__svg" width="12" height="12" viewbox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-															<path d="M1.5 3.75L6 8.25L10.5 3.75" stroke="white" stroke-width="1.5"></path>
-														</svg></div>
-													<div class="only-mobile"><a class="link link--black" href="#">
-															<div class="link__icon"><svg class="link__svg" width="12" height="12" viewbox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-																	<path d="M1.5 3.75L6 8.25L10.5 3.75" stroke="white" stroke-width="1.5"></path>
-																</svg></div>
-															<div class="link__text">Подробнее</div>
-														</a></div>
+												</div>
+												<div class="purchases-page__row-col">
+													<div class="purchases-page__label only-mobile">Тип и наименование</div>
+													<div class="purchases-page__wrapper">
+														<div class="purchases-page__title">Открытый конкурс в электронной форме № 6/ОКЭ-АО «ОТЛК ЕРА»/2021 на право заключения договора на оказание аудиторских услуг по РСБУ и МСФО для нужд АО «ОТЛК ЕРА» за 2021 год</div>
+													</div>
+												</div>
+												<div class="purchases-page__row-col">
+													<div class="purchases-page__label only-mobile">Прием заявок завершается</div>
+													<div class="purchases-page__inner">
+														<div class="purchases-page__link-wrapper">
+															<div class="purchases-page__link-date">
+																<div class="purchases-page__date">14.10.2022</div>
+																<div class="purchases-page__date purchases-page__time">03:07:00 Мск</div>
+															</div>
+															<div class="purchases-page__caption">Заявок отправлено: <span>23</span></div>
+														</div>
+														<div class="purchases-page__icon"><svg class="purchases-page__svg" width="12" height="12" viewbox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+																<path d="M1.5 3.75L6 8.25L10.5 3.75" stroke="white" stroke-width="1.5"></path>
+															</svg></div>
+													</div>
+												</div>
+											</a></div>
+										<div class="only-mobile">
+											<div class="purchases-page__row">
+												<div class="purchases-page__row-col">
+													<div class="purchases-page__label only-mobile">Номер закупки, статус</div>
+													<div class="purchases-page__item-wrapper">
+														<div>1</div>
+														<div class="purchases-page__item-status">
+															<div class="purchases-page__status">
+																<div class="purchases-page__status-icon"><svg class="purchases-page__status-svg" width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+																		<rect width="27" height="27" rx="8" fill="#53EE8C"></rect>
+																		<path d="M21.3337 12.7501V9.25008C21.3337 6.33341 20.167 5.16675 17.2503 5.16675H13.7503C10.8337 5.16675 9.66699 6.33341 9.66699 9.25008V10.1667H12.2503C15.167 10.1667 16.3337 11.3334 16.3337 14.2501V16.8334H17.2503C20.167 16.8334 21.3337 15.6667 21.3337 12.7501Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+																		<path d="M16.3337 17.7501V14.2501C16.3337 11.3334 15.167 10.1667 12.2503 10.1667H8.75033C5.83366 10.1667 4.66699 11.3334 4.66699 14.2501V17.7501C4.66699 20.6667 5.83366 21.8334 8.75033 21.8334H12.2503C15.167 21.8334 16.3337 20.6667 16.3337 17.7501Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+																		<path d="M8.06641 16L9.69141 17.625L12.9331 14.375" stroke="white" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round"></path>
+																	</svg></div>
+																<div class="purchases-page__item-text">Прием заявок</div>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="purchases-page__row-col">
+													<div class="purchases-page__label only-mobile">Тип и наименование</div>
+													<div class="purchases-page__wrapper">
+														<div class="purchases-page__title">Открытый конкурс в электронной форме № 6/ОКЭ-АО «ОТЛК ЕРА»/2021 на право заключения договора на оказание аудиторских услуг по РСБУ и МСФО для нужд АО «ОТЛК ЕРА» за 2021 год</div>
+													</div>
+												</div>
+												<div class="purchases-page__row-col">
+													<div class="purchases-page__label only-mobile">Прием заявок завершается</div>
+													<div class="purchases-page__inner">
+														<div class="purchases-page__link-wrapper">
+															<div class="purchases-page__link-date">
+																<div class="purchases-page__date">14.10.2022</div>
+																<div class="purchases-page__date purchases-page__time">03:07:00 Мск</div>
+															</div>
+															<div class="purchases-page__caption">Заявок отправлено: <span>23</span></div>
+														</div>
+														<div class="purchases-page__icon"><svg class="purchases-page__svg" width="12" height="12" viewbox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+																<path d="M1.5 3.75L6 8.25L10.5 3.75" stroke="white" stroke-width="1.5"></path>
+															</svg></div>
+														<div class="only-mobile"><a class="link link--black" href="#">
+																<div class="link__icon"><svg class="link__svg" width="12" height="12" viewbox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+																		<path d="M1.5 3.75L6 8.25L10.5 3.75" stroke="white" stroke-width="1.5"></path>
+																	</svg></div>
+																<div class="link__text">Подробнее</div>
+															</a></div>
+													</div>
 												</div>
 											</div>
 										</div>
 									</div>
 									<div class="purchases-page__item purchases-page__button">
-										<div class="purchases-page__row">
-											<div class="purchases-page__row-col">
-												<div class="purchases-page__label only-mobile">Номер закупки</div>
-												<div>1</div>
-											</div>
-											<div class="purchases-page__row-col">
-												<div class="purchases-page__label only-mobile">Тип и наименование</div>
-												<div class="purchases-page__wrapper">
-													<div class="purchases-page__title">Открытый конкурс в электронной форме № 6/ОКЭ-АО «ОТЛК ЕРА»/2021 на право заключения договора на оказание аудиторских услуг по РСБУ и МСФО для нужд АО «ОТЛК ЕРА» за 2021 год</div>
-												</div>
-											</div>
-											<div class="purchases-page__row-col">
-												<div class="purchases-page__label only-mobile">Прием заявок завершается</div>
-												<div class="purchases-page__inner">
-													<div class="purchases-page__link-wrapper">
-														<div class="purchases-page__link-date">
-															<div class="purchases-page__date">14.10.2022</div>
-															<div class="purchases-page__date purchases-page__time">03:07:00 Мск</div>
+										<div class="only-desktop"><a class="purchases-page__row" href="#">
+												<div class="purchases-page__row-col">
+													<div class="purchases-page__label only-mobile">Номер закупки, статус</div>
+													<div class="purchases-page__item-wrapper">
+														<div>1</div>
+														<div class="purchases-page__item-status">
+															<div class="purchases-page__status">
+																<div class="purchases-page__status-icon"><svg class="purchases-page__status-svg" width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+																		<rect width="27" height="27" rx="8" fill="#53EE8C"></rect>
+																		<path d="M21.3337 12.7501V9.25008C21.3337 6.33341 20.167 5.16675 17.2503 5.16675H13.7503C10.8337 5.16675 9.66699 6.33341 9.66699 9.25008V10.1667H12.2503C15.167 10.1667 16.3337 11.3334 16.3337 14.2501V16.8334H17.2503C20.167 16.8334 21.3337 15.6667 21.3337 12.7501Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+																		<path d="M16.3337 17.7501V14.2501C16.3337 11.3334 15.167 10.1667 12.2503 10.1667H8.75033C5.83366 10.1667 4.66699 11.3334 4.66699 14.2501V17.7501C4.66699 20.6667 5.83366 21.8334 8.75033 21.8334H12.2503C15.167 21.8334 16.3337 20.6667 16.3337 17.7501Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+																		<path d="M8.06641 16L9.69141 17.625L12.9331 14.375" stroke="white" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round"></path>
+																	</svg></div>
+																<div class="purchases-page__item-text">Прием заявок</div>
+															</div>
 														</div>
-														<div class="purchases-page__caption">Заявок отправлено: <span>23</span></div>
 													</div>
-													<div class="purchases-page__icon"><svg class="purchases-page__svg" width="12" height="12" viewbox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-															<path d="M1.5 3.75L6 8.25L10.5 3.75" stroke="white" stroke-width="1.5"></path>
-														</svg></div>
-													<div class="only-mobile"><a class="link link--black" href="#">
-															<div class="link__icon"><svg class="link__svg" width="12" height="12" viewbox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-																	<path d="M1.5 3.75L6 8.25L10.5 3.75" stroke="white" stroke-width="1.5"></path>
-																</svg></div>
-															<div class="link__text">Подробнее</div>
-														</a></div>
+												</div>
+												<div class="purchases-page__row-col">
+													<div class="purchases-page__label only-mobile">Тип и наименование</div>
+													<div class="purchases-page__wrapper">
+														<div class="purchases-page__title">Открытый конкурс в электронной форме № 6/ОКЭ-АО «ОТЛК ЕРА»/2021 на право заключения договора на оказание аудиторских услуг по РСБУ и МСФО для нужд АО «ОТЛК ЕРА» за 2021 год</div>
+													</div>
+												</div>
+												<div class="purchases-page__row-col">
+													<div class="purchases-page__label only-mobile">Прием заявок завершается</div>
+													<div class="purchases-page__inner">
+														<div class="purchases-page__link-wrapper">
+															<div class="purchases-page__link-date">
+																<div class="purchases-page__date">14.10.2022</div>
+																<div class="purchases-page__date purchases-page__time">03:07:00 Мск</div>
+															</div>
+															<div class="purchases-page__caption">Заявок отправлено: <span>23</span></div>
+														</div>
+														<div class="purchases-page__icon"><svg class="purchases-page__svg" width="12" height="12" viewbox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+																<path d="M1.5 3.75L6 8.25L10.5 3.75" stroke="white" stroke-width="1.5"></path>
+															</svg></div>
+													</div>
+												</div>
+											</a></div>
+										<div class="only-mobile">
+											<div class="purchases-page__row">
+												<div class="purchases-page__row-col">
+													<div class="purchases-page__label only-mobile">Номер закупки, статус</div>
+													<div class="purchases-page__item-wrapper">
+														<div>1</div>
+														<div class="purchases-page__item-status">
+															<div class="purchases-page__status">
+																<div class="purchases-page__status-icon"><svg class="purchases-page__status-svg" width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+																		<rect width="27" height="27" rx="8" fill="#53EE8C"></rect>
+																		<path d="M21.3337 12.7501V9.25008C21.3337 6.33341 20.167 5.16675 17.2503 5.16675H13.7503C10.8337 5.16675 9.66699 6.33341 9.66699 9.25008V10.1667H12.2503C15.167 10.1667 16.3337 11.3334 16.3337 14.2501V16.8334H17.2503C20.167 16.8334 21.3337 15.6667 21.3337 12.7501Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+																		<path d="M16.3337 17.7501V14.2501C16.3337 11.3334 15.167 10.1667 12.2503 10.1667H8.75033C5.83366 10.1667 4.66699 11.3334 4.66699 14.2501V17.7501C4.66699 20.6667 5.83366 21.8334 8.75033 21.8334H12.2503C15.167 21.8334 16.3337 20.6667 16.3337 17.7501Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+																		<path d="M8.06641 16L9.69141 17.625L12.9331 14.375" stroke="white" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round"></path>
+																	</svg></div>
+																<div class="purchases-page__item-text">Прием заявок</div>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="purchases-page__row-col">
+													<div class="purchases-page__label only-mobile">Тип и наименование</div>
+													<div class="purchases-page__wrapper">
+														<div class="purchases-page__title">Открытый конкурс в электронной форме № 6/ОКЭ-АО «ОТЛК ЕРА»/2021 на право заключения договора на оказание аудиторских услуг по РСБУ и МСФО для нужд АО «ОТЛК ЕРА» за 2021 год</div>
+													</div>
+												</div>
+												<div class="purchases-page__row-col">
+													<div class="purchases-page__label only-mobile">Прием заявок завершается</div>
+													<div class="purchases-page__inner">
+														<div class="purchases-page__link-wrapper">
+															<div class="purchases-page__link-date">
+																<div class="purchases-page__date">14.10.2022</div>
+																<div class="purchases-page__date purchases-page__time">03:07:00 Мск</div>
+															</div>
+															<div class="purchases-page__caption">Заявок отправлено: <span>23</span></div>
+														</div>
+														<div class="purchases-page__icon"><svg class="purchases-page__svg" width="12" height="12" viewbox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+																<path d="M1.5 3.75L6 8.25L10.5 3.75" stroke="white" stroke-width="1.5"></path>
+															</svg></div>
+														<div class="only-mobile"><a class="link link--black" href="#">
+																<div class="link__icon"><svg class="link__svg" width="12" height="12" viewbox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+																		<path d="M1.5 3.75L6 8.25L10.5 3.75" stroke="white" stroke-width="1.5"></path>
+																	</svg></div>
+																<div class="link__text">Подробнее</div>
+															</a></div>
+													</div>
 												</div>
 											</div>
 										</div>
 									</div>
 									<div class="purchases-page__item purchases-page__button">
-										<div class="purchases-page__row">
-											<div class="purchases-page__row-col">
-												<div class="purchases-page__label only-mobile">Номер закупки</div>
-												<div>1</div>
-											</div>
-											<div class="purchases-page__row-col">
-												<div class="purchases-page__label only-mobile">Тип и наименование</div>
-												<div class="purchases-page__wrapper">
-													<div class="purchases-page__title">Открытый конкурс в электронной форме № 6/ОКЭ-АО «ОТЛК ЕРА»/2021 на право заключения договора на оказание аудиторских услуг по РСБУ и МСФО для нужд АО «ОТЛК ЕРА» за 2021 год</div>
-												</div>
-											</div>
-											<div class="purchases-page__row-col">
-												<div class="purchases-page__label only-mobile">Прием заявок завершается</div>
-												<div class="purchases-page__inner">
-													<div class="purchases-page__link-wrapper">
-														<div class="purchases-page__link-date">
-															<div class="purchases-page__date">14.10.2022</div>
-															<div class="purchases-page__date purchases-page__time">03:07:00 Мск</div>
+										<div class="only-desktop"><a class="purchases-page__row" href="#">
+												<div class="purchases-page__row-col">
+													<div class="purchases-page__label only-mobile">Номер закупки, статус</div>
+													<div class="purchases-page__item-wrapper">
+														<div>1</div>
+														<div class="purchases-page__item-status">
+															<div class="purchases-page__status">
+																<div class="purchases-page__status-icon"><svg class="purchases-page__status-svg" width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+																		<rect width="27" height="27" rx="8" fill="#53EE8C"></rect>
+																		<path d="M21.3337 12.7501V9.25008C21.3337 6.33341 20.167 5.16675 17.2503 5.16675H13.7503C10.8337 5.16675 9.66699 6.33341 9.66699 9.25008V10.1667H12.2503C15.167 10.1667 16.3337 11.3334 16.3337 14.2501V16.8334H17.2503C20.167 16.8334 21.3337 15.6667 21.3337 12.7501Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+																		<path d="M16.3337 17.7501V14.2501C16.3337 11.3334 15.167 10.1667 12.2503 10.1667H8.75033C5.83366 10.1667 4.66699 11.3334 4.66699 14.2501V17.7501C4.66699 20.6667 5.83366 21.8334 8.75033 21.8334H12.2503C15.167 21.8334 16.3337 20.6667 16.3337 17.7501Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+																		<path d="M8.06641 16L9.69141 17.625L12.9331 14.375" stroke="white" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round"></path>
+																	</svg></div>
+																<div class="purchases-page__item-text">Прием заявок</div>
+															</div>
 														</div>
-														<div class="purchases-page__caption">Заявок отправлено: <span>23</span></div>
 													</div>
-													<div class="purchases-page__icon"><svg class="purchases-page__svg" width="12" height="12" viewbox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-															<path d="M1.5 3.75L6 8.25L10.5 3.75" stroke="white" stroke-width="1.5"></path>
-														</svg></div>
-													<div class="only-mobile"><a class="link link--black" href="#">
-															<div class="link__icon"><svg class="link__svg" width="12" height="12" viewbox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-																	<path d="M1.5 3.75L6 8.25L10.5 3.75" stroke="white" stroke-width="1.5"></path>
-																</svg></div>
-															<div class="link__text">Подробнее</div>
-														</a></div>
+												</div>
+												<div class="purchases-page__row-col">
+													<div class="purchases-page__label only-mobile">Тип и наименование</div>
+													<div class="purchases-page__wrapper">
+														<div class="purchases-page__title">Открытый конкурс в электронной форме № 6/ОКЭ-АО «ОТЛК ЕРА»/2021 на право заключения договора на оказание аудиторских услуг по РСБУ и МСФО для нужд АО «ОТЛК ЕРА» за 2021 год</div>
+													</div>
+												</div>
+												<div class="purchases-page__row-col">
+													<div class="purchases-page__label only-mobile">Прием заявок завершается</div>
+													<div class="purchases-page__inner">
+														<div class="purchases-page__link-wrapper">
+															<div class="purchases-page__link-date">
+																<div class="purchases-page__date">14.10.2022</div>
+																<div class="purchases-page__date purchases-page__time">03:07:00 Мск</div>
+															</div>
+															<div class="purchases-page__caption">Заявок отправлено: <span>23</span></div>
+														</div>
+														<div class="purchases-page__icon"><svg class="purchases-page__svg" width="12" height="12" viewbox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+																<path d="M1.5 3.75L6 8.25L10.5 3.75" stroke="white" stroke-width="1.5"></path>
+															</svg></div>
+													</div>
+												</div>
+											</a></div>
+										<div class="only-mobile">
+											<div class="purchases-page__row">
+												<div class="purchases-page__row-col">
+													<div class="purchases-page__label only-mobile">Номер закупки, статус</div>
+													<div class="purchases-page__item-wrapper">
+														<div>1</div>
+														<div class="purchases-page__item-status">
+															<div class="purchases-page__status">
+																<div class="purchases-page__status-icon"><svg class="purchases-page__status-svg" width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+																		<rect width="27" height="27" rx="8" fill="#53EE8C"></rect>
+																		<path d="M21.3337 12.7501V9.25008C21.3337 6.33341 20.167 5.16675 17.2503 5.16675H13.7503C10.8337 5.16675 9.66699 6.33341 9.66699 9.25008V10.1667H12.2503C15.167 10.1667 16.3337 11.3334 16.3337 14.2501V16.8334H17.2503C20.167 16.8334 21.3337 15.6667 21.3337 12.7501Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+																		<path d="M16.3337 17.7501V14.2501C16.3337 11.3334 15.167 10.1667 12.2503 10.1667H8.75033C5.83366 10.1667 4.66699 11.3334 4.66699 14.2501V17.7501C4.66699 20.6667 5.83366 21.8334 8.75033 21.8334H12.2503C15.167 21.8334 16.3337 20.6667 16.3337 17.7501Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+																		<path d="M8.06641 16L9.69141 17.625L12.9331 14.375" stroke="white" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round"></path>
+																	</svg></div>
+																<div class="purchases-page__item-text">Прием заявок</div>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="purchases-page__row-col">
+													<div class="purchases-page__label only-mobile">Тип и наименование</div>
+													<div class="purchases-page__wrapper">
+														<div class="purchases-page__title">Открытый конкурс в электронной форме № 6/ОКЭ-АО «ОТЛК ЕРА»/2021 на право заключения договора на оказание аудиторских услуг по РСБУ и МСФО для нужд АО «ОТЛК ЕРА» за 2021 год</div>
+													</div>
+												</div>
+												<div class="purchases-page__row-col">
+													<div class="purchases-page__label only-mobile">Прием заявок завершается</div>
+													<div class="purchases-page__inner">
+														<div class="purchases-page__link-wrapper">
+															<div class="purchases-page__link-date">
+																<div class="purchases-page__date">14.10.2022</div>
+																<div class="purchases-page__date purchases-page__time">03:07:00 Мск</div>
+															</div>
+															<div class="purchases-page__caption">Заявок отправлено: <span>23</span></div>
+														</div>
+														<div class="purchases-page__icon"><svg class="purchases-page__svg" width="12" height="12" viewbox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+																<path d="M1.5 3.75L6 8.25L10.5 3.75" stroke="white" stroke-width="1.5"></path>
+															</svg></div>
+														<div class="only-mobile"><a class="link link--black" href="#">
+																<div class="link__icon"><svg class="link__svg" width="12" height="12" viewbox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+																		<path d="M1.5 3.75L6 8.25L10.5 3.75" stroke="white" stroke-width="1.5"></path>
+																	</svg></div>
+																<div class="link__text">Подробнее</div>
+															</a></div>
+													</div>
 												</div>
 											</div>
 										</div>
 									</div>
 									<div class="purchases-page__item purchases-page__button">
-										<div class="purchases-page__row">
-											<div class="purchases-page__row-col">
-												<div class="purchases-page__label only-mobile">Номер закупки</div>
-												<div>1</div>
-											</div>
-											<div class="purchases-page__row-col">
-												<div class="purchases-page__label only-mobile">Тип и наименование</div>
-												<div class="purchases-page__wrapper">
-													<div class="purchases-page__title">Открытый конкурс в электронной форме № 6/ОКЭ-АО «ОТЛК ЕРА»/2021 на право заключения договора на оказание аудиторских услуг по РСБУ и МСФО для нужд АО «ОТЛК ЕРА» за 2021 год</div>
-												</div>
-											</div>
-											<div class="purchases-page__row-col">
-												<div class="purchases-page__label only-mobile">Прием заявок завершается</div>
-												<div class="purchases-page__inner">
-													<div class="purchases-page__link-wrapper">
-														<div class="purchases-page__link-date">
-															<div class="purchases-page__date">14.10.2022</div>
-															<div class="purchases-page__date purchases-page__time">03:07:00 Мск</div>
+										<div class="only-desktop"><a class="purchases-page__row" href="#">
+												<div class="purchases-page__row-col">
+													<div class="purchases-page__label only-mobile">Номер закупки, статус</div>
+													<div class="purchases-page__item-wrapper">
+														<div>1</div>
+														<div class="purchases-page__item-status">
+															<div class="purchases-page__status">
+																<div class="purchases-page__status-icon"><svg class="purchases-page__status-svg" width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+																		<rect width="27" height="27" rx="8" fill="#53EE8C"></rect>
+																		<path d="M21.3337 12.7501V9.25008C21.3337 6.33341 20.167 5.16675 17.2503 5.16675H13.7503C10.8337 5.16675 9.66699 6.33341 9.66699 9.25008V10.1667H12.2503C15.167 10.1667 16.3337 11.3334 16.3337 14.2501V16.8334H17.2503C20.167 16.8334 21.3337 15.6667 21.3337 12.7501Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+																		<path d="M16.3337 17.7501V14.2501C16.3337 11.3334 15.167 10.1667 12.2503 10.1667H8.75033C5.83366 10.1667 4.66699 11.3334 4.66699 14.2501V17.7501C4.66699 20.6667 5.83366 21.8334 8.75033 21.8334H12.2503C15.167 21.8334 16.3337 20.6667 16.3337 17.7501Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+																		<path d="M8.06641 16L9.69141 17.625L12.9331 14.375" stroke="white" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round"></path>
+																	</svg></div>
+																<div class="purchases-page__item-text">Прием заявок</div>
+															</div>
 														</div>
-														<div class="purchases-page__caption">Заявок отправлено: <span>23</span></div>
 													</div>
-													<div class="purchases-page__icon"><svg class="purchases-page__svg" width="12" height="12" viewbox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-															<path d="M1.5 3.75L6 8.25L10.5 3.75" stroke="white" stroke-width="1.5"></path>
-														</svg></div>
-													<div class="only-mobile"><a class="link link--black" href="#">
-															<div class="link__icon"><svg class="link__svg" width="12" height="12" viewbox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-																	<path d="M1.5 3.75L6 8.25L10.5 3.75" stroke="white" stroke-width="1.5"></path>
-																</svg></div>
-															<div class="link__text">Подробнее</div>
-														</a></div>
+												</div>
+												<div class="purchases-page__row-col">
+													<div class="purchases-page__label only-mobile">Тип и наименование</div>
+													<div class="purchases-page__wrapper">
+														<div class="purchases-page__title">Открытый конкурс в электронной форме № 6/ОКЭ-АО «ОТЛК ЕРА»/2021 на право заключения договора на оказание аудиторских услуг по РСБУ и МСФО для нужд АО «ОТЛК ЕРА» за 2021 год</div>
+													</div>
+												</div>
+												<div class="purchases-page__row-col">
+													<div class="purchases-page__label only-mobile">Прием заявок завершается</div>
+													<div class="purchases-page__inner">
+														<div class="purchases-page__link-wrapper">
+															<div class="purchases-page__link-date">
+																<div class="purchases-page__date">14.10.2022</div>
+																<div class="purchases-page__date purchases-page__time">03:07:00 Мск</div>
+															</div>
+															<div class="purchases-page__caption">Заявок отправлено: <span>23</span></div>
+														</div>
+														<div class="purchases-page__icon"><svg class="purchases-page__svg" width="12" height="12" viewbox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+																<path d="M1.5 3.75L6 8.25L10.5 3.75" stroke="white" stroke-width="1.5"></path>
+															</svg></div>
+													</div>
+												</div>
+											</a></div>
+										<div class="only-mobile">
+											<div class="purchases-page__row">
+												<div class="purchases-page__row-col">
+													<div class="purchases-page__label only-mobile">Номер закупки, статус</div>
+													<div class="purchases-page__item-wrapper">
+														<div>1</div>
+														<div class="purchases-page__item-status">
+															<div class="purchases-page__status">
+																<div class="purchases-page__status-icon"><svg class="purchases-page__status-svg" width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+																		<rect width="27" height="27" rx="8" fill="#53EE8C"></rect>
+																		<path d="M21.3337 12.7501V9.25008C21.3337 6.33341 20.167 5.16675 17.2503 5.16675H13.7503C10.8337 5.16675 9.66699 6.33341 9.66699 9.25008V10.1667H12.2503C15.167 10.1667 16.3337 11.3334 16.3337 14.2501V16.8334H17.2503C20.167 16.8334 21.3337 15.6667 21.3337 12.7501Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+																		<path d="M16.3337 17.7501V14.2501C16.3337 11.3334 15.167 10.1667 12.2503 10.1667H8.75033C5.83366 10.1667 4.66699 11.3334 4.66699 14.2501V17.7501C4.66699 20.6667 5.83366 21.8334 8.75033 21.8334H12.2503C15.167 21.8334 16.3337 20.6667 16.3337 17.7501Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+																		<path d="M8.06641 16L9.69141 17.625L12.9331 14.375" stroke="white" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round"></path>
+																	</svg></div>
+																<div class="purchases-page__item-text">Прием заявок</div>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="purchases-page__row-col">
+													<div class="purchases-page__label only-mobile">Тип и наименование</div>
+													<div class="purchases-page__wrapper">
+														<div class="purchases-page__title">Открытый конкурс в электронной форме № 6/ОКЭ-АО «ОТЛК ЕРА»/2021 на право заключения договора на оказание аудиторских услуг по РСБУ и МСФО для нужд АО «ОТЛК ЕРА» за 2021 год</div>
+													</div>
+												</div>
+												<div class="purchases-page__row-col">
+													<div class="purchases-page__label only-mobile">Прием заявок завершается</div>
+													<div class="purchases-page__inner">
+														<div class="purchases-page__link-wrapper">
+															<div class="purchases-page__link-date">
+																<div class="purchases-page__date">14.10.2022</div>
+																<div class="purchases-page__date purchases-page__time">03:07:00 Мск</div>
+															</div>
+															<div class="purchases-page__caption">Заявок отправлено: <span>23</span></div>
+														</div>
+														<div class="purchases-page__icon"><svg class="purchases-page__svg" width="12" height="12" viewbox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+																<path d="M1.5 3.75L6 8.25L10.5 3.75" stroke="white" stroke-width="1.5"></path>
+															</svg></div>
+														<div class="only-mobile"><a class="link link--black" href="#">
+																<div class="link__icon"><svg class="link__svg" width="12" height="12" viewbox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+																		<path d="M1.5 3.75L6 8.25L10.5 3.75" stroke="white" stroke-width="1.5"></path>
+																	</svg></div>
+																<div class="link__text">Подробнее</div>
+															</a></div>
+													</div>
 												</div>
 											</div>
 										</div>
 									</div>
 									<div class="purchases-page__item purchases-page__button">
-										<div class="purchases-page__row">
-											<div class="purchases-page__row-col">
-												<div class="purchases-page__label only-mobile">Номер закупки</div>
-												<div>1</div>
-											</div>
-											<div class="purchases-page__row-col">
-												<div class="purchases-page__label only-mobile">Тип и наименование</div>
-												<div class="purchases-page__wrapper">
-													<div class="purchases-page__title">Открытый конкурс в электронной форме № 6/ОКЭ-АО «ОТЛК ЕРА»/2021 на право заключения договора на оказание аудиторских услуг по РСБУ и МСФО для нужд АО «ОТЛК ЕРА» за 2021 год</div>
-												</div>
-											</div>
-											<div class="purchases-page__row-col">
-												<div class="purchases-page__label only-mobile">Прием заявок завершается</div>
-												<div class="purchases-page__inner">
-													<div class="purchases-page__link-wrapper">
-														<div class="purchases-page__link-date">
-															<div class="purchases-page__date">14.10.2022</div>
-															<div class="purchases-page__date purchases-page__time">03:07:00 Мск</div>
+										<div class="only-desktop"><a class="purchases-page__row" href="#">
+												<div class="purchases-page__row-col">
+													<div class="purchases-page__label only-mobile">Номер закупки, статус</div>
+													<div class="purchases-page__item-wrapper">
+														<div>1</div>
+														<div class="purchases-page__item-status">
+															<div class="purchases-page__status">
+																<div class="purchases-page__status-icon"><svg class="purchases-page__status-svg" width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+																		<rect width="27" height="27" rx="8" fill="#53EE8C"></rect>
+																		<path d="M21.3337 12.7501V9.25008C21.3337 6.33341 20.167 5.16675 17.2503 5.16675H13.7503C10.8337 5.16675 9.66699 6.33341 9.66699 9.25008V10.1667H12.2503C15.167 10.1667 16.3337 11.3334 16.3337 14.2501V16.8334H17.2503C20.167 16.8334 21.3337 15.6667 21.3337 12.7501Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+																		<path d="M16.3337 17.7501V14.2501C16.3337 11.3334 15.167 10.1667 12.2503 10.1667H8.75033C5.83366 10.1667 4.66699 11.3334 4.66699 14.2501V17.7501C4.66699 20.6667 5.83366 21.8334 8.75033 21.8334H12.2503C15.167 21.8334 16.3337 20.6667 16.3337 17.7501Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+																		<path d="M8.06641 16L9.69141 17.625L12.9331 14.375" stroke="white" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round"></path>
+																	</svg></div>
+																<div class="purchases-page__item-text">Прием заявок</div>
+															</div>
 														</div>
-														<div class="purchases-page__caption">Заявок отправлено: <span>23</span></div>
 													</div>
-													<div class="purchases-page__icon"><svg class="purchases-page__svg" width="12" height="12" viewbox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-															<path d="M1.5 3.75L6 8.25L10.5 3.75" stroke="white" stroke-width="1.5"></path>
-														</svg></div>
-													<div class="only-mobile"><a class="link link--black" href="#">
-															<div class="link__icon"><svg class="link__svg" width="12" height="12" viewbox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-																	<path d="M1.5 3.75L6 8.25L10.5 3.75" stroke="white" stroke-width="1.5"></path>
-																</svg></div>
-															<div class="link__text">Подробнее</div>
-														</a></div>
+												</div>
+												<div class="purchases-page__row-col">
+													<div class="purchases-page__label only-mobile">Тип и наименование</div>
+													<div class="purchases-page__wrapper">
+														<div class="purchases-page__title">Открытый конкурс в электронной форме № 6/ОКЭ-АО «ОТЛК ЕРА»/2021 на право заключения договора на оказание аудиторских услуг по РСБУ и МСФО для нужд АО «ОТЛК ЕРА» за 2021 год</div>
+													</div>
+												</div>
+												<div class="purchases-page__row-col">
+													<div class="purchases-page__label only-mobile">Прием заявок завершается</div>
+													<div class="purchases-page__inner">
+														<div class="purchases-page__link-wrapper">
+															<div class="purchases-page__link-date">
+																<div class="purchases-page__date">14.10.2022</div>
+																<div class="purchases-page__date purchases-page__time">03:07:00 Мск</div>
+															</div>
+															<div class="purchases-page__caption">Заявок отправлено: <span>23</span></div>
+														</div>
+														<div class="purchases-page__icon"><svg class="purchases-page__svg" width="12" height="12" viewbox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+																<path d="M1.5 3.75L6 8.25L10.5 3.75" stroke="white" stroke-width="1.5"></path>
+															</svg></div>
+													</div>
+												</div>
+											</a></div>
+										<div class="only-mobile">
+											<div class="purchases-page__row">
+												<div class="purchases-page__row-col">
+													<div class="purchases-page__label only-mobile">Номер закупки, статус</div>
+													<div class="purchases-page__item-wrapper">
+														<div>1</div>
+														<div class="purchases-page__item-status">
+															<div class="purchases-page__status">
+																<div class="purchases-page__status-icon"><svg class="purchases-page__status-svg" width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+																		<rect width="27" height="27" rx="8" fill="#53EE8C"></rect>
+																		<path d="M21.3337 12.7501V9.25008C21.3337 6.33341 20.167 5.16675 17.2503 5.16675H13.7503C10.8337 5.16675 9.66699 6.33341 9.66699 9.25008V10.1667H12.2503C15.167 10.1667 16.3337 11.3334 16.3337 14.2501V16.8334H17.2503C20.167 16.8334 21.3337 15.6667 21.3337 12.7501Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+																		<path d="M16.3337 17.7501V14.2501C16.3337 11.3334 15.167 10.1667 12.2503 10.1667H8.75033C5.83366 10.1667 4.66699 11.3334 4.66699 14.2501V17.7501C4.66699 20.6667 5.83366 21.8334 8.75033 21.8334H12.2503C15.167 21.8334 16.3337 20.6667 16.3337 17.7501Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+																		<path d="M8.06641 16L9.69141 17.625L12.9331 14.375" stroke="white" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round"></path>
+																	</svg></div>
+																<div class="purchases-page__item-text">Прием заявок</div>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="purchases-page__row-col">
+													<div class="purchases-page__label only-mobile">Тип и наименование</div>
+													<div class="purchases-page__wrapper">
+														<div class="purchases-page__title">Открытый конкурс в электронной форме № 6/ОКЭ-АО «ОТЛК ЕРА»/2021 на право заключения договора на оказание аудиторских услуг по РСБУ и МСФО для нужд АО «ОТЛК ЕРА» за 2021 год</div>
+													</div>
+												</div>
+												<div class="purchases-page__row-col">
+													<div class="purchases-page__label only-mobile">Прием заявок завершается</div>
+													<div class="purchases-page__inner">
+														<div class="purchases-page__link-wrapper">
+															<div class="purchases-page__link-date">
+																<div class="purchases-page__date">14.10.2022</div>
+																<div class="purchases-page__date purchases-page__time">03:07:00 Мск</div>
+															</div>
+															<div class="purchases-page__caption">Заявок отправлено: <span>23</span></div>
+														</div>
+														<div class="purchases-page__icon"><svg class="purchases-page__svg" width="12" height="12" viewbox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+																<path d="M1.5 3.75L6 8.25L10.5 3.75" stroke="white" stroke-width="1.5"></path>
+															</svg></div>
+														<div class="only-mobile"><a class="link link--black" href="#">
+																<div class="link__icon"><svg class="link__svg" width="12" height="12" viewbox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+																		<path d="M1.5 3.75L6 8.25L10.5 3.75" stroke="white" stroke-width="1.5"></path>
+																	</svg></div>
+																<div class="link__text">Подробнее</div>
+															</a></div>
+													</div>
 												</div>
 											</div>
 										</div>
 									</div>
 									<div class="purchases-page__item purchases-page__button">
-										<div class="purchases-page__row">
-											<div class="purchases-page__row-col">
-												<div class="purchases-page__label only-mobile">Номер закупки</div>
-												<div>1</div>
-											</div>
-											<div class="purchases-page__row-col">
-												<div class="purchases-page__label only-mobile">Тип и наименование</div>
-												<div class="purchases-page__wrapper">
-													<div class="purchases-page__title">Открытый конкурс в электронной форме № 6/ОКЭ-АО «ОТЛК ЕРА»/2021 на право заключения договора на оказание аудиторских услуг по РСБУ и МСФО для нужд АО «ОТЛК ЕРА» за 2021 год</div>
-												</div>
-											</div>
-											<div class="purchases-page__row-col">
-												<div class="purchases-page__label only-mobile">Прием заявок завершается</div>
-												<div class="purchases-page__inner">
-													<div class="purchases-page__link-wrapper">
-														<div class="purchases-page__link-date">
-															<div class="purchases-page__date">14.10.2022</div>
-															<div class="purchases-page__date purchases-page__time">03:07:00 Мск</div>
+										<div class="only-desktop"><a class="purchases-page__row" href="#">
+												<div class="purchases-page__row-col">
+													<div class="purchases-page__label only-mobile">Номер закупки, статус</div>
+													<div class="purchases-page__item-wrapper">
+														<div>1</div>
+														<div class="purchases-page__item-status">
+															<div class="purchases-page__status">
+																<div class="purchases-page__status-icon"><svg class="purchases-page__status-svg" width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+																		<rect width="27" height="27" rx="8" fill="#53EE8C"></rect>
+																		<path d="M21.3337 12.7501V9.25008C21.3337 6.33341 20.167 5.16675 17.2503 5.16675H13.7503C10.8337 5.16675 9.66699 6.33341 9.66699 9.25008V10.1667H12.2503C15.167 10.1667 16.3337 11.3334 16.3337 14.2501V16.8334H17.2503C20.167 16.8334 21.3337 15.6667 21.3337 12.7501Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+																		<path d="M16.3337 17.7501V14.2501C16.3337 11.3334 15.167 10.1667 12.2503 10.1667H8.75033C5.83366 10.1667 4.66699 11.3334 4.66699 14.2501V17.7501C4.66699 20.6667 5.83366 21.8334 8.75033 21.8334H12.2503C15.167 21.8334 16.3337 20.6667 16.3337 17.7501Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+																		<path d="M8.06641 16L9.69141 17.625L12.9331 14.375" stroke="white" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round"></path>
+																	</svg></div>
+																<div class="purchases-page__item-text">Прием заявок</div>
+															</div>
 														</div>
-														<div class="purchases-page__caption">Заявок отправлено: <span>23</span></div>
 													</div>
-													<div class="purchases-page__icon"><svg class="purchases-page__svg" width="12" height="12" viewbox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-															<path d="M1.5 3.75L6 8.25L10.5 3.75" stroke="white" stroke-width="1.5"></path>
-														</svg></div>
-													<div class="only-mobile"><a class="link link--black" href="#">
-															<div class="link__icon"><svg class="link__svg" width="12" height="12" viewbox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-																	<path d="M1.5 3.75L6 8.25L10.5 3.75" stroke="white" stroke-width="1.5"></path>
-																</svg></div>
-															<div class="link__text">Подробнее</div>
-														</a></div>
+												</div>
+												<div class="purchases-page__row-col">
+													<div class="purchases-page__label only-mobile">Тип и наименование</div>
+													<div class="purchases-page__wrapper">
+														<div class="purchases-page__title">Открытый конкурс в электронной форме № 6/ОКЭ-АО «ОТЛК ЕРА»/2021 на право заключения договора на оказание аудиторских услуг по РСБУ и МСФО для нужд АО «ОТЛК ЕРА» за 2021 год</div>
+													</div>
+												</div>
+												<div class="purchases-page__row-col">
+													<div class="purchases-page__label only-mobile">Прием заявок завершается</div>
+													<div class="purchases-page__inner">
+														<div class="purchases-page__link-wrapper">
+															<div class="purchases-page__link-date">
+																<div class="purchases-page__date">14.10.2022</div>
+																<div class="purchases-page__date purchases-page__time">03:07:00 Мск</div>
+															</div>
+															<div class="purchases-page__caption">Заявок отправлено: <span>23</span></div>
+														</div>
+														<div class="purchases-page__icon"><svg class="purchases-page__svg" width="12" height="12" viewbox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+																<path d="M1.5 3.75L6 8.25L10.5 3.75" stroke="white" stroke-width="1.5"></path>
+															</svg></div>
+													</div>
+												</div>
+											</a></div>
+										<div class="only-mobile">
+											<div class="purchases-page__row">
+												<div class="purchases-page__row-col">
+													<div class="purchases-page__label only-mobile">Номер закупки, статус</div>
+													<div class="purchases-page__item-wrapper">
+														<div>1</div>
+														<div class="purchases-page__item-status">
+															<div class="purchases-page__status">
+																<div class="purchases-page__status-icon"><svg class="purchases-page__status-svg" width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+																		<rect width="27" height="27" rx="8" fill="#53EE8C"></rect>
+																		<path d="M21.3337 12.7501V9.25008C21.3337 6.33341 20.167 5.16675 17.2503 5.16675H13.7503C10.8337 5.16675 9.66699 6.33341 9.66699 9.25008V10.1667H12.2503C15.167 10.1667 16.3337 11.3334 16.3337 14.2501V16.8334H17.2503C20.167 16.8334 21.3337 15.6667 21.3337 12.7501Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+																		<path d="M16.3337 17.7501V14.2501C16.3337 11.3334 15.167 10.1667 12.2503 10.1667H8.75033C5.83366 10.1667 4.66699 11.3334 4.66699 14.2501V17.7501C4.66699 20.6667 5.83366 21.8334 8.75033 21.8334H12.2503C15.167 21.8334 16.3337 20.6667 16.3337 17.7501Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+																		<path d="M8.06641 16L9.69141 17.625L12.9331 14.375" stroke="white" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round"></path>
+																	</svg></div>
+																<div class="purchases-page__item-text">Прием заявок</div>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="purchases-page__row-col">
+													<div class="purchases-page__label only-mobile">Тип и наименование</div>
+													<div class="purchases-page__wrapper">
+														<div class="purchases-page__title">Открытый конкурс в электронной форме № 6/ОКЭ-АО «ОТЛК ЕРА»/2021 на право заключения договора на оказание аудиторских услуг по РСБУ и МСФО для нужд АО «ОТЛК ЕРА» за 2021 год</div>
+													</div>
+												</div>
+												<div class="purchases-page__row-col">
+													<div class="purchases-page__label only-mobile">Прием заявок завершается</div>
+													<div class="purchases-page__inner">
+														<div class="purchases-page__link-wrapper">
+															<div class="purchases-page__link-date">
+																<div class="purchases-page__date">14.10.2022</div>
+																<div class="purchases-page__date purchases-page__time">03:07:00 Мск</div>
+															</div>
+															<div class="purchases-page__caption">Заявок отправлено: <span>23</span></div>
+														</div>
+														<div class="purchases-page__icon"><svg class="purchases-page__svg" width="12" height="12" viewbox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+																<path d="M1.5 3.75L6 8.25L10.5 3.75" stroke="white" stroke-width="1.5"></path>
+															</svg></div>
+														<div class="only-mobile"><a class="link link--black" href="#">
+																<div class="link__icon"><svg class="link__svg" width="12" height="12" viewbox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+																		<path d="M1.5 3.75L6 8.25L10.5 3.75" stroke="white" stroke-width="1.5"></path>
+																	</svg></div>
+																<div class="link__text">Подробнее</div>
+															</a></div>
+													</div>
 												</div>
 											</div>
 										</div>
 									</div>
 									<div class="purchases-page__item purchases-page__button">
-										<div class="purchases-page__row">
-											<div class="purchases-page__row-col">
-												<div class="purchases-page__label only-mobile">Номер закупки</div>
-												<div>1</div>
-											</div>
-											<div class="purchases-page__row-col">
-												<div class="purchases-page__label only-mobile">Тип и наименование</div>
-												<div class="purchases-page__wrapper">
-													<div class="purchases-page__title">Открытый конкурс в электронной форме № 6/ОКЭ-АО «ОТЛК ЕРА»/2021 на право заключения договора на оказание аудиторских услуг по РСБУ и МСФО для нужд АО «ОТЛК ЕРА» за 2021 год</div>
-												</div>
-											</div>
-											<div class="purchases-page__row-col">
-												<div class="purchases-page__label only-mobile">Прием заявок завершается</div>
-												<div class="purchases-page__inner">
-													<div class="purchases-page__link-wrapper">
-														<div class="purchases-page__link-date">
-															<div class="purchases-page__date">14.10.2022</div>
-															<div class="purchases-page__date purchases-page__time">03:07:00 Мск</div>
+										<div class="only-desktop"><a class="purchases-page__row" href="#">
+												<div class="purchases-page__row-col">
+													<div class="purchases-page__label only-mobile">Номер закупки, статус</div>
+													<div class="purchases-page__item-wrapper">
+														<div>1</div>
+														<div class="purchases-page__item-status">
+															<div class="purchases-page__status">
+																<div class="purchases-page__status-icon"><svg class="purchases-page__status-svg" width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+																		<rect width="27" height="27" rx="8" fill="#53EE8C"></rect>
+																		<path d="M21.3337 12.7501V9.25008C21.3337 6.33341 20.167 5.16675 17.2503 5.16675H13.7503C10.8337 5.16675 9.66699 6.33341 9.66699 9.25008V10.1667H12.2503C15.167 10.1667 16.3337 11.3334 16.3337 14.2501V16.8334H17.2503C20.167 16.8334 21.3337 15.6667 21.3337 12.7501Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+																		<path d="M16.3337 17.7501V14.2501C16.3337 11.3334 15.167 10.1667 12.2503 10.1667H8.75033C5.83366 10.1667 4.66699 11.3334 4.66699 14.2501V17.7501C4.66699 20.6667 5.83366 21.8334 8.75033 21.8334H12.2503C15.167 21.8334 16.3337 20.6667 16.3337 17.7501Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+																		<path d="M8.06641 16L9.69141 17.625L12.9331 14.375" stroke="white" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round"></path>
+																	</svg></div>
+																<div class="purchases-page__item-text">Прием заявок</div>
+															</div>
 														</div>
-														<div class="purchases-page__caption">Заявок отправлено: <span>23</span></div>
 													</div>
-													<div class="purchases-page__icon"><svg class="purchases-page__svg" width="12" height="12" viewbox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-															<path d="M1.5 3.75L6 8.25L10.5 3.75" stroke="white" stroke-width="1.5"></path>
-														</svg></div>
-													<div class="only-mobile"><a class="link link--black" href="#">
-															<div class="link__icon"><svg class="link__svg" width="12" height="12" viewbox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-																	<path d="M1.5 3.75L6 8.25L10.5 3.75" stroke="white" stroke-width="1.5"></path>
-																</svg></div>
-															<div class="link__text">Подробнее</div>
-														</a></div>
+												</div>
+												<div class="purchases-page__row-col">
+													<div class="purchases-page__label only-mobile">Тип и наименование</div>
+													<div class="purchases-page__wrapper">
+														<div class="purchases-page__title">Открытый конкурс в электронной форме № 6/ОКЭ-АО «ОТЛК ЕРА»/2021 на право заключения договора на оказание аудиторских услуг по РСБУ и МСФО для нужд АО «ОТЛК ЕРА» за 2021 год</div>
+													</div>
+												</div>
+												<div class="purchases-page__row-col">
+													<div class="purchases-page__label only-mobile">Прием заявок завершается</div>
+													<div class="purchases-page__inner">
+														<div class="purchases-page__link-wrapper">
+															<div class="purchases-page__link-date">
+																<div class="purchases-page__date">14.10.2022</div>
+																<div class="purchases-page__date purchases-page__time">03:07:00 Мск</div>
+															</div>
+															<div class="purchases-page__caption">Заявок отправлено: <span>23</span></div>
+														</div>
+														<div class="purchases-page__icon"><svg class="purchases-page__svg" width="12" height="12" viewbox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+																<path d="M1.5 3.75L6 8.25L10.5 3.75" stroke="white" stroke-width="1.5"></path>
+															</svg></div>
+													</div>
+												</div>
+											</a></div>
+										<div class="only-mobile">
+											<div class="purchases-page__row">
+												<div class="purchases-page__row-col">
+													<div class="purchases-page__label only-mobile">Номер закупки, статус</div>
+													<div class="purchases-page__item-wrapper">
+														<div>1</div>
+														<div class="purchases-page__item-status">
+															<div class="purchases-page__status">
+																<div class="purchases-page__status-icon"><svg class="purchases-page__status-svg" width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+																		<rect width="27" height="27" rx="8" fill="#53EE8C"></rect>
+																		<path d="M21.3337 12.7501V9.25008C21.3337 6.33341 20.167 5.16675 17.2503 5.16675H13.7503C10.8337 5.16675 9.66699 6.33341 9.66699 9.25008V10.1667H12.2503C15.167 10.1667 16.3337 11.3334 16.3337 14.2501V16.8334H17.2503C20.167 16.8334 21.3337 15.6667 21.3337 12.7501Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+																		<path d="M16.3337 17.7501V14.2501C16.3337 11.3334 15.167 10.1667 12.2503 10.1667H8.75033C5.83366 10.1667 4.66699 11.3334 4.66699 14.2501V17.7501C4.66699 20.6667 5.83366 21.8334 8.75033 21.8334H12.2503C15.167 21.8334 16.3337 20.6667 16.3337 17.7501Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+																		<path d="M8.06641 16L9.69141 17.625L12.9331 14.375" stroke="white" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round"></path>
+																	</svg></div>
+																<div class="purchases-page__item-text">Прием заявок</div>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="purchases-page__row-col">
+													<div class="purchases-page__label only-mobile">Тип и наименование</div>
+													<div class="purchases-page__wrapper">
+														<div class="purchases-page__title">Открытый конкурс в электронной форме № 6/ОКЭ-АО «ОТЛК ЕРА»/2021 на право заключения договора на оказание аудиторских услуг по РСБУ и МСФО для нужд АО «ОТЛК ЕРА» за 2021 год</div>
+													</div>
+												</div>
+												<div class="purchases-page__row-col">
+													<div class="purchases-page__label only-mobile">Прием заявок завершается</div>
+													<div class="purchases-page__inner">
+														<div class="purchases-page__link-wrapper">
+															<div class="purchases-page__link-date">
+																<div class="purchases-page__date">14.10.2022</div>
+																<div class="purchases-page__date purchases-page__time">03:07:00 Мск</div>
+															</div>
+															<div class="purchases-page__caption">Заявок отправлено: <span>23</span></div>
+														</div>
+														<div class="purchases-page__icon"><svg class="purchases-page__svg" width="12" height="12" viewbox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+																<path d="M1.5 3.75L6 8.25L10.5 3.75" stroke="white" stroke-width="1.5"></path>
+															</svg></div>
+														<div class="only-mobile"><a class="link link--black" href="#">
+																<div class="link__icon"><svg class="link__svg" width="12" height="12" viewbox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+																		<path d="M1.5 3.75L6 8.25L10.5 3.75" stroke="white" stroke-width="1.5"></path>
+																	</svg></div>
+																<div class="link__text">Подробнее</div>
+															</a></div>
+													</div>
 												</div>
 											</div>
 										</div>

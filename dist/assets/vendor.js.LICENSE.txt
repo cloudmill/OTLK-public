@@ -1,3 +1,9 @@
+/*
+object-assign
+(c) Sindre Sorhus
+@license MIT
+*/
+
 /*!
  * GSAP 3.11.3
  * https://greensock.com
@@ -77,3 +83,24 @@
 */
 
 /*! ieee754. BSD-3-Clause License. Feross Aboukhadijeh <https://feross.org/opensource> */
+
+/**
+   * splaytree v3.1.0
+   * Fast Splay tree for Node and browser
+   *
+   * @author Alexander Milevski <info@w8r.name>
+   * @license MIT
+   * @preserve
+   */
+
+/**
+* @version: 3.1
+* @author: Dan Grossman http://www.dangrossman.info/
+* @copyright: Copyright (c) 2012-2019 Dan Grossman. All rights reserved.
+* @license: Licensed under the MIT license. See http://www.opensource.org/licenses/mit-license.php
+* @website: http://www.daterangepicker.com/
+*/
+
+//! moment.js
+
+//! moment.js locale configuration
