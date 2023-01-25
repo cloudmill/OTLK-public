@@ -292,11 +292,13 @@
 			</header>
 			<main class="main">
 				<div class="about-page">
-					<section class="about-page__intro">
+					<section class="about-page__intro" data-about-section="">
 						<div class="about-page__intro-bg">
-							<picture class="picture about-page__intro-picture" data-aos="image-scale">
-								<source type="image/webp" srcset="assets/images/about-bg.webp, assets/images/about-bg_2x.webp 2x" /><img class="picture__img" src="assets/images/about-bg.jpg" srcset="assets/images/about-bg_2x.jpg 2x" />
-							</picture>
+							<div class="about-page__intro-frame" data-about-frame="">
+								<picture class="picture about-page__intro-picture" data-about-image="">
+									<source type="image/webp" srcset="assets/images/about-bg.webp, assets/images/about-bg_2x.webp 2x" /><img class="picture__img" src="assets/images/about-bg.jpg" srcset="assets/images/about-bg_2x.jpg 2x" />
+								</picture>
+							</div>
 						</div>
 						<div class="about-page__inner">
 							<div class="decor"><span></span><span></span>
@@ -326,7 +328,7 @@
 								</div>
 							</div>
 							<h1 class="about-page__intro-title">ОТЛК ЕРА</h1>
-							<div class="about-page__intro-heading" data-aos="about-text" data-aos-duration="500" data-aos-delay="300">Лидер трансъевразийских железнодорожных контейнерных перевозок</div>
+							<div class="about-page__intro-heading" data-about-text="">Лидер трансъевразийских железнодорожных контейнерных перевозок</div>
 						</div>
 					</section>
 					<section class="about-page__container about-page__about">
