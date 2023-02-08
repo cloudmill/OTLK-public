@@ -19,8 +19,55 @@
 	<body class="body body--notransition">
 		<div class="wrapper">
 			<main class="main">
+				<div class="grid test-selects">
+					<div class="test-selects__item">
+						<div class="select-wrapper">
+							<div class="select"><select class="select__select" data-select-placeholder="Укажите страну" style="width: 100%" data-route-select="countryFrom">
+									<option value="" disabled="disabled" selected="selected"></option>
+									<option value="Китай">Китай</option>
+									<option value="Россия">Россия</option>
+									<option value="Австрия">Австрия</option>
+								</select></div>
+						</div>
+					</div>
+					<div class="test-selects__item">
+						<div class="select-wrapper">
+							<div class="select"><select class="select__select" data-select-placeholder="Укажите город" style="width: 100%" data-route-select="origin">
+									<option value="" disabled="disabled" selected="selected"></option>
+									<option value="41.166667,80.25">Аксау</option>
+									<option value="48.17466482732612,16.374056569206644">Вена</option>
+									<option value="56.83255610910418,60.63757031420683">Екатеринбург</option>
+									<option value="59.914457936688294,30.425457221916155">Санкт-Петербург</option>
+									<option value="55.743342334211846,37.55897014954603">Москва</option>
+								</select></div>
+						</div>
+					</div>
+					<div class="test-selects__item">
+						<div class="select-wrapper">
+							<div class="select"><select class="select__select" data-select-placeholder="Укажите страну" style="width: 100%" data-route-select="countryTo">
+									<option value="" disabled="disabled" selected="selected"></option>
+									<option value="Китай">Китай</option>
+									<option value="Россия">Россия</option>
+									<option value="Австрия">Австрия</option>
+								</select></div>
+						</div>
+					</div>
+					<div class="test-selects__item">
+						<div class="select-wrapper">
+							<div class="select"><select class="select__select" data-select-placeholder="Укажите город" style="width: 100%" data-route-select="destination">
+									<option value="" disabled="disabled" selected="selected"></option>
+									<option value="41.166667,80.25">Аксау</option>
+									<option value="48.17466482732612,16.374056569206644">Вена</option>
+									<option value="56.83255610910418,60.63757031420683">Екатеринбург</option>
+									<option value="59.914457936688294,30.425457221916155">Санкт-Петербург</option>
+									<option value="55.743342334211846,37.55897014954603">Москва</option>
+								</select></div>
+						</div>
+					</div>
+					<div class="test-selects__item"><button class="button" data-route-button=""><span class="button__span"><span class="button__text">Произвести расчет</span></span></button></div>
+				</div>
 				<div class="test-map">
-					<div class="tracking-page__map" id="map" data-map-type="track" data-map-data="{&quot;containerPos&quot;: [51.07764159320214, 71.6158443269763], &quot;test&quot;: &quot;true&quot;}"></div>
+					<div class="tracking-page__map" id="map" data-map-type="map" data-map-data="{}"></div>
 				</div>
 			</main>
 			<div class="grid-test">
