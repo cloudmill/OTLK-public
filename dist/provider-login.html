@@ -292,18 +292,18 @@
 			</header>
 			<main class="main">
 				<div class="login-page">
-					<section class="section section--first">
+					<section class="section section--first section--last">
 						<div class="container">
 							<div class="login-page__container" data-tabs="" data-login-form="">
 								<h1 class="login-page__title">Личный кабинет поставщика</h1>
 								<div class="section__inner">
 									<div class="login-page__tabs">
-										<div class="login-page__item" data-tabs-item="">Вход</div>
-										<div class="login-page__item active" data-tabs-item="">Регистрация</div>
+										<div class="login-page__item active" data-tabs-item="">Вход</div>
+										<div class="login-page__item" data-tabs-item="">Регистрация</div>
 									</div>
 								</div>
 								<div class="login-page__blocks">
-									<div class="login-page__block" data-tabs-block="">
+									<div class="login-page__block active" data-tabs-block="">
 										<form class="login-page__form" action="/">
 											<div class="login-page__form-item">
 												<div class="input-wrapper"><input class="input" data-input="" required="required" placeholder="Логин" /></div>
@@ -315,13 +315,20 @@
 											<div class="login-page__form-label" data-password-btn="">Восстановить пароль</div>
 										</form>
 									</div>
-									<div class="login-page__block active" data-tabs-block="">
-										<form class="login-page__form" action="/">
+									<div class="login-page__block" data-tabs-block="">
+										<form class="login-page__form" action="/" data-form="">
 											<div class="login-page__form-item">
-												<div class="input-wrapper"><input class="input" data-input="" required="required" placeholder="№ Договора" /></div>
+												<div class="select-wrapper">
+													<div class="select"><select class="select__select" data-select-placeholder="Страна" style="width: 100%">
+															<option value="" disabled="disabled" selected="selected"></option>
+															<option value="Россия">Россия</option>
+															<option value="Беларусь">Беларусь</option>
+															<option value="Казахстан">Казахстан</option>
+														</select></div>
+												</div>
 											</div>
 											<div class="login-page__form-item">
-												<div class="input-wrapper"><input class="input" data-input="" required="required" type="email" placeholder="E-mail, будет использоваться как логин" /></div>
+												<div class="input-wrapper"><input class="input" data-input="" required="required" type="email" placeholder="E-mail" /></div>
 											</div>
 											<div class="login-page__form-item">
 												<div class="input-wrapper"><input class="input" data-input="" required="required" type="password" placeholder="Пароль" /></div>
@@ -329,6 +336,13 @@
 											<div class="login-page__form-item">
 												<div class="input-wrapper"><input class="input" data-input="" required="required" type="password" placeholder="Повторите пароль" /></div>
 											</div>
+											<div class="login-page__form-item">
+												<div class="input-wrapper"><input class="input" data-input="" required="required" placeholder="Полное название организации" /></div>
+											</div>
+											<div class="login-page__form-item">
+												<div class="input-wrapper"><input class="input" data-input="" required="required" placeholder="ИНН" /></div>
+											</div>
+											<div class="input-wrapper"><input class="input" data-input="" required="required" type="phone" placeholder="Телефон" data-mask-phone="" /></div>
 											<div class="login-page__form-inner">
 												<div class="checkbox"><label class="checkbox__label"><input class="checkbox__input" type="checkbox" required="required" id="policy" />
 														<div class="checkbox__box"><svg class="checkbox__svg" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -363,7 +377,7 @@
 								</div>
 								<div class="section__offset">
 									<div class="login-page__block active">
-										<form class="login-page__form" action="/">
+										<form class="login-page__form" action="/" data-form="rec" data-form-id="rec">
 											<div class="login-page__form-item">
 												<div class="input-wrapper"><input class="input" data-input="" required="required" type="email" placeholder="E-mail" /></div>
 											</div>
@@ -374,6 +388,22 @@
 							</div>
 						</div>
 					</section>
+				</div>
+				<div class="response-modal" data-response="reg">
+					<div class="response-modal__container">
+						<div class="response-modal__title">Заявка отправлена</div>
+						<div class="response-modal__text">На указанную почту отправлена ссылка для подтверждения регистрации</div>
+						<div class="response-modal__button"><a class="button" href="#" data-fancybox-close=""><span class="button__span"><span class="button__text">На Главную</span></span></a></div>
+					</div>
+					<div class="modal__close" data-fancybox-close=""><span class="modal__span"><span class="modal__hover"><svg class="modal__svg" width="58" height="58" viewBox="0 0 58 58" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M21.9287 21.9288L36.0708 36.071" stroke="#181D1D" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round"></path><path d="M21.9287 36.071L36.0708 21.9288" stroke="#181D1D" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round"></path></svg></span></span></div>
+				</div>
+				<div class="response-modal" data-response="rec">
+					<div class="response-modal__container">
+						<div class="response-modal__title">Успешно</div>
+						<div class="response-modal__text">Новый пароль отправлен на указанную почту</div>
+						<div class="response-modal__button"><a class="button" href="#" data-fancybox-close=""><span class="button__span"><span class="button__text">На Главную</span></span></a></div>
+					</div>
+					<div class="modal__close" data-fancybox-close=""><span class="modal__span"><span class="modal__hover"><svg class="modal__svg" width="58" height="58" viewBox="0 0 58 58" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M21.9287 21.9288L36.0708 36.071" stroke="#181D1D" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round"></path><path d="M21.9287 36.071L36.0708 21.9288" stroke="#181D1D" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round"></path></svg></span></span></div>
 				</div>
 			</main>
 			<footer class="footer">

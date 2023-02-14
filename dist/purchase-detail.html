@@ -311,7 +311,7 @@
 												</svg></div>
 											<div class="link__text">Ко всем закупкам</div>
 										</a>
-										<div class="only-desktop">
+										<div class="only-desktop purchase__sticky">
 											<div class="purchase__card">
 												<div class="purchase__container">
 													<div class="purchase__card-heading">Контактное лицо</div>
@@ -588,11 +588,11 @@
 										</div>
 									</div>
 									<div class="bottom__col">
-										<form action="/" data-form="1">
+										<form action="/" data-form="q1">
 											<div class="bottom__grid">
 												<div class="bottom__item">
 													<div class="select-wrapper">
-														<div class="select"><select class="select__select" data-select-placeholder="Страна" style="width: 100%">
+														<div class="select"><select class="select__select" data-select-placeholder="Страна" style="width: 100%" required data-parsley-class-handler=".select" data-parsley-errors-container=".select-wrapper">
 																<option value="" disabled="disabled" selected="selected"></option>
 																<option value="Россия">Россия</option>
 																<option value="Китай">Китай</option>
@@ -688,6 +688,14 @@
 							<div class="form-modal__text">Спасибо, мы получили ваш вопрос и опубликуем ответ в течении 3-х дней.</div>
 							<div class="form-modal__button" data-fancybox-close=""><button class="button"><span class="button__span"><span class="button__text">Закрыть</span></span></button></div>
 						</div>
+					</div>
+					<div class="modal__close" data-fancybox-close=""><span class="modal__span"><span class="modal__hover"><svg class="modal__svg" width="58" height="58" viewBox="0 0 58 58" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M21.9287 21.9288L36.0708 36.071" stroke="#181D1D" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round"></path><path d="M21.9287 36.071L36.0708 21.9288" stroke="#181D1D" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round"></path></svg></span></span></div>
+				</div>
+				<div class="response-modal" data-response="q1">
+					<div class="response-modal__container">
+						<div class="response-modal__title">Заявка отправлена</div>
+						<div class="response-modal__text">Заявка на участие отправлена. Следить за статусом заявки, корректировать указанные данные в личном кабинете, в разделе «Мои закупки»</div>
+						<div class="response-modal__button"><a class="button" href="#"><span class="button__span"><span class="button__text">Мои закупки</span></span></a></div>
 					</div>
 					<div class="modal__close" data-fancybox-close=""><span class="modal__span"><span class="modal__hover"><svg class="modal__svg" width="58" height="58" viewBox="0 0 58 58" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M21.9287 21.9288L36.0708 36.071" stroke="#181D1D" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round"></path><path d="M21.9287 36.071L36.0708 21.9288" stroke="#181D1D" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round"></path></svg></span></span></div>
 				</div>
