@@ -321,14 +321,16 @@
 											</div>
 										</div>
 									</div>
-									<form class="map-page__grid" action="/">
-										<div class="map-page__grid-item">
+									<form class="map-page__grid" action="/" data-route-info="[{&quot;country&quot;:&quot;Китай&quot;,&quot;geolocation&quot;:&quot;Восток&quot;,&quot;locations&quot;:[{&quot;name&quot;:&quot;Аксау&quot;,&quot;coords&quot;:[41.166667,80.25]},{&quot;name&quot;:&quot;Алашанькоу&quot;,&quot;coords&quot;:[45.253333,82.484444]},{&quot;name&quot;:&quot;Вэйхай&quot;,&quot;coords&quot;:[37.516667,122.116667]},{&quot;name&quot;:&quot;Вэньдэн&quot;,&quot;coords&quot;:[37.2,122.05]}]},{&quot;country&quot;:&quot;Россия&quot;,&quot;geolocation&quot;:&quot;СНГ&quot;,&quot;locations&quot;:[{&quot;name&quot;:&quot;Воротынск&quot;,&quot;coords&quot;:[55.1845917,30.2046751]},{&quot;name&quot;:&quot;Ворсино&quot;,&quot;coords&quot;:[54.55,36.283333]},{&quot;name&quot;:&quot;Кольцово&quot;,&quot;coords&quot;:[60.8265,56.7603]},{&quot;name&quot;:&quot;Екатеринбург&quot;,&quot;coords&quot;:[56.8376454,60.5945261]}]},{&quot;country&quot;:&quot;Беларусь&quot;,&quot;geolocation&quot;:&quot;СНГ&quot;,&quot;locations&quot;:[{&quot;name&quot;:&quot;Колядичи&quot;,&quot;coords&quot;:[53.8082,27.5796]},{&quot;name&quot;:&quot;Калинковичи&quot;,&quot;coords&quot;:[52.1260899,29.3355242]},{&quot;name&quot;:&quot;Калий 4&quot;,&quot;coords&quot;:[52.8056,27.7653]}]},{&quot;country&quot;:&quot;Польша&quot;,&quot;geolocation&quot;:&quot;Запад&quot;,&quot;locations&quot;:[{&quot;name&quot;:&quot;Катовице&quot;,&quot;coords&quot;:[50.266667,19.016667]},{&quot;name&quot;:&quot;Кутно&quot;,&quot;coords&quot;:[52.233333,19.366667]},{&quot;name&quot;:&quot;Лодзь&quot;,&quot;coords&quot;:[51.7590524,19.4586028]},{&quot;name&quot;:&quot;Малашевиче&quot;,&quot;coords&quot;:[52.0258419,23.5308077]}]},{&quot;country&quot;:&quot;Германия&quot;,&quot;geolocation&quot;:&quot;Запад&quot;,&quot;locations&quot;:[{&quot;name&quot;:&quot;Мангейм&quot;,&quot;coords&quot;:[49.4846773,8.476724]},{&quot;name&quot;:&quot;Мюнхен&quot;,&quot;coords&quot;:[48.1391264,11.5802189]},{&quot;name&quot;:&quot;Ноймаркт&quot;,&quot;coords&quot;:[49.2732,11.4569]},{&quot;name&quot;:&quot;Нойс&quot;,&quot;coords&quot;:[51.2,6.7]}]}]">
+										<div class="map-page__grid-item" data-route-item="">
 											<div class="map-page__grid-label">Страна отправления</div>
-											<div class="search-input" data-search-root=""><select class="search-input__select" data-search-select="">
+											<div class="search-input" data-search-root=""><select class="search-input__select" data-search-select="" data-route-select="countryFrom">
 													<option value="" selected="selected" disabled="disabled"></option>
 													<option value="Китай">Китай</option>
 													<option value="Россия">Россия</option>
-													<option value="Австрия">Австрия</option>
+													<option value="Беларусь">Беларусь</option>
+													<option value="Польша">Польша</option>
+													<option value="Германия">Германия</option>
 												</select>
 												<div class="input-wrapper"><input class="input" data-input="" required="required" placeholder="Укажите страну" data-root-input="" /></div>
 												<div class="search-input__dropdown" data-search-dropdown="">
@@ -336,13 +338,10 @@
 												</div>
 											</div>
 										</div>
-										<div class="map-page__grid-item">
-											<div class="map-page__grid-label">Город отправления</div>
-											<div class="search-input" data-search-root=""><select class="search-input__select" data-search-select="">
+										<div class="map-page__grid-item disabled" data-route-item="">
+											<div class="map-page__grid-label">Локация отправления</div>
+											<div class="search-input" data-search-root=""><select class="search-input__select" data-search-select="" data-route-select="origin">
 													<option value="" selected="selected" disabled="disabled"></option>
-													<option value="Китай">Китай</option>
-													<option value="Россия">Россия</option>
-													<option value="Австрия">Австрия</option>
 												</select>
 												<div class="input-wrapper"><input class="input" data-input="" required="required" placeholder="Укажите страну" data-root-input="" /></div>
 												<div class="search-input__dropdown" data-search-dropdown="">
@@ -350,13 +349,10 @@
 												</div>
 											</div>
 										</div>
-										<div class="map-page__grid-item">
+										<div class="map-page__grid-item disabled" data-route-item="">
 											<div class="map-page__grid-label">Страна назначения</div>
-											<div class="search-input" data-search-root=""><select class="search-input__select" data-search-select="">
+											<div class="search-input" data-search-root=""><select class="search-input__select" data-search-select="" data-route-select="countryTo">
 													<option value="" selected="selected" disabled="disabled"></option>
-													<option value="Китай">Китай</option>
-													<option value="Россия">Россия</option>
-													<option value="Австрия">Австрия</option>
 												</select>
 												<div class="input-wrapper"><input class="input" data-input="" required="required" placeholder="Укажите страну" data-root-input="" /></div>
 												<div class="search-input__dropdown" data-search-dropdown="">
@@ -364,13 +360,10 @@
 												</div>
 											</div>
 										</div>
-										<div class="map-page__grid-item">
-											<div class="map-page__grid-label">Город назначения</div>
-											<div class="search-input" data-search-root=""><select class="search-input__select" data-search-select="">
+										<div class="map-page__grid-item disabled" data-route-item="">
+											<div class="map-page__grid-label">Локация назначения</div>
+											<div class="search-input" data-search-root=""><select class="search-input__select" data-search-select="" data-route-select="destination">
 													<option value="" selected="selected" disabled="disabled"></option>
-													<option value="Китай">Китай</option>
-													<option value="Россия">Россия</option>
-													<option value="Австрия">Австрия</option>
 												</select>
 												<div class="input-wrapper"><input class="input" data-input="" required="required" placeholder="Укажите страну" data-root-input="" /></div>
 												<div class="search-input__dropdown" data-search-dropdown="">
@@ -378,7 +371,7 @@
 												</div>
 											</div>
 										</div>
-										<div class="map-page__grid-item">
+										<div class="map-page__grid-item disabled" data-route-item="">
 											<div class="map-page__grid-label">Тип контейнера</div>
 											<div class="select-wrapper">
 												<div class="select"><select class="select__select" data-select-placeholder="Выбрать" style="width: 100%">
@@ -389,7 +382,7 @@
 													</select></div>
 											</div>
 										</div>
-										<div class="map-page__grid-item">
+										<div class="map-page__grid-item disabled" data-route-item="">
 											<div class="map-page__grid-label">Размер контейнера</div>
 											<div class="select-wrapper">
 												<div class="select"><select class="select__select" data-select-placeholder="Выбрать" style="width: 100%">
@@ -400,7 +393,7 @@
 													</select></div>
 											</div>
 										</div>
-										<div class="map-page__grid-item">
+										<div class="map-page__grid-item disabled" data-route-item="">
 											<div class="map-page__grid-label">Количество контейнеров</div>
 											<div class="map-page__grid-wrapper">
 												<div class="input-wrapper"><input class="input" data-input="" required="required" placeholder="от 41" /></div>
@@ -444,7 +437,7 @@
 								<div class="tracking-page__card-text map-page__text">Локация</div>
 							</div>
 						</div>
-						<div class="tracking-page__map" id="map" data-map-type="map" data-map-data="{}"></div>
+						<div class="tracking-page__map" id="map" data-map-type="map" data-map-data="[{&quot;country&quot;:&quot;Россия&quot;,&quot;name&quot;:&quot;Воротынск&quot;,&quot;coords&quot;:[55.1845917,30.2046751],&quot;location&quot;:&quot;СНГ&quot;},{&quot;country&quot;:&quot;Россия&quot;,&quot;name&quot;:&quot;Ворсино&quot;,&quot;coords&quot;:[54.55,36.283333],&quot;location&quot;:&quot;СНГ&quot;},{&quot;country&quot;:&quot;Россия&quot;,&quot;name&quot;:&quot;Кольцово&quot;,&quot;coords&quot;:[60.8265,56.7603],&quot;location&quot;:&quot;СНГ&quot;},{&quot;country&quot;:&quot;Россия&quot;,&quot;name&quot;:&quot;Екатеринбург&quot;,&quot;coords&quot;:[56.8376454,60.5945261],&quot;location&quot;:&quot;СНГ&quot;},{&quot;country&quot;:&quot;Китай&quot;,&quot;name&quot;:&quot;Аксау&quot;,&quot;coords&quot;:[41.166667,80.25],&quot;location&quot;:&quot;Восток&quot;},{&quot;country&quot;:&quot;Китай&quot;,&quot;name&quot;:&quot;Алашанькоу&quot;,&quot;coords&quot;:[45.253333,82.484444],&quot;location&quot;:&quot;Восток&quot;},{&quot;country&quot;:&quot;Китай&quot;,&quot;name&quot;:&quot;Вэйхай&quot;,&quot;coords&quot;:[37.516667,122.116667],&quot;location&quot;:&quot;Восток&quot;},{&quot;country&quot;:&quot;Китай&quot;,&quot;name&quot;:&quot;Вэньдэн&quot;,&quot;coords&quot;:[37.2,122.05],&quot;location&quot;:&quot;Восток&quot;},{&quot;country&quot;:&quot;Беларусь&quot;,&quot;name&quot;:&quot;Колядичи&quot;,&quot;coords&quot;:[53.8082,27.5796],&quot;location&quot;:&quot;СНГ&quot;},{&quot;country&quot;:&quot;Беларусь&quot;,&quot;name&quot;:&quot;Калинковичи&quot;,&quot;coords&quot;:[52.1260899,29.3355242],&quot;location&quot;:&quot;СНГ&quot;},{&quot;country&quot;:&quot;Беларусь&quot;,&quot;name&quot;:&quot;Калий 4&quot;,&quot;coords&quot;:[52.8056,27.7653],&quot;location&quot;:&quot;СНГ&quot;},{&quot;country&quot;:&quot;Польша&quot;,&quot;name&quot;:&quot;Катовице&quot;,&quot;coords&quot;:[50.266667,19.016667],&quot;location&quot;:&quot;Запад&quot;},{&quot;country&quot;:&quot;Польша&quot;,&quot;name&quot;:&quot;Кутно&quot;,&quot;coords&quot;:[52.233333,19.366667],&quot;location&quot;:&quot;Запад&quot;},{&quot;country&quot;:&quot;Польша&quot;,&quot;name&quot;:&quot;Лодзь&quot;,&quot;coords&quot;:[51.7590524,19.4586028],&quot;location&quot;:&quot;Запад&quot;},{&quot;country&quot;:&quot;Польша&quot;,&quot;name&quot;:&quot;Малашевиче&quot;,&quot;coords&quot;:[52.0258419,23.5308077],&quot;location&quot;:&quot;Запад&quot;},{&quot;country&quot;:&quot;Германия&quot;,&quot;name&quot;:&quot;Мангейм&quot;,&quot;coords&quot;:[49.4846773,8.476724],&quot;location&quot;:&quot;Запад&quot;},{&quot;country&quot;:&quot;Германия&quot;,&quot;name&quot;:&quot;Мюнхен&quot;,&quot;coords&quot;:[48.1391264,11.5802189],&quot;location&quot;:&quot;Запад&quot;},{&quot;country&quot;:&quot;Германия&quot;,&quot;name&quot;:&quot;Ноймаркт&quot;,&quot;coords&quot;:[49.2732,11.4569],&quot;location&quot;:&quot;Запад&quot;},{&quot;country&quot;:&quot;Германия&quot;,&quot;name&quot;:&quot;Нойс&quot;,&quot;coords&quot;:[51.2,6.7],&quot;location&quot;:&quot;Запад&quot;}]"></div>
 					</div>
 				</div>
 				</section>
