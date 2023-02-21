@@ -316,7 +316,7 @@
 										</form>
 									</div>
 									<div class="login-page__block" data-tabs-block="">
-										<form class="login-page__form" action="/" data-form="" data-form-id="reg">
+										<form class="login-page__form" action="/">
 											<div class="login-page__form-item">
 												<div class="select-wrapper">
 													<div class="select"><select class="select__select" data-select-placeholder="Страна" style="width: 100%">
@@ -331,10 +331,10 @@
 												<div class="input-wrapper"><input class="input" data-input="" required="required" type="email" placeholder="E-mail" /></div>
 											</div>
 											<div class="login-page__form-item">
-												<div class="input-wrapper"><input class="input" data-input="" required="required" type="password" placeholder="Пароль" /></div>
+												<div class="input-wrapper"><input class="input" data-input="" required="required" type="password" placeholder="Пароль" data-parsley-equalto="#pass-again" id="pass" minlength="6" /></div>
 											</div>
 											<div class="login-page__form-item">
-												<div class="input-wrapper"><input class="input" data-input="" required="required" type="password" placeholder="Повторите пароль" /></div>
+												<div class="input-wrapper"><input class="input" data-input="" required="required" type="password" placeholder="Повторите пароль" id="pass-again" data-parsley-equalto="#pass" /></div>
 											</div>
 											<div class="login-page__form-item">
 												<div class="input-wrapper"><input class="input" data-input="" required="required" placeholder="Полное название организации" /></div>
@@ -342,21 +342,15 @@
 											<div class="login-page__form-item">
 												<div class="input-wrapper"><input class="input" data-input="" required="required" placeholder="ИНН" /></div>
 											</div>
-											<div class="input-wrapper"><input class="input" data-input="" required="required" type="phone" placeholder="Телефон" data-mask-phone="" /></div>
+											<div class="login-page__form-item">
+												<div class="input-wrapper"><input class="input" data-input="" required="required" type="phone" placeholder="Телефон" data-mask-phone="" /></div>
+											</div>
 											<div class="login-page__form-inner">
 												<div class="checkbox"><label class="checkbox__label"><input class="checkbox__input" type="checkbox" required="required" id="policy" />
 														<div class="checkbox__box"><svg class="checkbox__svg" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
 																<path d="M3 9L8 14L17 5" stroke="white" stroke-width="1.5"></path>
 															</svg></div>
 														<div class="checkbox__text">Согласие с политикой в отношении <a class="checkbox__link" href="#">обработки персональных данных</a></div>
-													</label></div>
-											</div>
-											<div class="login-page__form-inner">
-												<div class="checkbox"><label class="checkbox__label"><input class="checkbox__input" type="checkbox" id="container">
-														<div class="checkbox__box"><svg class="checkbox__svg" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-																<path d="M3 9L8 14L17 5" stroke="white" stroke-width="1.5"></path>
-															</svg></div>
-														<div class="checkbox__text">Согласие <a class="checkbox__link" href="#">о получении информации о доставке контейнера</a></div>
 													</label></div>
 											</div>
 											<div class="login-page__form-inner"><button class="button"><span class="button__span"><span class="button__text">Зарегистрироваться</span></span></button></div>
