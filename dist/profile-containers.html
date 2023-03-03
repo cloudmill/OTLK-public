@@ -291,7 +291,7 @@
 				</div>
 			</header>
 			<main class="main">
-				<div class="profile-page tracking-page">
+				<div class="profile-page tracking-page map-page">
 					<section class="section section--first">
 						<div class="container">
 							<div class="breadcrumbs">
@@ -395,94 +395,117 @@
 												<path d="M21.9287 36.071L36.0708 21.9288" stroke="#181D1D" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round"></path>
 											</svg></div>
 									</div>
-									<div class="tracking-page__top-col"><button class="button"><span class="button__span"><span class="button__text">Поиск</span></span></button></div>
+									<div class="tracking-page__top-col">
+										<div class="only-desktop"><button class="button"><span class="button__span"><span class="button__text">Поиск</span></span></button></div>
+									</div>
 								</form>
 								<div class="profile-page__grid">
 									<div class="profile-page__grid-item">
-										<div class="tracking-page__label">Выбрать</div>
+										<div class="tracking-page__label">Маршрут</div>
 										<div class="select-wrapper">
-											<div class="select"><select class="select__select" data-select-placeholder="Выбрать" style="width: 100%">
+											<div class="select"><select class="select__select" data-select-placeholder="Выбрать" style="width: 100%" data-icons-select="true">
 													<option value="" disabled="disabled" selected="selected"></option>
-													<option value="qwe">qwe</option>
-													<option value="asd">asd</option>
-													<option value="zxc">zxc</option>
+													<option value="На Запад" data-icon-class="green">На Запад</option>
+													<option value="На Восток" data-icon-class="brown">На Восток</option>
+													<option value="Мосузел" data-icon-class="blue">Мосузел</option>
+													<option value="Калий" data-icon-class="yellow">Калий</option>
+													<option value="Другие маршруты">Другие маршруты</option>
 												</select></div>
 										</div>
 									</div>
 									<div class="profile-page__grid-item">
-										<div class="tracking-page__label">Выбрать</div>
-										<div class="select-wrapper">
-											<div class="select"><select class="select__select" data-select-placeholder="Выбрать" style="width: 100%">
-													<option value="" disabled="disabled" selected="selected"></option>
-													<option value="qwe">qwe</option>
-													<option value="asd">asd</option>
-													<option value="zxc">zxc</option>
+										<div class="tracking-page__label">Станция назначения</div>
+										<div class="search-input" data-search-root="">
+											<div class="search-input__wrapper"><select class="search-input__select" data-search-select="">
+													<option value="" selected="selected" disabled="disabled"></option>
+													<option value="Брест">Брест</option>
+													<option value="Брестенская">Брестенская</option>
+													<option value="Брестовичи">Брестовичи</option>
+													<option value="Старый Брест">Старый Брест</option>
 												</select></div>
+											<div class="input-wrapper"><input class="input" data-input="" required="required" placeholder="Введите название станции" data-root-input="" /></div>
+											<div class="search-input__dropdown" data-search-dropdown="">
+												<div class="search-input__item hidden" data-search-empty="">Ничего не найдено...</div>
+											</div>
+											<div class="delete-icon hidden" data-input-clear=""><svg class="delete-icon__svg" width="58" height="58" viewBox="0 0 58 58" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path d="M21.9287 21.9288L36.0708 36.071" stroke="#181D1D" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round"></path>
+													<path d="M21.9287 36.071L36.0708 21.9288" stroke="#181D1D" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round"></path>
+												</svg></div>
 										</div>
 									</div>
 									<div class="profile-page__grid-item">
-										<div class="tracking-page__label">Выбрать</div>
+										<div class="tracking-page__label">Статус</div>
 										<div class="select-wrapper">
 											<div class="select"><select class="select__select" data-select-placeholder="Выбрать" style="width: 100%">
 													<option value="" disabled="disabled" selected="selected"></option>
-													<option value="qwe">qwe</option>
-													<option value="asd">asd</option>
-													<option value="zxc">zxc</option>
+													<option value="В пути">В пути</option>
+													<option value="На подходе">На подходе</option>
+													<option value="Ожидает выгрузки">Ожидает выгрузки</option>
 												</select></div>
 										</div>
 									</div>
 								</div>
-								<div class="only-mobile"><button class="button"><span class="button__span"><span class="button__text">Поиск</span></span></button></div>
+								<div class="only-mobile">
+									<div class="profile-page__btn"><button class="button"><span class="button__span"><span class="button__text">Поиск</span></span></button></div>
+								</div>
 							</div>
 						</div>
 						<div class="section__offset">
 							<div class="tracking-page__container">
-								<div class="tracking-page__card">
-									<div class="tracking-page__card-item">
-										<div class="tracking-page__card-icon"><svg class="tracking-page__card-svg" width="38" height="43" viewBox="0 0 38 43" fill="none" xmlns="http://www.w3.org/2000/svg">
-												<g filter="url(#filter0_d_2135_46225)">
-													<path d="M19.8937 26.2199C19.5247 26.955 18.4754 26.955 18.1063 26.2199L11.7944 13.6473C11.1267 12.3174 12.0936 10.75 13.5818 10.75L24.4183 10.75C25.9065 10.75 26.8734 12.3174 26.2057 13.6473L19.8937 26.2199Z" fill="#006525"></path>
-												</g>
-												<defs>
-													<filter id="filter0_d_2135_46225" x="1.57922" y="6.75" width="34.8417" height="36.0212" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-														<feflood flood-opacity="0" result="BackgroundImageFix"></feflood>
-														<fecolormatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"></fecolormatrix>
-														<feoffset dy="6"></feoffset>
-														<fegaussianblur stdDeviation="5"></fegaussianblur>
-														<fecomposite in2="hardAlpha" operator="out"></fecomposite>
-														<fecolormatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0.396078 0 0 0 0 0.145098 0 0 0 0.45 0"></fecolormatrix>
-														<feblend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_2135_46225"></feblend>
-														<feblend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_2135_46225" result="shape"></feblend>
-													</filter>
-												</defs>
-											</svg></div>
-										<div class="tracking-page__card-text">Погранпереходы</div>
+								<div class="only-desktop">
+									<div class="tracking-page__card profile">
+										<div class="tracking-page__card-item">
+											<div class="profile-page__icon green"></div>
+											<div class="tracking-page__card-text">На Запад</div>
+										</div>
+										<div class="tracking-page__card-item">
+											<div class="profile-page__icon brown"></div>
+											<div class="tracking-page__card-text">На Восток</div>
+										</div>
+										<div class="tracking-page__card-item">
+											<div class="profile-page__icon blue"></div>
+											<div class="tracking-page__card-text">Мосузел</div>
+										</div>
+										<div class="tracking-page__card-item">
+											<div class="profile-page__icon yellow"></div>
+											<div class="tracking-page__card-text">Калий</div>
+										</div>
+										<div class="tracking-page__card-item">
+											<div class="profile-page__icon"></div>
+											<div class="tracking-page__card-text">Другие маршруты</div>
+										</div>
 									</div>
-									<div class="tracking-page__card-item">
-										<div class="tracking-page__card-icon"><svg class="tracking-page__card-svg" width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
-												<g clip-path="url(#clip0_2078_43949)">
-													<rect width="38" height="38" rx="19" fill="white" fill-opacity="0.8"></rect>
-													<g filter="url(#filter0_d_2078_43949)">
-														<circle cx="19" cy="19" r="7" fill="#53EE8C"></circle>
-													</g>
-												</g>
-												<defs>
-													<filter id="filter0_d_2078_43949" x="2" y="5" width="34" height="34" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-														<feflood flood-opacity="0" result="BackgroundImageFix"></feflood>
-														<fecolormatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"></fecolormatrix>
-														<feoffset dy="3"></feoffset>
-														<fegaussianblur stdDeviation="5"></fegaussianblur>
-														<fecomposite in2="hardAlpha" operator="out"></fecomposite>
-														<fecolormatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0.870833 0 0 0 0 0.320833 0 0 0 0.8 0"></fecolormatrix>
-														<feblend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_2078_43949"></feblend>
-														<feblend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_2078_43949" result="shape"></feblend>
-													</filter>
-													<clippath id="clip0_2078_43949">
-														<rect width="38" height="38" rx="19" fill="white"></rect>
-													</clippath>
-												</defs>
-											</svg></div>
-										<div class="tracking-page__card-text">Контейнер</div>
+								</div>
+								<div class="only-mobile">
+									<div class="map-page__cards">
+										<div class="profile-page__item">
+											<div class="tracking-page__card static static--auto">
+												<div class="tracking-page__card-item">
+													<div class="profile-page__icon green"></div>
+													<div class="tracking-page__card-text">На Запад</div>
+												</div>
+												<div class="tracking-page__card-item">
+													<div class="profile-page__icon brown"></div>
+													<div class="tracking-page__card-text">На Восток</div>
+												</div>
+												<div class="tracking-page__card-item">
+													<div class="profile-page__icon blue"></div>
+													<div class="tracking-page__card-text">Мосузел</div>
+												</div>
+											</div>
+										</div>
+										<div class="profile-page__item">
+											<div class="tracking-page__card static static--auto">
+												<div class="tracking-page__card-item">
+													<div class="profile-page__icon yellow"></div>
+													<div class="tracking-page__card-text">Калий</div>
+												</div>
+												<div class="tracking-page__card-item">
+													<div class="profile-page__icon"></div>
+													<div class="tracking-page__card-text">Другие маршруты</div>
+												</div>
+											</div>
+										</div>
 									</div>
 								</div>
 								<div class="tracking-page__map" id="map" data-map-type="track" data-map-data="[{&quot;id&quot;:&quot;CICU2351649&quot;,&quot;coords&quot;:[44.162975,80.34461],&quot;direction&quot;:&quot;yellow&quot;},{&quot;id&quot;:&quot;CICU2351648&quot;,&quot;coords&quot;:[44.162975,80.34461],&quot;direction&quot;:&quot;green&quot;},{&quot;id&quot;:&quot;CICU2351647&quot;,&quot;coords&quot;:[44.162975,80.34461],&quot;direction&quot;:&quot;moscow&quot;},{&quot;id&quot;:&quot;CICU2351646&quot;,&quot;coords&quot;:[44.162975,80.34461],&quot;direction&quot;:&quot;kaliy&quot;},{&quot;id&quot;:&quot;CICU2351641&quot;,&quot;coords&quot;:[55.4306125765295,37.277340437246544],&quot;direction&quot;:&quot;yellow&quot;},{&quot;id&quot;:&quot;CICU2351642&quot;,&quot;coords&quot;:[55.4306125765295,37.277340437246544],&quot;direction&quot;:&quot;green&quot;},{&quot;id&quot;:&quot;CICU2351643&quot;,&quot;coords&quot;:[55.4306125765295,37.277340437246544],&quot;direction&quot;:&quot;moscow&quot;},{&quot;id&quot;:&quot;CICU2351644&quot;,&quot;coords&quot;:[55.4306125765295,37.277340437246544],&quot;direction&quot;:&quot;kaliy&quot;},{&quot;id&quot;:&quot;CICU2351645&quot;,&quot;coords&quot;:[55.4306125765295,37.277340437246544],&quot;direction&quot;:&quot;other&quot;}]"></div>
