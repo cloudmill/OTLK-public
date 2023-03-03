@@ -385,68 +385,78 @@
 									</div>
 								</div>
 							</div>
-							<div class="section__inner">
-								<div class="tracking-page__label">Номер контейнера</div>
-								<form class="tracking-page__top" action="/">
-									<div class="tracking-page__top-col" data-search-container="">
-										<div class="input-wrapper"><input class="input" data-input="" required="required" placeholder="Введите номер" data-search-input="" data-parsley-container="" /></div>
-										<div class="delete-icon hidden" data-search-clear=""><svg class="delete-icon__svg" width="58" height="58" viewBox="0 0 58 58" fill="none" xmlns="http://www.w3.org/2000/svg">
-												<path d="M21.9287 21.9288L36.0708 36.071" stroke="#181D1D" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round"></path>
-												<path d="M21.9287 36.071L36.0708 21.9288" stroke="#181D1D" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round"></path>
-											</svg></div>
-									</div>
-									<div class="tracking-page__top-col">
-										<div class="only-desktop"><button class="button"><span class="button__span"><span class="button__text">Поиск</span></span></button></div>
-									</div>
-								</form>
-								<div class="profile-page__grid">
-									<div class="profile-page__grid-item">
-										<div class="tracking-page__label">Маршрут</div>
-										<div class="select-wrapper">
-											<div class="select"><select class="select__select" data-select-placeholder="Выбрать" style="width: 100%" data-icons-select="true">
-													<option value="" disabled="disabled" selected="selected"></option>
-													<option value="На Запад" data-icon-class="green">На Запад</option>
-													<option value="На Восток" data-icon-class="brown">На Восток</option>
-													<option value="Мосузел" data-icon-class="blue">Мосузел</option>
-													<option value="Калий" data-icon-class="yellow">Калий</option>
-													<option value="Другие маршруты">Другие маршруты</option>
-												</select></div>
-										</div>
-									</div>
-									<div class="profile-page__grid-item">
-										<div class="tracking-page__label">Станция назначения</div>
-										<div class="search-input" data-search-root="">
-											<div class="search-input__wrapper"><select class="search-input__select" data-search-select="">
-													<option value="" selected="selected" disabled="disabled"></option>
-													<option value="Брест">Брест</option>
-													<option value="Брестенская">Брестенская</option>
-													<option value="Брестовичи">Брестовичи</option>
-													<option value="Старый Брест">Старый Брест</option>
-												</select></div>
-											<div class="input-wrapper"><input class="input" data-input="" required="required" placeholder="Введите название станции" data-root-input="" /></div>
-											<div class="search-input__dropdown" data-search-dropdown="">
-												<div class="search-input__item hidden" data-search-empty="">Ничего не найдено...</div>
-											</div>
-											<div class="delete-icon hidden" data-input-clear=""><svg class="delete-icon__svg" width="58" height="58" viewBox="0 0 58 58" fill="none" xmlns="http://www.w3.org/2000/svg">
-													<path d="M21.9287 21.9288L36.0708 36.071" stroke="#181D1D" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round"></path>
-													<path d="M21.9287 36.071L36.0708 21.9288" stroke="#181D1D" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round"></path>
-												</svg></div>
-										</div>
-									</div>
-									<div class="profile-page__grid-item">
-										<div class="tracking-page__label">Статус</div>
-										<div class="select-wrapper">
-											<div class="select"><select class="select__select" data-select-placeholder="Выбрать" style="width: 100%">
-													<option value="" disabled="disabled" selected="selected"></option>
-													<option value="В пути">В пути</option>
-													<option value="На подходе">На подходе</option>
-													<option value="Ожидает выгрузки">Ожидает выгрузки</option>
-												</select></div>
-										</div>
-									</div>
+							<div class="section__inner" data-tabs="">
+								<div class="nav nav--small--mobile">
+									<ul class="nav__list">
+										<li class="nav__item">
+											<div class="nav__link purchase__link active" data-tabs-item="">по номеру</div>
+										</li>
+										<li class="nav__item">
+											<div class="nav__link purchase__link" data-tabs-item="">по параметрам</div>
+										</li>
+									</ul>
 								</div>
-								<div class="only-mobile">
-									<div class="profile-page__btn"><button class="button"><span class="button__span"><span class="button__text">Поиск</span></span></button></div>
+								<div class="section__offset">
+									<div class="profile-page__block active" data-tabs-block="">
+										<form class="profile-page__form" action="/">
+											<div class="profile-page__form-col" data-search-container="">
+												<div class="input-wrapper"><input class="input" data-input="" required="required" placeholder="Введите номер" data-search-input="" data-parsley-container="" /></div>
+												<div class="delete-icon hidden" data-search-clear=""><svg class="delete-icon__svg" width="58" height="58" viewBox="0 0 58 58" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<path d="M21.9287 21.9288L36.0708 36.071" stroke="#181D1D" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round"></path>
+														<path d="M21.9287 36.071L36.0708 21.9288" stroke="#181D1D" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round"></path>
+													</svg></div>
+											</div>
+											<div class="profile-page__form-col"><button class="button"><span class="button__span"><span class="button__text">Поиск</span></span></button></div>
+										</form>
+									</div>
+									<div class="profile-page__block" data-tabs-block="">
+										<div class="profile-page__grid">
+											<div class="profile-page__grid-item">
+												<div class="tracking-page__label">Маршрут</div>
+												<div class="select-wrapper">
+													<div class="select"><select class="select__select" data-select-placeholder="Выбрать" style="width: 100%" data-icons-select="true">
+															<option value="" disabled="disabled" selected="selected"></option>
+															<option value="На Запад" data-icon-class="green">На Запад</option>
+															<option value="На Восток" data-icon-class="brown">На Восток</option>
+															<option value="Мосузел" data-icon-class="blue">Мосузел</option>
+															<option value="Калий" data-icon-class="yellow">Калий</option>
+															<option value="Другие маршруты">Другие маршруты</option>
+														</select></div>
+												</div>
+											</div>
+											<div class="profile-page__grid-item">
+												<div class="tracking-page__label">Станция назначения</div>
+												<div class="search-input" data-search-root="">
+													<div class="search-input__wrapper"><select class="search-input__select" data-search-select="">
+															<option value="" selected="selected" disabled="disabled"></option>
+															<option value="Брест">Брест</option>
+															<option value="Брестенская">Брестенская</option>
+															<option value="Брестовичи">Брестовичи</option>
+															<option value="Старый Брест">Старый Брест</option>
+														</select></div>
+													<div class="input-wrapper"><input class="input" data-input="" required="required" placeholder="Введите название станции" data-root-input="" /></div>
+													<div class="search-input__dropdown" data-search-dropdown="">
+														<div class="search-input__item hidden" data-search-empty="">Ничего не найдено...</div>
+													</div>
+													<div class="delete-icon hidden" data-input-clear=""><svg class="delete-icon__svg" width="58" height="58" viewBox="0 0 58 58" fill="none" xmlns="http://www.w3.org/2000/svg">
+															<path d="M21.9287 21.9288L36.0708 36.071" stroke="#181D1D" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round"></path>
+															<path d="M21.9287 36.071L36.0708 21.9288" stroke="#181D1D" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round"></path>
+														</svg></div>
+												</div>
+											</div>
+											<div class="profile-page__grid-item">
+												<div class="tracking-page__label">Статус</div>
+												<div class="select-wrapper">
+													<div class="select"><select class="select__select" data-select-placeholder="Выбрать" style="width: 100%">
+															<option value="" disabled="disabled" selected="selected"></option>
+															<option value="В пути">В пути</option>
+															<option value="На подходе">На подходе</option>
+															<option value="Ожидает выгрузки">Ожидает выгрузки</option>
+														</select></div>
+												</div>
+											</div>
+										</div>
+									</div>
 								</div>
 							</div>
 						</div>
