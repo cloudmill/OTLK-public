@@ -294,22 +294,97 @@
 				<div class="login-page">
 					<section class="section section--last login-page__intro">
 						<div class="container">
-							<div class="login-page__container" data-tabs="" data-login-form="">
+							<div class="login-page__container" data-tabs="">
 								<h1 class="login-page__title">Личный кабинет</h1>
 								<div class="section__inner">
-									<div class="login-page__heading">Вход</div>
-								</div>
-								<div class="login-page__blocks">
-									<div class="login-page__block active" data-tabs-block="">
-										<form class="login-page__form" action="/">
-											<div class="login-page__form-item">
-												<div class="input-wrapper"><input class="input" data-input="" required="required" placeholder="Логин" /></div>
-											</div>
-											<div class="login-page__form-item">
-												<div class="input-wrapper"><input class="input" data-input="" required="required" type="password" placeholder="Пароль" /></div>
-											</div>
-											<div class="login-page__form-inner"><button class="button"><span class="button__span"><span class="button__text">Войти</span></span></button></div>
-										</form>
+									<div class="login-page__tabs">
+										<div class="nav">
+											<ul class="nav__list">
+												<li class="nav__item">
+													<div class="nav__link login-page__tab active" data-tabs-item="">Клиента</div>
+												</li>
+												<li class="nav__item login-page__tab" data-tabs-item="">
+													<div class="nav__link">поставщика</div>
+												</li>
+											</ul>
+										</div>
+									</div>
+									<div class="login-page__blocks">
+										<div class="login-page__block active" data-tabs-block="">
+											<form class="login-page__form" action="/">
+												<div class="login-page__form-item">
+													<div class="input-wrapper"><input class="input" data-input="" required="required" placeholder="Логин" /></div>
+												</div>
+												<div class="login-page__form-item">
+													<div class="input-wrapper"><input class="input" data-input="" required="required" type="password" placeholder="Пароль" /></div>
+												</div>
+												<div class="login-page__form-inner"><button class="button"><span class="button__span"><span class="button__text">Войти</span></span></button></div>
+											</form>
+										</div>
+										<div class="login-page__block" data-tabs-block="" data-tabs="">
+											<form class="login-page__form" action="/">
+												<div class="section__offset">
+													<div class="login-page__tabs">
+														<div class="login-page__item active" data-tabs-item="">Вход</div>
+														<div class="login-page__item" data-tabs-item="">Регистрация</div>
+													</div>
+												</div>
+												<div class="login-page__blocks">
+													<div class="login-page__block active" data-tabs-block="">
+														<form class="login-page__form" action="/">
+															<div class="login-page__form-item">
+																<div class="input-wrapper"><input class="input" data-input="" required="required" placeholder="Логин" /></div>
+															</div>
+															<div class="login-page__form-item">
+																<div class="input-wrapper"><input class="input" data-input="" required="required" type="password" placeholder="Пароль" /></div>
+															</div>
+															<div class="login-page__form-inner"><button class="button"><span class="button__span"><span class="button__text">Войти</span></span></button></div>
+														</form>
+													</div>
+													<div class="login-page__block" data-tabs-block="">
+														<form class="login-page__form" action="/">
+															<div class="login-page__form-item">
+																<div class="select-wrapper">
+																	<div class="select"><select class="select__select" data-select-placeholder="Страна" style="width: 100%">
+																			<option value="" disabled="disabled" selected="selected"></option>
+																			<option value="Россия">Россия</option>
+																			<option value="Беларусь">Беларусь</option>
+																			<option value="Казахстан">Казахстан</option>
+																		</select></div>
+																</div>
+															</div>
+															<div class="login-page__form-item">
+																<div class="input-wrapper"><input class="input" data-input="" required="required" type="email" placeholder="E-mail" /></div>
+															</div>
+															<div class="login-page__form-item">
+																<div class="input-wrapper"><input class="input" data-input="" required="required" type="password" placeholder="Пароль" data-parsley-equalto="#pass-again" id="pass" minlength="6" /></div>
+															</div>
+															<div class="login-page__form-item">
+																<div class="input-wrapper"><input class="input" data-input="" required="required" type="password" placeholder="Повторите пароль" id="pass-again" data-parsley-equalto="#pass" /></div>
+															</div>
+															<div class="login-page__form-item">
+																<div class="input-wrapper"><input class="input" data-input="" required="required" placeholder="Полное название организации" /></div>
+															</div>
+															<div class="login-page__form-item">
+																<div class="input-wrapper"><input class="input" data-input="" required="required" placeholder="ИНН" /></div>
+															</div>
+															<div class="login-page__form-item">
+																<div class="input-wrapper"><input class="input" data-input="" required="required" type="phone" placeholder="Телефон" data-mask-phone="" /></div>
+															</div>
+															<div class="login-page__form-inner">
+																<div class="checkbox"><label class="checkbox__label"><input class="checkbox__input" type="checkbox" required="required" id="policy" />
+																		<div class="checkbox__box"><svg class="checkbox__svg" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+																				<path d="M3 9L8 14L17 5" stroke="white" stroke-width="1.5"></path>
+																			</svg></div>
+																		<div class="checkbox__text">Согласие с политикой в отношении <a class="checkbox__link" href="#">обработки персональных данных</a></div>
+																	</label></div>
+															</div>
+															<div class="login-page__form-inner"><button class="button"><span class="button__span"><span class="button__text">Зарегистрироваться</span></span></button></div>
+														</form>
+													</div>
+												</div>
+											</form>
+										</div>
 									</div>
 								</div>
 							</div>
