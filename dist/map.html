@@ -404,8 +404,8 @@
 											</div>
 											<div class="map-page__list-item" data-route-item="">
 												<div class="map-page__grid-label">Тип контейнера</div>
-												<div class="select-wrapper">
-													<div class="select"><select class="select__select" data-select-placeholder="Укажите тип" style="width: 100%" data-route-select="type" required data-parsley-class-handler=".select" data-parsley-errors-container=".select-wrapper">
+												<div class="select-wrapper" id="type">
+													<div class="select"><select class="select__select" data-select-placeholder="Укажите тип" style="width: 100%" data-route-select="type" required data-parsley-class-handler="#type" data-parsley-errors-container="#type">
 															<option value="" disabled="disabled" selected="selected"></option>
 															<option value="Стандартный">Стандартный</option>
 															<option value="Рефрижератор">Рефрижератор</option>
@@ -415,8 +415,8 @@
 											</div>
 											<div class="map-page__list-item" data-route-item="">
 												<div class="map-page__grid-label">Размер контейнера</div>
-												<div class="select-wrapper">
-													<div class="select"><select class="select__select" data-select-placeholder="Укажите размер" style="width: 100%" data-route-select="size" required data-parsley-class-handler=".select" data-parsley-errors-container=".select-wrapper">
+												<div class="select-wrapper" id="size">
+													<div class="select"><select class="select__select" data-select-placeholder="Укажите размер" style="width: 100%" data-route-select="size" required data-parsley-class-handler="#size" data-parsley-errors-container="#size">
 															<option value="" disabled="disabled" selected="selected"></option>
 															<option value="20">20 футов</option>
 															<option value="40">40 футов</option>
@@ -543,6 +543,264 @@
 						</div>
 					</div>
 				</section>
+		</div>
+		<div class="modal route-modal form-modal" data-fancy-modal="route">
+			<div class="modal__container">
+				<div class="route-modal__wrapper">
+					<div class="modal__title">Возможный маршрут</div>
+					<div class="route-modal__text">Точный маршрут будет известен после отправки заявки</div>
+				</div>
+				<div class="route-modal__routes route-modal__inner">
+					<div class="route-modal__route">
+						<div class="route-modal__container transit">
+							<div class="route-modal__item location">
+								<div class="route-modal__icon">
+									<div class="route-modal__content">
+										<div class="route-modal__city">Вена</div>
+										<div class="route-modal__country">Австрия</div>
+									</div>
+								</div>
+								<div class="route-modal__line"></div>
+							</div>
+							<div class="route-modal__item">
+								<div class="route-modal__icon">
+									<div class="route-modal__content">
+										<div class="route-modal__city">Брест/Свислочь/Брузги</div>
+										<div class="route-modal__country">Белоруссия</div>
+									</div>
+								</div>
+								<div class="route-modal__line"></div>
+							</div>
+							<div class="route-modal__item">
+								<div class="route-modal__icon">
+									<div class="route-modal__content">
+										<div class="route-modal__city">Достык</div>
+										<div class="route-modal__country">Казахстан</div>
+									</div>
+								</div>
+								<div class="route-modal__line"></div>
+							</div>
+							<div class="route-modal__item location">
+								<div class="route-modal__icon">
+									<div class="route-modal__content">
+										<div class="route-modal__city">Аксау</div>
+										<div class="route-modal__country">Китай</div>
+									</div>
+								</div>
+								<div class="route-modal__line"></div>
+							</div>
+						</div>
+						<div class="route-modal__price">
+							<div class="route-modal__price-text">Ставка</div>
+							<div class="route-modal__price-num">$ 1 650</div>
+						</div>
+					</div>
+					<div class="route-modal__route">
+						<div class="route-modal__container transit">
+							<div class="route-modal__item location">
+								<div class="route-modal__icon">
+									<div class="route-modal__content">
+										<div class="route-modal__city">Вена</div>
+										<div class="route-modal__country">Австрия</div>
+									</div>
+								</div>
+								<div class="route-modal__line"></div>
+							</div>
+							<div class="route-modal__item">
+								<div class="route-modal__icon">
+									<div class="route-modal__content">
+										<div class="route-modal__city">Брест/Свислочь/Брузги</div>
+										<div class="route-modal__country">Белоруссия</div>
+									</div>
+								</div>
+								<div class="route-modal__line"></div>
+							</div>
+							<div class="route-modal__item">
+								<div class="route-modal__icon">
+									<div class="route-modal__content">
+										<div class="route-modal__city">Достык</div>
+										<div class="route-modal__country">Казахстан</div>
+									</div>
+								</div>
+								<div class="route-modal__line"></div>
+							</div>
+							<div class="route-modal__item location">
+								<div class="route-modal__icon">
+									<div class="route-modal__content">
+										<div class="route-modal__city">Аксау</div>
+										<div class="route-modal__country">Китай</div>
+									</div>
+								</div>
+								<div class="route-modal__line"></div>
+							</div>
+						</div>
+						<div class="route-modal__price">
+							<div class="route-modal__price-text">Ставка</div>
+							<div class="route-modal__price-num">$ 1 650</div>
+						</div>
+					</div>
+				</div>
+				<div class="route-modal__wrapper">
+					<div class="route-modal__inner">
+						<div class="route-modal__grid">
+							<div class="route-modal__grid-item">
+								<div class="route-modal__grid-label">Тип контейнера</div>
+								<div class="route-modal__grid-text">Универсальный</div>
+							</div>
+							<div class="route-modal__grid-item">
+								<div class="route-modal__grid-label">Размер контейнера</div>
+								<div class="route-modal__grid-text">20 футов</div>
+							</div>
+							<div class="route-modal__grid-item">
+								<div class="route-modal__grid-label">Количество контейнеров</div>
+								<div class="route-modal__grid-text">420</div>
+							</div>
+						</div>
+					</div>
+					<div class="route-modal__inner">
+						<form class="form-modal__form" action="/">
+							<div class="form-modal__item">
+								<div class="input-wrapper"><input class="input" data-input="" required="required" placeholder="ФИО" /></div>
+							</div>
+							<div class="form-modal__item">
+								<div class="input-wrapper"><input class="input" data-input="" required="required" placeholder="Наименование компании" /></div>
+							</div>
+							<div class="form-modal__item">
+								<div class="input-wrapper"><input class="input" data-input="" required="required" type="email" placeholder="E-mail" /></div>
+							</div>
+							<div class="form-modal__item">
+								<div class="input-wrapper"><input class="input" data-input="" required="required" type="phone" placeholder="Телефон" /></div>
+							</div>
+							<div class="form-modal__item">
+								<div class="input-wrapper"><textarea class="textarea" data-input="" placeholder="Комменатрий или вопрос"></textarea></div>
+							</div>
+							<div class="form-modal__inner">
+								<div class="checkbox"><label class="checkbox__label"><input class="checkbox__input" type="checkbox" required="required" id="policy" />
+										<div class="checkbox__box"><svg class="checkbox__svg" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M3 9L8 14L17 5" stroke="white" stroke-width="1.5"></path>
+											</svg></div>
+										<div class="checkbox__text">Согласие с политикой в отношении <a class="checkbox__link" href="#">обработки персональных данных</a></div>
+									</label></div>
+							</div>
+							<div class="form-modal__inner"><button class="button"><span class="button__span"><span class="button__text">Отправить</span></span></button></div>
+						</form>
+					</div>
+				</div>
+			</div>
+			<div class="modal__close" data-fancybox-close=""><span class="modal__span"><span class="modal__hover"><svg class="modal__svg" width="58" height="58" viewBox="0 0 58 58" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M21.9287 21.9288L36.0708 36.071" stroke="#181D1D" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round"></path><path d="M21.9287 36.071L36.0708 21.9288" stroke="#181D1D" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round"></path></svg></span></span></div>
+		</div>
+		<div class="modal route-filters" data-fancy-modal="route-filters">
+			<form class="route-filters__form" action="/" data-route-form-mobile="">
+				<div class="modal__container" data-form-container="data-form-container">
+					<div class="modal__title">Фильтры</div>
+					<div class="route-filters__inner">
+						<div class="map-page__item">
+							<div class="tracking-page__point big">A</div>
+							<div class="map-page__item-heading">Отправление</div>
+						</div>
+						<div class="map-page__grid-item" data-route-item-mobile="">
+							<div class="map-page__grid-label">Страна отправления</div>
+							<div class="search-input" data-search-root="">
+								<div class="search-input__wrapper"><select class="search-input__select" data-search-select="" data-route-select="countryFrom" required="required">
+										<option value="" selected="selected" disabled="disabled"></option>
+									</select></div>
+								<div class="input-wrapper"><input class="input" data-input="" required="required" placeholder="Укажите страну" data-root-input="" /></div>
+								<div class="search-input__dropdown" data-search-dropdown="">
+									<div class="search-input__item hidden" data-search-empty="">Ничего не найдено...</div>
+								</div>
+								<div class="delete-icon hidden" data-input-clear=""><svg class="delete-icon__svg" width="58" height="58" viewBox="0 0 58 58" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M21.9287 21.9288L36.0708 36.071" stroke="#181D1D" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round"></path>
+										<path d="M21.9287 36.071L36.0708 21.9288" stroke="#181D1D" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round"></path>
+									</svg></div>
+							</div>
+						</div>
+						<div class="map-page__grid-item" data-route-item-mobile="">
+							<div class="map-page__grid-label">Локация отправления</div>
+							<div class="search-input" data-search-root="">
+								<div class="search-input__wrapper"><select class="search-input__select" data-search-select="" data-route-select="origin" required="required">
+										<option value="" selected="selected" disabled="disabled"></option>
+									</select></div>
+								<div class="input-wrapper"><input class="input" data-input="" required="required" placeholder="Укажите город" data-root-input="" /></div>
+								<div class="search-input__dropdown" data-search-dropdown="">
+									<div class="search-input__item hidden" data-search-empty="">Ничего не найдено...</div>
+								</div>
+								<div class="delete-icon hidden" data-input-clear=""><svg class="delete-icon__svg" width="58" height="58" viewBox="0 0 58 58" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M21.9287 21.9288L36.0708 36.071" stroke="#181D1D" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round"></path>
+										<path d="M21.9287 36.071L36.0708 21.9288" stroke="#181D1D" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round"></path>
+									</svg></div>
+							</div>
+						</div>
+					</div>
+					<div class="route-filters__inner">
+						<div class="map-page__item">
+							<div class="tracking-page__point big">B</div>
+							<div class="map-page__item-heading">назначение</div>
+						</div>
+						<div class="map-page__grid-item" data-route-item-mobile="">
+							<div class="map-page__grid-label">Страна назначения</div>
+							<div class="search-input" data-search-root="">
+								<div class="search-input__wrapper"><select class="search-input__select" data-search-select="" data-route-select="countryTo" required="required">
+										<option value="" selected="selected" disabled="disabled"></option>
+									</select></div>
+								<div class="input-wrapper"><input class="input" data-input="" required="required" placeholder="Укажите страну" data-root-input="" /></div>
+								<div class="search-input__dropdown" data-search-dropdown="">
+									<div class="search-input__item hidden" data-search-empty="">Ничего не найдено...</div>
+								</div>
+								<div class="delete-icon hidden" data-input-clear=""><svg class="delete-icon__svg" width="58" height="58" viewBox="0 0 58 58" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M21.9287 21.9288L36.0708 36.071" stroke="#181D1D" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round"></path>
+										<path d="M21.9287 36.071L36.0708 21.9288" stroke="#181D1D" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round"></path>
+									</svg></div>
+							</div>
+						</div>
+						<div class="map-page__grid-item" data-route-item-mobile="">
+							<div class="map-page__grid-label">Локация назначения</div>
+							<div class="search-input" data-search-root="">
+								<div class="search-input__wrapper"><select class="search-input__select" data-search-select="" data-route-select="destination" required="required">
+										<option value="" selected="selected" disabled="disabled"></option>
+									</select></div>
+								<div class="input-wrapper"><input class="input" data-input="" required="required" placeholder="Укажите город" data-root-input="" /></div>
+								<div class="search-input__dropdown" data-search-dropdown="">
+									<div class="search-input__item hidden" data-search-empty="">Ничего не найдено...</div>
+								</div>
+								<div class="delete-icon hidden" data-input-clear=""><svg class="delete-icon__svg" width="58" height="58" viewBox="0 0 58 58" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M21.9287 21.9288L36.0708 36.071" stroke="#181D1D" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round"></path>
+										<path d="M21.9287 36.071L36.0708 21.9288" stroke="#181D1D" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round"></path>
+									</svg></div>
+							</div>
+						</div>
+						<div class="map-page__grid-item" data-route-item-mobile="">
+							<div class="map-page__grid-label">Тип контейнера</div>
+							<div class="select-wrapper">
+								<div class="select"><select class="select__select" data-select-placeholder="Укажите тип" style="width: 100%" data-route-select="type" required="required" data-parsley-class-handler="#type" data-parsley-errors-container="#type">
+										<option value="" disabled="disabled" selected="selected"></option>
+										<option value="Стандартный">Стандартный</option>
+										<option value="Рефрижератор">Рефрижератор</option>
+										<option value="Изолированный">Изолированный</option>
+									</select></div>
+							</div>
+						</div>
+						<div class="map-page__grid-item" data-route-item-mobile="">
+							<div class="map-page__grid-label">Размер контейнера</div>
+							<div class="select-wrapper">
+								<div class="select"><select class="select__select" data-select-placeholder="Укажите размер" style="width: 100%" data-route-select="size" required="required" data-parsley-class-handler="#size" data-parsley-errors-container="#size">
+										<option value="" disabled="disabled" selected="selected"></option>
+										<option value="20">20 футов</option>
+										<option value="40">40 футов</option>
+									</select></div>
+							</div>
+						</div>
+						<div class="map-page__grid-item" data-route-item-mobile="">
+							<div class="map-page__grid-label">Количество контейнеров</div>
+							<div class="map-page__grid-wrapper">
+								<div class="input-wrapper"><input class="input" data-input="" required="required" type="number" placeholder="от 41" data-route-select="count" /></div>
+								<div class="map-page__grid-caption">Минимальное количество контейнеров в составе одной заявки — <span data-containers-count="">41</span></div>
+							</div>
+						</div>
+						<div class="map-page__grid-item"><button class="button" data-route-button-mobile=""><span class="button__span"><span class="button__text">Произвести расчет</span></span></button></div>
+					</div>
+				</div>
+			</form>
+			<div class="modal__close" data-fancybox-close=""><span class="modal__span"><span class="modal__hover"><svg class="modal__svg" width="58" height="58" viewBox="0 0 58 58" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M21.9287 21.9288L36.0708 36.071" stroke="#181D1D" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round"></path><path d="M21.9287 36.071L36.0708 21.9288" stroke="#181D1D" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round"></path></svg></span></span></div>
 		</div>
 		</main>
 		<footer class="footer">
