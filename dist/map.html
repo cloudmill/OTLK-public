@@ -510,9 +510,9 @@
 					<div class="container">
 						<div class="section__heading">Оставить заявку на расчет</div>
 						<div class="section__inner section__inner--alt">
-							<div class="grid">
+							<form class="grid" action="/">
 								<div class="map-page__bot-item">
-									<div class="input-wrapper"><input class="input" data-input="" required="required" placeholder="ФИО" /></div>
+									<div class="input-wrapper"><input class="input" data-input="" required="required" placeholder="ФИО" data-parsley-string="" /></div>
 								</div>
 								<div class="map-page__bot-item">
 									<div class="input-wrapper"><input class="input" data-input="" required="required" placeholder="Наименование компании" /></div>
@@ -521,7 +521,7 @@
 									<div class="input-wrapper"><input class="input" data-input="" required="required" type="email" placeholder="E-mail" /></div>
 								</div>
 								<div class="map-page__bot-item">
-									<div class="input-wrapper"><input class="input" data-input="" required="required" type="phone" placeholder="Телефон" data-mask-phone="" /></div>
+									<div class="input-wrapper"><input class="input" data-input="" required="required" type="phone" placeholder="Телефон" data-mask-phone="" data-parsley-phone="" /></div>
 								</div>
 								<div class="map-page__bot-item big">
 									<div class="input-wrapper"><textarea class="textarea" data-input="" placeholder="Комменатрий или вопрос" required="required"></textarea></div>
@@ -529,7 +529,7 @@
 								<div class="map-page__bot-item big">
 									<div class="map-page__bot-inner">
 										<div class="map-page__bot-col">
-											<div class="checkbox"><label class="checkbox__label"><input class="checkbox__input" type="checkbox" required="required" id="policy" />
+											<div class="checkbox"><label class="checkbox__label"><input class="checkbox__input" type="checkbox" required checked="checked" id="policy">
 													<div class="checkbox__box"><svg class="checkbox__svg" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
 															<path d="M3 9L8 14L17 5" stroke="white" stroke-width="1.5"></path>
 														</svg></div>
@@ -539,7 +539,7 @@
 										<div class="map-page__bot-col"><button class="button"><span class="button__span"><span class="button__text">Отправить</span></span></button></div>
 									</div>
 								</div>
-							</div>
+							</form>
 						</div>
 					</div>
 				</section>
