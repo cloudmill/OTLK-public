@@ -476,15 +476,51 @@
 										<div class="map-page__grid-label tooltip tooltip--text">Станция отправления*<span class="tooltip__icon"> <svg class="tooltip__svg" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="10" cy="10" r="10" fill="#E1E1E1"></circle><path d="M9.244 11.844H10.465C10.465 11.404 10.454 11.206 10.663 10.854C10.861 10.513 11.279 10.271 11.631 9.886C12.104 9.391 12.423 8.797 12.423 8.093C12.423 7.576 12.247 7.07 11.917 6.696C11.455 6.146 10.729 5.926 9.948 5.926C9.398 5.926 8.837 6.091 8.408 6.421C7.902 6.795 7.605 7.433 7.55 8.115H8.76C8.749 7.796 8.859 7.499 9.09 7.301C9.299 7.103 9.629 7.015 9.981 7.015C10.377 7.015 10.762 7.125 10.993 7.422C11.147 7.598 11.202 7.84 11.202 8.126C11.202 8.5 11.125 8.819 10.839 9.149C10.311 9.71 9.849 9.853 9.541 10.447C9.31 10.865 9.244 11.316 9.244 11.844ZM9.255 14H10.465V12.669H9.255V14Z" fill="#181D1D"></path></svg></span>
 											<div class="tooltip__container">В сервисе ОТЛК ЕРА</div>
 										</div>
-										<div class="input-wrapper"><input class="input" data-input="" required="required" placeholder="Укажите станцию" /></div>
+										<div class="search-input" data-search-root="">
+											<div class="search-input__wrapper"><select class="search-input__select" data-search-select="" required="required">
+													<option value="" selected="selected" disabled="disabled"></option>
+												</select></div>
+											<div class="input-wrapper"><input class="input" data-input="" required="required" placeholder="Укажите станцию" data-root-input="" /></div>
+											<div class="search-input__dropdown" data-search-dropdown="">
+												<div class="search-input__item hidden" data-search-empty="">Ничего не найдено...</div>
+											</div>
+											<div class="delete-icon delete-icon--center hidden" data-input-clear=""><svg class="delete-icon__svg" width="58" height="58" viewBox="0 0 58 58" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path d="M21.9287 21.9288L36.0708 36.071" stroke="#181D1D" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round"></path>
+													<path d="M21.9287 36.071L36.0708 21.9288" stroke="#181D1D" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round"></path>
+												</svg></div>
+										</div>
 									</div>
 									<div class="form-modal__inner">
 										<div class="map-page__grid-label">Код станции отправления*</div>
-										<div class="input-wrapper"><input class="input" data-input="" required="required" placeholder="Укажите код" /></div>
+										<div class="search-input" data-search-root="">
+											<div class="search-input__wrapper"><select class="search-input__select" data-search-select="" required="required">
+													<option value="" selected="selected" disabled="disabled"></option>
+												</select></div>
+											<div class="input-wrapper"><input class="input" data-input="" required="required" placeholder="Укажите код" data-root-input="" /></div>
+											<div class="search-input__dropdown" data-search-dropdown="">
+												<div class="search-input__item hidden" data-search-empty="">Ничего не найдено...</div>
+											</div>
+											<div class="delete-icon delete-icon--center hidden" data-input-clear=""><svg class="delete-icon__svg" width="58" height="58" viewBox="0 0 58 58" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path d="M21.9287 21.9288L36.0708 36.071" stroke="#181D1D" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round"></path>
+													<path d="M21.9287 36.071L36.0708 21.9288" stroke="#181D1D" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round"></path>
+												</svg></div>
+										</div>
 									</div>
 									<div class="form-modal__inner">
 										<div class="map-page__grid-label">Терминал станции отправления*</div>
-										<div class="input-wrapper"><input class="input" data-input="" required="required" placeholder="Укажите код" /></div>
+										<div class="search-input" data-search-root="">
+											<div class="search-input__wrapper"><select class="search-input__select" data-search-select="" required="required">
+													<option value="" selected="selected" disabled="disabled"></option>
+												</select></div>
+											<div class="input-wrapper"><input class="input" data-input="" required="required" placeholder="Укажите код" data-root-input="" /></div>
+											<div class="search-input__dropdown" data-search-dropdown="">
+												<div class="search-input__item hidden" data-search-empty="">Ничего не найдено...</div>
+											</div>
+											<div class="delete-icon delete-icon--center hidden" data-input-clear=""><svg class="delete-icon__svg" width="58" height="58" viewBox="0 0 58 58" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path d="M21.9287 21.9288L36.0708 36.071" stroke="#181D1D" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round"></path>
+													<path d="M21.9287 36.071L36.0708 21.9288" stroke="#181D1D" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round"></path>
+												</svg></div>
+										</div>
 									</div>
 									<div class="form-modal__inner">
 										<div class="map-page__item">
@@ -496,15 +532,51 @@
 										<div class="map-page__grid-label tooltip tooltip--text">Станция назначения*<span class="tooltip__icon"> <svg class="tooltip__svg" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="10" cy="10" r="10" fill="#E1E1E1"></circle><path d="M9.244 11.844H10.465C10.465 11.404 10.454 11.206 10.663 10.854C10.861 10.513 11.279 10.271 11.631 9.886C12.104 9.391 12.423 8.797 12.423 8.093C12.423 7.576 12.247 7.07 11.917 6.696C11.455 6.146 10.729 5.926 9.948 5.926C9.398 5.926 8.837 6.091 8.408 6.421C7.902 6.795 7.605 7.433 7.55 8.115H8.76C8.749 7.796 8.859 7.499 9.09 7.301C9.299 7.103 9.629 7.015 9.981 7.015C10.377 7.015 10.762 7.125 10.993 7.422C11.147 7.598 11.202 7.84 11.202 8.126C11.202 8.5 11.125 8.819 10.839 9.149C10.311 9.71 9.849 9.853 9.541 10.447C9.31 10.865 9.244 11.316 9.244 11.844ZM9.255 14H10.465V12.669H9.255V14Z" fill="#181D1D"></path></svg></span>
 											<div class="tooltip__container">В сервисе ОТЛК ЕРА</div>
 										</div>
-										<div class="input-wrapper"><input class="input" data-input="" required="required" placeholder="Укажите станцию" /></div>
+										<div class="search-input" data-search-root="">
+											<div class="search-input__wrapper"><select class="search-input__select" data-search-select="" required="required">
+													<option value="" selected="selected" disabled="disabled"></option>
+												</select></div>
+											<div class="input-wrapper"><input class="input" data-input="" required="required" placeholder="Укажите станцию" data-root-input="" /></div>
+											<div class="search-input__dropdown" data-search-dropdown="">
+												<div class="search-input__item hidden" data-search-empty="">Ничего не найдено...</div>
+											</div>
+											<div class="delete-icon delete-icon--center hidden" data-input-clear=""><svg class="delete-icon__svg" width="58" height="58" viewBox="0 0 58 58" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path d="M21.9287 21.9288L36.0708 36.071" stroke="#181D1D" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round"></path>
+													<path d="M21.9287 36.071L36.0708 21.9288" stroke="#181D1D" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round"></path>
+												</svg></div>
+										</div>
 									</div>
 									<div class="form-modal__inner">
 										<div class="map-page__grid-label">Код станции назначения*</div>
-										<div class="input-wrapper"><input class="input" data-input="" required="required" placeholder="Укажите код" /></div>
+										<div class="search-input" data-search-root="">
+											<div class="search-input__wrapper"><select class="search-input__select" data-search-select="" required="required">
+													<option value="" selected="selected" disabled="disabled"></option>
+												</select></div>
+											<div class="input-wrapper"><input class="input" data-input="" required="required" placeholder="Укажите код" data-root-input="" /></div>
+											<div class="search-input__dropdown" data-search-dropdown="">
+												<div class="search-input__item hidden" data-search-empty="">Ничего не найдено...</div>
+											</div>
+											<div class="delete-icon delete-icon--center hidden" data-input-clear=""><svg class="delete-icon__svg" width="58" height="58" viewBox="0 0 58 58" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path d="M21.9287 21.9288L36.0708 36.071" stroke="#181D1D" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round"></path>
+													<path d="M21.9287 36.071L36.0708 21.9288" stroke="#181D1D" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round"></path>
+												</svg></div>
+										</div>
 									</div>
 									<div class="form-modal__inner">
 										<div class="map-page__grid-label">Терминал станции назначения*</div>
-										<div class="input-wrapper"><input class="input" data-input="" required="required" placeholder="Укажите код" /></div>
+										<div class="search-input" data-search-root="">
+											<div class="search-input__wrapper"><select class="search-input__select" data-search-select="" required="required">
+													<option value="" selected="selected" disabled="disabled"></option>
+												</select></div>
+											<div class="input-wrapper"><input class="input" data-input="" required="required" placeholder="Укажите код" data-root-input="" /></div>
+											<div class="search-input__dropdown" data-search-dropdown="">
+												<div class="search-input__item hidden" data-search-empty="">Ничего не найдено...</div>
+											</div>
+											<div class="delete-icon delete-icon--center hidden" data-input-clear=""><svg class="delete-icon__svg" width="58" height="58" viewBox="0 0 58 58" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path d="M21.9287 21.9288L36.0708 36.071" stroke="#181D1D" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round"></path>
+													<path d="M21.9287 36.071L36.0708 21.9288" stroke="#181D1D" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round"></path>
+												</svg></div>
+										</div>
 									</div>
 									<div class="form-modal__inner">
 										<div class="map-page__grid-label">Вид отправки*</div>
@@ -521,11 +593,35 @@
 									</div>
 									<div class="form-modal__inner">
 										<div class="map-page__grid-label">Код груза ГНГ*</div>
-										<div class="input-wrapper"><input class="input" data-input="" required="required" placeholder="Укажите код" /></div>
+										<div class="search-input" data-search-root="">
+											<div class="search-input__wrapper"><select class="search-input__select" data-search-select="" required="required">
+													<option value="" selected="selected" disabled="disabled"></option>
+												</select></div>
+											<div class="input-wrapper"><input class="input" data-input="" required="required" placeholder="Укажите код" data-root-input="" /></div>
+											<div class="search-input__dropdown" data-search-dropdown="">
+												<div class="search-input__item hidden" data-search-empty="">Ничего не найдено...</div>
+											</div>
+											<div class="delete-icon delete-icon--center hidden" data-input-clear=""><svg class="delete-icon__svg" width="58" height="58" viewBox="0 0 58 58" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path d="M21.9287 21.9288L36.0708 36.071" stroke="#181D1D" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round"></path>
+													<path d="M21.9287 36.071L36.0708 21.9288" stroke="#181D1D" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round"></path>
+												</svg></div>
+										</div>
 									</div>
 									<div class="form-modal__inner">
 										<div class="map-page__grid-label">Код груза ЕТ СНГ*</div>
-										<div class="input-wrapper"><input class="input" data-input="" required="required" placeholder="Укажите код" /></div>
+										<div class="search-input" data-search-root="">
+											<div class="search-input__wrapper"><select class="search-input__select" data-search-select="" required="required">
+													<option value="" selected="selected" disabled="disabled"></option>
+												</select></div>
+											<div class="input-wrapper"><input class="input" data-input="" required="required" placeholder="Укажите код" data-root-input="" /></div>
+											<div class="search-input__dropdown" data-search-dropdown="">
+												<div class="search-input__item hidden" data-search-empty="">Ничего не найдено...</div>
+											</div>
+											<div class="delete-icon delete-icon--center hidden" data-input-clear=""><svg class="delete-icon__svg" width="58" height="58" viewBox="0 0 58 58" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path d="M21.9287 21.9288L36.0708 36.071" stroke="#181D1D" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round"></path>
+													<path d="M21.9287 36.071L36.0708 21.9288" stroke="#181D1D" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round"></path>
+												</svg></div>
+										</div>
 									</div>
 									<div class="form-modal__inner">
 										<div class="map-page__grid-label">Тип контейнера*</div>
