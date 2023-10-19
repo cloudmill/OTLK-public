@@ -370,7 +370,7 @@
 							<div class="section__offset">
 								<div class="profile-page__top">
 									<h1 class="profile-page__title">Контейнеры&ensp;<br class="profile-page__br">на карте</h1>
-									<div class="profile-page__top-btn"><button class="button" data-profile-about=""><span class="button__span"><span class="button__text">Узнать больше о возможностях личного кабинета</span></span></button></div>
+									<div class="profile-page__top-btn"><button class="button button--profile" data-profile-about=""><span class="button__span"><span class="button__text">Узнать больше о возможностях личного кабинета</span></span></button></div>
 								</div>
 								<div class="profile-page__nav">
 									<div class="nav nav--icons">
@@ -505,7 +505,25 @@
 				</div>
 				<div class="modal containers-modal track-modal" data-fancy-modal="containers">
 					<div class="modal__container">
-						<div class="containers-modal__title">контейнеры</div><template data-containers-template="">
+						<div class="containers-modal__head">
+							<div class="containers-modal__title">контейнеры</div>
+							<div class="containers-modal__tabs" data-containers-tabs="">
+								<div class="containers-modal__tabs-list">
+									<div class="containers-modal__tabs-item active" data-containers-tab="На Запад">
+										<div class="containers-modal__tabs-icon"></div>
+										<div class="containers-modal__tabs-text">На Запад</div>
+									</div>
+									<div class="containers-modal__tabs-item" data-containers-tab="На Восток">
+										<div class="containers-modal__tabs-icon brown"></div>
+										<div class="containers-modal__tabs-text">На Восток</div>
+									</div>
+									<div class="containers-modal__tabs-item" data-containers-tab="Другие маршруты">
+										<div class="containers-modal__tabs-icon gray"></div>
+										<div class="containers-modal__tabs-text">Другие</div>
+									</div>
+								</div>
+							</div>
+						</div><template data-containers-template="">
 							<div class="containers-modal__item">
 								<div class="containers-modal__accordion" data-accordion="">
 									<div class="containers-modal__top" data-accordion-button="">
@@ -579,13 +597,17 @@
 								</div>
 							</div>
 						</template>
-						<div class="containers-modal__list" data-containers-list=""></div>
+						<div class="containers-modal__list active" data-containers-list="На Запад"></div>
+						<div class="containers-modal__list" data-containers-list="На Восток"></div>
+						<div class="containers-modal__list" data-containers-list="Другие маршруты"></div>
 					</div>
 					<div class="modal__close" data-fancybox-close=""><span class="modal__span"><span class="modal__hover"><svg class="modal__svg" width="58" height="58" viewBox="0 0 58 58" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M21.9287 21.9288L36.0708 36.071" stroke="#181D1D" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round"></path><path d="M21.9287 36.071L36.0708 21.9288" stroke="#181D1D" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round"></path></svg></span></span></div>
 				</div>
 				<div class="modal containers-modal track-modal" data-fancy-modal="container">
 					<div class="modal__container">
-						<div class="containers-modal__title">контейнеры</div>
+						<div class="containers-modal__head alt">
+							<div class="containers-modal__title">контейнеры</div>
+						</div>
 						<div class="containers-modal__wrapper">
 							<div class="containers-modal__container">
 								<div class="containers-modal__heading big" data-container-field="id"></div>

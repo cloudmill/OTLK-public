@@ -294,7 +294,7 @@
 			</header>
 			<main class="main">
 				<div class="profile-page tracking-page">
-					<section class="section section--first">
+					<section class="section section--first section--last">
 						<div class="container">
 							<div class="breadcrumbs">
 								<ul class="breadcrumbs__list">
@@ -370,7 +370,7 @@
 							<div class="section__offset">
 								<div class="profile-page__top">
 									<h1 class="profile-page__title">Дебиторская задолженность</h1>
-									<div class="profile-page__top-btn"><button class="button" data-profile-about=""><span class="button__span"><span class="button__text">Узнать больше о возможностях личного кабинета</span></span></button></div>
+									<div class="profile-page__top-btn"><button class="button button--profile" data-profile-about=""><span class="button__span"><span class="button__text">Узнать больше о возможностях личного кабинета</span></span></button></div>
 								</div>
 								<div class="profile-page__nav">
 									<div class="nav nav--icons">
@@ -388,191 +388,36 @@
 								</div>
 							</div>
 							<div class="section__inner">
-								<div class="profile-page__cards">
-									<div class="profile-page__card visible">
-										<div class="profile-page__container">
-											<div class="profile-page__text">Дебиторская задолженность по договорам</div>
-											<div class="profile-page__select">
-												<div class="select-wrapper">
-													<div class="select select--small"><select class="select__select" style="width: 100%" data-currency="">
-															<option value="345 002" data-currency-name="RUB">В рублях</option>
-															<option value="123" data-currency-name="USD">В долларах</option>
-															<option value="666" data-currency-name="CNY">В юанях</option>
-														</select></div>
+								<div class="profile-page__card debt visible">
+									<div class="profile-page__card-row">
+										<div class="profile-page__card-col">
+											<div class="profile-page__container">
+												<div class="profile-page__text">Дебиторская задолженность по договорам</div>
+												<div class="profile-page__select">
+													<div class="select-wrapper">
+														<div class="select select--small"><select class="select__select" style="width: 100%" data-currency="">
+																<option value="345 002" data-currency-name="RUB">В рублях</option>
+																<option value="123" data-currency-name="USD">В долларах</option>
+																<option value="666" data-currency-name="CNY">В юанях</option>
+															</select></div>
+													</div>
+												</div>
+												<div class="profile-page__stat-num" data-currency-value="">123</div>
+												<div class="profile-page__stat-inner">
+													<div class="profile-page__stat-caption">* Сумма предварительная, может не учитывать внесенные платежи за последние 72 часа, для более детальной информации пожалуйста, свяжитесь с менеджером.</div>
+													<div class="profile-page__stat-date">на 29.05.2022</div>
 												</div>
 											</div>
-											<div class="profile-page__stat-num" data-currency-value="">123</div>
-											<div class="profile-page__stat-inner">
-												<div class="profile-page__stat-caption">* Сумма предварительная, может не учитывать внесенные платежи за последние 72 часа, для более детальной информации пожалуйста, свяжитесь с менеджером.</div>
-												<div class="profile-page__stat-date">на 29.05.2022</div>
+										</div>
+										<div class="profile-page__card-col">
+											<div class="profile-page__container alt">
+												<div class="profile-page__card-column">
+													<div class="profile-page__text">Неоплаченные счета</div>
+													<div class="profile-page__card-btn"><button class="button" data-fancy-button="document" data-fancy-link="document"><span class="button__span"><span class="button__text">Запросить документы</span></span></button></div>
+												</div>
 											</div>
 										</div>
 									</div>
-								</div>
-							</div>
-						</div>
-					</section>
-					<section class="section section--regular section--last">
-						<div class="container">
-							<div class="section__heading">Неоплаченные счета</div>
-							<div class="section__inner section__inner--alt">
-								<div class="grid">
-									<div class="grid__item"><a class="docs-card" href="#.#">
-											<div class="docs-card__hover"><svg class="docs-card__bg" width="165" height="279" viewBox="0 0 165 279" fill="none" xmlns="http://www.w3.org/2000/svg">
-													<path d="M165 70.3319L0 0V279H165V70.3319Z" fill="url(#paint0_linear_1039_3966)"></path>
-													<defs>
-														<lineargradient id="paint0_linear_1039_3966" x1="82.5" y1="0" x2="82.5" y2="279" gradientUnits="userSpaceOnUse">
-															<stop stop-color="#C9ECDB" stop-opacity="0.15"></stop>
-															<stop offset="1" stop-color="#C0EACF" stop-opacity="0"></stop>
-														</lineargradient>
-													</defs>
-												</svg></div>
-											<div class="docs-card__container">
-												<div class="docs-card__row">
-													<div class="docs-card__col">
-														<div class="docs-card__icon">
-															<div class="docs-card__icon-text">pdf</div><svg class="docs-card__svg" width="53" height="66" viewBox="0 0 53 66" fill="none" xmlns="http://www.w3.org/2000/svg">
-																<path class="stroke" d="M52.25 42.6562L52.25 0.750003L0.749994 0.750008L0.75 64.8599L52.25 42.6562Z" stroke="#006525" stroke-width="1.5"></path>
-															</svg>
-														</div>
-													</div>
-													<div class="docs-card__col">
-														<div class="docs-card__text">Счет № 231 от 22.12.22</div>
-														<div class="docs-card__label">234 кб</div>
-													</div>
-												</div>
-											</div>
-										</a></div>
-									<div class="grid__item"><a class="docs-card" href="#.#">
-											<div class="docs-card__hover"><svg class="docs-card__bg" width="165" height="279" viewBox="0 0 165 279" fill="none" xmlns="http://www.w3.org/2000/svg">
-													<path d="M165 70.3319L0 0V279H165V70.3319Z" fill="url(#paint0_linear_1039_3966)"></path>
-													<defs>
-														<lineargradient id="paint0_linear_1039_3966" x1="82.5" y1="0" x2="82.5" y2="279" gradientUnits="userSpaceOnUse">
-															<stop stop-color="#C9ECDB" stop-opacity="0.15"></stop>
-															<stop offset="1" stop-color="#C0EACF" stop-opacity="0"></stop>
-														</lineargradient>
-													</defs>
-												</svg></div>
-											<div class="docs-card__container">
-												<div class="docs-card__row">
-													<div class="docs-card__col">
-														<div class="docs-card__icon">
-															<div class="docs-card__icon-text">pdf</div><svg class="docs-card__svg" width="53" height="66" viewBox="0 0 53 66" fill="none" xmlns="http://www.w3.org/2000/svg">
-																<path class="stroke" d="M52.25 42.6562L52.25 0.750003L0.749994 0.750008L0.75 64.8599L52.25 42.6562Z" stroke="#006525" stroke-width="1.5"></path>
-															</svg>
-														</div>
-													</div>
-													<div class="docs-card__col">
-														<div class="docs-card__text">Счет № 231 от 22.12.22</div>
-														<div class="docs-card__label">234 кб</div>
-													</div>
-												</div>
-											</div>
-										</a></div>
-									<div class="grid__item"><a class="docs-card" href="#.#">
-											<div class="docs-card__hover"><svg class="docs-card__bg" width="165" height="279" viewBox="0 0 165 279" fill="none" xmlns="http://www.w3.org/2000/svg">
-													<path d="M165 70.3319L0 0V279H165V70.3319Z" fill="url(#paint0_linear_1039_3966)"></path>
-													<defs>
-														<lineargradient id="paint0_linear_1039_3966" x1="82.5" y1="0" x2="82.5" y2="279" gradientUnits="userSpaceOnUse">
-															<stop stop-color="#C9ECDB" stop-opacity="0.15"></stop>
-															<stop offset="1" stop-color="#C0EACF" stop-opacity="0"></stop>
-														</lineargradient>
-													</defs>
-												</svg></div>
-											<div class="docs-card__container">
-												<div class="docs-card__row">
-													<div class="docs-card__col">
-														<div class="docs-card__icon">
-															<div class="docs-card__icon-text">pdf</div><svg class="docs-card__svg" width="53" height="66" viewBox="0 0 53 66" fill="none" xmlns="http://www.w3.org/2000/svg">
-																<path class="stroke" d="M52.25 42.6562L52.25 0.750003L0.749994 0.750008L0.75 64.8599L52.25 42.6562Z" stroke="#006525" stroke-width="1.5"></path>
-															</svg>
-														</div>
-													</div>
-													<div class="docs-card__col">
-														<div class="docs-card__text">Счет № 231 от 22.12.22</div>
-														<div class="docs-card__label">234 кб</div>
-													</div>
-												</div>
-											</div>
-										</a></div>
-									<div class="grid__item"><a class="docs-card" href="#.#">
-											<div class="docs-card__hover"><svg class="docs-card__bg" width="165" height="279" viewBox="0 0 165 279" fill="none" xmlns="http://www.w3.org/2000/svg">
-													<path d="M165 70.3319L0 0V279H165V70.3319Z" fill="url(#paint0_linear_1039_3966)"></path>
-													<defs>
-														<lineargradient id="paint0_linear_1039_3966" x1="82.5" y1="0" x2="82.5" y2="279" gradientUnits="userSpaceOnUse">
-															<stop stop-color="#C9ECDB" stop-opacity="0.15"></stop>
-															<stop offset="1" stop-color="#C0EACF" stop-opacity="0"></stop>
-														</lineargradient>
-													</defs>
-												</svg></div>
-											<div class="docs-card__container">
-												<div class="docs-card__row">
-													<div class="docs-card__col">
-														<div class="docs-card__icon">
-															<div class="docs-card__icon-text">pdf</div><svg class="docs-card__svg" width="53" height="66" viewBox="0 0 53 66" fill="none" xmlns="http://www.w3.org/2000/svg">
-																<path class="stroke" d="M52.25 42.6562L52.25 0.750003L0.749994 0.750008L0.75 64.8599L52.25 42.6562Z" stroke="#006525" stroke-width="1.5"></path>
-															</svg>
-														</div>
-													</div>
-													<div class="docs-card__col">
-														<div class="docs-card__text">Счет № 231 от 22.12.22</div>
-														<div class="docs-card__label">234 кб</div>
-													</div>
-												</div>
-											</div>
-										</a></div>
-									<div class="grid__item"><a class="docs-card" href="#.#">
-											<div class="docs-card__hover"><svg class="docs-card__bg" width="165" height="279" viewBox="0 0 165 279" fill="none" xmlns="http://www.w3.org/2000/svg">
-													<path d="M165 70.3319L0 0V279H165V70.3319Z" fill="url(#paint0_linear_1039_3966)"></path>
-													<defs>
-														<lineargradient id="paint0_linear_1039_3966" x1="82.5" y1="0" x2="82.5" y2="279" gradientUnits="userSpaceOnUse">
-															<stop stop-color="#C9ECDB" stop-opacity="0.15"></stop>
-															<stop offset="1" stop-color="#C0EACF" stop-opacity="0"></stop>
-														</lineargradient>
-													</defs>
-												</svg></div>
-											<div class="docs-card__container">
-												<div class="docs-card__row">
-													<div class="docs-card__col">
-														<div class="docs-card__icon">
-															<div class="docs-card__icon-text">pdf</div><svg class="docs-card__svg" width="53" height="66" viewBox="0 0 53 66" fill="none" xmlns="http://www.w3.org/2000/svg">
-																<path class="stroke" d="M52.25 42.6562L52.25 0.750003L0.749994 0.750008L0.75 64.8599L52.25 42.6562Z" stroke="#006525" stroke-width="1.5"></path>
-															</svg>
-														</div>
-													</div>
-													<div class="docs-card__col">
-														<div class="docs-card__text">Счет № 231 от 22.12.22</div>
-														<div class="docs-card__label">234 кб</div>
-													</div>
-												</div>
-											</div>
-										</a></div>
-									<div class="grid__item"><a class="docs-card" href="#.#">
-											<div class="docs-card__hover"><svg class="docs-card__bg" width="165" height="279" viewBox="0 0 165 279" fill="none" xmlns="http://www.w3.org/2000/svg">
-													<path d="M165 70.3319L0 0V279H165V70.3319Z" fill="url(#paint0_linear_1039_3966)"></path>
-													<defs>
-														<lineargradient id="paint0_linear_1039_3966" x1="82.5" y1="0" x2="82.5" y2="279" gradientUnits="userSpaceOnUse">
-															<stop stop-color="#C9ECDB" stop-opacity="0.15"></stop>
-															<stop offset="1" stop-color="#C0EACF" stop-opacity="0"></stop>
-														</lineargradient>
-													</defs>
-												</svg></div>
-											<div class="docs-card__container">
-												<div class="docs-card__row">
-													<div class="docs-card__col">
-														<div class="docs-card__icon">
-															<div class="docs-card__icon-text">pdf</div><svg class="docs-card__svg" width="53" height="66" viewBox="0 0 53 66" fill="none" xmlns="http://www.w3.org/2000/svg">
-																<path class="stroke" d="M52.25 42.6562L52.25 0.750003L0.749994 0.750008L0.75 64.8599L52.25 42.6562Z" stroke="#006525" stroke-width="1.5"></path>
-															</svg>
-														</div>
-													</div>
-													<div class="docs-card__col">
-														<div class="docs-card__text">Счет № 231 от 22.12.22</div>
-														<div class="docs-card__label">234 кб</div>
-													</div>
-												</div>
-											</div>
-										</a></div>
 								</div>
 							</div>
 						</div>
@@ -847,6 +692,32 @@
 							</div>
 						</div>
 					</div>
+				</div>
+				<div class="modal document-modal form-modal" data-fancy-modal="document">
+					<div class="modal__container" data-response-container="">
+						<form class="form-modal__form" action="/" data-form="document" data-form-id="document">
+							<div class="modal__title">Запросить документы</div>
+							<div class="form-modal__wrapper">
+								<div class="document-modal__container">
+									<div class="document-modal__text">Добрый день! В Личном кабинете отражена информация о наличии дебиторской задолженности. Пришлите, пожалуйста, неоплаченные счета по Договору №________</div>
+								</div>
+								<div class="form-modal__inner">
+									<div class="checkbox"><label class="checkbox__label"><input class="checkbox__input" type="checkbox" name="qwe" required="required" id="policy" />
+											<div class="checkbox__box"><svg class="checkbox__svg" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path d="M3 9L8 14L17 5" stroke="white" stroke-width="1.5"></path>
+												</svg></div>
+											<div class="checkbox__text">Согласие с политикой в отношении <a class="checkbox__link" href="#">обработки персональных данных</a></div>
+										</label></div>
+								</div>
+								<div class="form-modal__inner"><button class="button"><span class="button__span"><span class="button__text">Отправить</span></span></button></div>
+							</div>
+						</form>
+						<div class="form-modal__response" data-response="document">
+							<div class="modal__title form-modal__title">запрос отправлен</div>
+							<div class="form-modal__button" data-fancybox-close=""><button class="button"><span class="button__span"><span class="button__text">Закрыть</span></span></button></div>
+						</div>
+					</div>
+					<div class="modal__close" data-fancybox-close=""><span class="modal__span"><span class="modal__hover"><svg class="modal__svg" width="58" height="58" viewBox="0 0 58 58" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M21.9287 21.9288L36.0708 36.071" stroke="#181D1D" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round"></path><path d="M21.9287 36.071L36.0708 21.9288" stroke="#181D1D" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round"></path></svg></span></span></div>
 				</div>
 			</main>
 			<footer class="footer">
