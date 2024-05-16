@@ -309,7 +309,7 @@
 							</div>
 							<h1 class="section__title">Отслеживание грузов</h1>
 							<div class="section__inner">
-								<div class="tracking-page__top">
+								<div class="tracking-page__top desktop">
 									<div class="tracking-page__top-col">
 										<div class="tracking-page__label">Номер контейнера</div>
 									</div>
@@ -320,19 +320,29 @@
 								</div>
 								<form class="tracking-page__top" action="/">
 									<div class="tracking-page__top-col" data-search-container="">
-										<div class="input-wrapper"><input class="input" data-input="" required="required" placeholder="Введите номер" value="TBJU7684929" data-search-input="" data-parsley-container="" /></div>
-										<div class="delete-icon" data-search-clear=""><svg class="delete-icon__svg" width="58" height="58" viewBox="0 0 58 58" fill="none" xmlns="http://www.w3.org/2000/svg">
-												<path d="M21.9287 21.9288L36.0708 36.071" stroke="#181D1D" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round"></path>
-												<path d="M21.9287 36.071L36.0708 21.9288" stroke="#181D1D" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round"></path>
-											</svg></div>
+										<div class="only-mobile">
+											<div class="tracking-page__label">Номер контейнера</div>
+										</div>
+										<div class="tracking-page__top-wrapper">
+											<div class="input-wrapper"><input class="input" data-input="" required="required" placeholder="Введите номер" value="TBJU7684929" data-search-input="" data-parsley-container="" /></div>
+											<div class="delete-icon" data-search-clear=""><svg class="delete-icon__svg" width="58" height="58" viewBox="0 0 58 58" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path d="M21.9287 21.9288L36.0708 36.071" stroke="#181D1D" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round"></path>
+													<path d="M21.9287 36.071L36.0708 21.9288" stroke="#181D1D" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round"></path>
+												</svg></div>
+										</div>
 									</div>
 									<div class="tracking-page__top-col" data-search-container="">
-										<div class="input-wrapper"><input class="input" data-input="" required="required" placeholder="Введите подкод" value="TBJU7684929" data-search-input="" data-parsley-container="" /></div>
-										<div class="delete-icon" data-search-clear=""><svg class="delete-icon__svg" width="58" height="58" viewBox="0 0 58 58" fill="none" xmlns="http://www.w3.org/2000/svg">
-												<path d="M21.9287 21.9288L36.0708 36.071" stroke="#181D1D" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round"></path>
-												<path d="M21.9287 36.071L36.0708 21.9288" stroke="#181D1D" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round"></path>
-											</svg></div>
-										<div class="tracking-page__top-info"><span class="tracking-page__top-hint">*</span>Подкод экспедитора указан в <span>&nbsp;графе №23 СМГС</span></div>
+										<div class="only-mobile">
+											<div class="tracking-page__label">Подкод экспедитора *</div>
+										</div>
+										<div class="tracking-page__top-wrapper">
+											<div class="input-wrapper"><input class="input" data-input="" required="required" placeholder="Введите подкод" value="TBJU7684929" data-search-input="" /></div>
+											<div class="delete-icon" data-search-clear=""><svg class="delete-icon__svg" width="58" height="58" viewBox="0 0 58 58" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path d="M21.9287 21.9288L36.0708 36.071" stroke="#181D1D" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round"></path>
+													<path d="M21.9287 36.071L36.0708 21.9288" stroke="#181D1D" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round"></path>
+												</svg></div>
+										</div>
+										<div class="tracking-page__top-info"><span class="tracking-page__top-hint">*</span>Подкод экспедитора указан в <span data-fancy-button="" data-fancy-link="hint">&nbsp;графе №23 СМГС</span></div>
 									</div>
 									<div class="tracking-page__top-col"><button class="button"><span class="button__span"><span class="button__text">Найти груз</span></span></button></div>
 								</form>
@@ -470,6 +480,18 @@
 							<div class="tracking-page__modal-label">контейнеров</div>
 							<div class="tracking-page__modal-text">55</div>
 						</div>
+					</div>
+					<div class="modal__close" data-fancybox-close=""><span class="modal__span"><span class="modal__hover"><svg class="modal__svg" width="58" height="58" viewBox="0 0 58 58" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M21.9287 21.9288L36.0708 36.071" stroke="#181D1D" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round"></path><path d="M21.9287 36.071L36.0708 21.9288" stroke="#181D1D" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round"></path></svg></span></span></div>
+				</div>
+				<div class="modal hint-modal" data-fancy-modal="hint">
+					<div class="hint-modal__container">
+						<div class="hint-modal__title modal__title">графа №23 СМГС</div>
+						<div class="hint-modal__img">
+							<picture class="picture">
+								<source type="image/webp" srcset="assets/images/hint-modal.webp" /><img class="picture__img" src="assets/images/hint-modal.jpg" />
+							</picture>
+						</div>
+						<div class="hint-modal__btn" data-fancybox-close=""><button class="button"><span class="button__span"><span class="button__text">Понятно, спасибо</span></span></button></div>
 					</div>
 					<div class="modal__close" data-fancybox-close=""><span class="modal__span"><span class="modal__hover"><svg class="modal__svg" width="58" height="58" viewBox="0 0 58 58" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M21.9287 21.9288L36.0708 36.071" stroke="#181D1D" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round"></path><path d="M21.9287 36.071L36.0708 21.9288" stroke="#181D1D" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round"></path></svg></span></span></div>
 				</div>
