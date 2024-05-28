@@ -374,7 +374,16 @@
 							<div class="section__offset">
 								<div class="profile-page__top">
 									<h1 class="profile-page__title">Активные заявки</h1>
-									<div class="profile-page__top-btn"><button class="button button--profile" data-profile-about=""><span class="button__span"><span class="button__text">Узнать больше о возможностях личного кабинета</span></span></button></div>
+									<div class="profile-page__top-btn"><a class="button-icon button-icon--green" href="#">
+											<div class="button-icon__icon"><span class="button-icon__span"><span class="button-icon__hover"><svg class="button-icon__svg" width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10.5 2.16667V12.9" stroke="#181D1D" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round"></path><path d="M13.2917 11.0417L10.5 13.8333L7.70837 11.0417" stroke="#181D1D" stroke-width="1.5" stroke-linecap="square"></path><path d="M5.49996 8H2.16663V10.5C2.16663 15.1024 5.89759 18.8333 10.5 18.8333V18.8333C15.1023 18.8333 18.8333 15.1024 18.8333 10.5V8H15.5" stroke="#181D1D" stroke-width="1.5" stroke-linecap="square"></path></svg></span></span></div><span class="button-icon__span"><div class="button-icon__text">Скачать общие данные дислокации</div></span>
+										</a></div>
+								</div>
+								<div class="profile-page__refresh">
+									<div class="profile-page__refresh-icon"><svg class="profile-page__refresh-svg" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M22 12C22 17.52 17.52 22 12 22C6.48 22 2 17.52 2 12C2 6.48 6.48 2 12 2C17.52 2 22 6.48 22 12Z" stroke="#060808" stroke-opacity="0.5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+											<path d="M15.7099 15.18L12.6099 13.33C12.0699 13.01 11.6299 12.24 11.6299 11.61V7.51001" stroke="#060808" stroke-opacity="0.5" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round"></path>
+										</svg></div>
+									<div class="profile-page__refresh-text">Информация обновляется ежечасно</div>
 								</div>
 								<div class="profile-page__nav">
 									<div class="nav nav--icons">
@@ -393,6 +402,25 @@
 							</div>
 							<div class="section__inner">
 								<div class="requests">
+									<form class="requests__top" action="/">
+										<div class="requests__top-col">
+											<div class="select-wrapper">
+												<div class="select"><select class="select__select" style="width: 100%">
+														<option value="Номер заявки">Номер заявки</option>
+														<option value="Пункт отправления">Пункт отправления</option>
+														<option value="Пункт назначения">Пункт назначения</option>
+													</select></div>
+											</div>
+										</div>
+										<div class="requests__top-col" data-search-container="">
+											<div class="input-wrapper"><input class="input" data-input="" required="required" placeholder="Введите номер заявки" data-search-input="" /></div>
+											<div class="delete-icon hidden" data-search-clear=""><svg class="delete-icon__svg" width="58" height="58" viewBox="0 0 58 58" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path d="M21.9287 21.9288L36.0708 36.071" stroke="#181D1D" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round"></path>
+													<path d="M21.9287 36.071L36.0708 21.9288" stroke="#181D1D" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round"></path>
+												</svg></div>
+										</div>
+										<div class="requests__top-col"><button class="button"><span class="button__span"><span class="button__text">Поиск</span></span></button></div>
+									</form>
 									<div class="only-desktop">
 										<div class="requests__row">
 											<div class="requests__col">
@@ -402,9 +430,19 @@
 												<div class="requests__col-item">
 													<div class="requests__item">
 														<div class="purchases-page__label">Пункт отправления</div>
+														<div class="requests__img"><svg class="requests__svg" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+																<path d="M3 7H21" stroke="#181D1D" stroke-width="1.5" stroke-linecap="square"></path>
+																<path d="M6 12H18" stroke="#181D1D" stroke-width="1.5" stroke-linecap="square"></path>
+																<path d="M10 17H14" stroke="#181D1D" stroke-width="1.5" stroke-linecap="square"></path>
+															</svg></div>
 													</div>
 													<div class="requests__item">
 														<div class="purchases-page__label">Пункт назначения</div>
+														<div class="requests__img"><svg class="requests__svg active" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+																<path d="M3 7H21" stroke="#181D1D" stroke-width="1.5" stroke-linecap="square"></path>
+																<path d="M6 12H18" stroke="#181D1D" stroke-width="1.5" stroke-linecap="square"></path>
+																<path d="M10 17H14" stroke="#181D1D" stroke-width="1.5" stroke-linecap="square"></path>
+															</svg></div>
 													</div>
 												</div>
 											</div>
@@ -412,11 +450,24 @@
 												<div class="purchases-page__label">Контейнеров</div>
 											</div>
 											<div class="requests__col">
-												<div class="purchases-page__label">Вагонов</div>
+												<div class="purchases-page__label">Референция</div>
 											</div>
 										</div>
 									</div>
 									<div class="section__offset">
+										<div class="only-mobile">
+											<div class="requests__filter">
+												<div class="requests__filter-label">Сортировать по:</div>
+												<div class="requests__filter-button">
+													<div class="requests__filter-text">Пункт назначения</div>
+													<div class="requests__img"><svg class="requests__svg" width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+															<path d="M3 7H21" stroke="#181D1D" stroke-width="1.5" stroke-linecap="square"></path>
+															<path d="M6 12H18" stroke="#181D1D" stroke-width="1.5" stroke-linecap="square"></path>
+															<path d="M10 17H14" stroke="#181D1D" stroke-width="1.5" stroke-linecap="square"></path>
+														</svg></div>
+												</div>
+											</div>
+										</div>
 										<div class="purchases-page__list">
 											<div class="purchases-page__item purchases-page__button disabled">
 												<div class="only-desktop"><a class="requests__row" href="#">
@@ -450,7 +501,7 @@
 														</div>
 														<div class="requests__col">
 															<div class="reuqests__wrapper">
-																<div class="requests__text">32</div>
+																<div class="requests__text">325362654</div>
 															</div>
 															<div class="purchases-page__icon"><svg class="purchases-page__svg" width="12" height="12" viewbox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
 																	<path d="M1.5 3.75L6 8.25L10.5 3.75" stroke="white" stroke-width="1.5"></path>
@@ -493,8 +544,8 @@
 														</div>
 														<div class="requests__col">
 															<div class="requests__wrapper">
-																<div class="purchases-page__label">Вагонов</div>
-																<div class="requests__text">32</div>
+																<div class="purchases-page__label">Референция</div>
+																<div class="requests__text">325362654</div>
 															</div><a class="link link--black" href="#">
 																<div class="link__icon"><svg class="link__svg" width="12" height="12" viewbox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
 																		<path d="M1.5 3.75L6 8.25L10.5 3.75" stroke="white" stroke-width="1.5"></path>
@@ -537,7 +588,7 @@
 														</div>
 														<div class="requests__col">
 															<div class="reuqests__wrapper">
-																<div class="requests__text">32</div>
+																<div class="requests__text">325362654</div>
 															</div>
 															<div class="purchases-page__icon"><svg class="purchases-page__svg" width="12" height="12" viewbox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
 																	<path d="M1.5 3.75L6 8.25L10.5 3.75" stroke="white" stroke-width="1.5"></path>
@@ -580,8 +631,8 @@
 														</div>
 														<div class="requests__col">
 															<div class="requests__wrapper">
-																<div class="purchases-page__label">Вагонов</div>
-																<div class="requests__text">32</div>
+																<div class="purchases-page__label">Референция</div>
+																<div class="requests__text">325362654</div>
 															</div><a class="link link--black" href="#">
 																<div class="link__icon"><svg class="link__svg" width="12" height="12" viewbox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
 																		<path d="M1.5 3.75L6 8.25L10.5 3.75" stroke="white" stroke-width="1.5"></path>
@@ -624,7 +675,7 @@
 														</div>
 														<div class="requests__col">
 															<div class="reuqests__wrapper">
-																<div class="requests__text">32</div>
+																<div class="requests__text">325362654</div>
 															</div>
 															<div class="purchases-page__icon"><svg class="purchases-page__svg" width="12" height="12" viewbox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
 																	<path d="M1.5 3.75L6 8.25L10.5 3.75" stroke="white" stroke-width="1.5"></path>
@@ -667,8 +718,8 @@
 														</div>
 														<div class="requests__col">
 															<div class="requests__wrapper">
-																<div class="purchases-page__label">Вагонов</div>
-																<div class="requests__text">32</div>
+																<div class="purchases-page__label">Референция</div>
+																<div class="requests__text">325362654</div>
 															</div><a class="link link--black" href="#">
 																<div class="link__icon"><svg class="link__svg" width="12" height="12" viewbox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
 																		<path d="M1.5 3.75L6 8.25L10.5 3.75" stroke="white" stroke-width="1.5"></path>
@@ -711,7 +762,7 @@
 														</div>
 														<div class="requests__col">
 															<div class="reuqests__wrapper">
-																<div class="requests__text">32</div>
+																<div class="requests__text">325362654</div>
 															</div>
 															<div class="purchases-page__icon"><svg class="purchases-page__svg" width="12" height="12" viewbox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
 																	<path d="M1.5 3.75L6 8.25L10.5 3.75" stroke="white" stroke-width="1.5"></path>
@@ -754,8 +805,8 @@
 														</div>
 														<div class="requests__col">
 															<div class="requests__wrapper">
-																<div class="purchases-page__label">Вагонов</div>
-																<div class="requests__text">32</div>
+																<div class="purchases-page__label">Референция</div>
+																<div class="requests__text">325362654</div>
 															</div><a class="link link--black" href="#">
 																<div class="link__icon"><svg class="link__svg" width="12" height="12" viewbox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
 																		<path d="M1.5 3.75L6 8.25L10.5 3.75" stroke="white" stroke-width="1.5"></path>
@@ -798,7 +849,7 @@
 														</div>
 														<div class="requests__col">
 															<div class="reuqests__wrapper">
-																<div class="requests__text">32</div>
+																<div class="requests__text">325362654</div>
 															</div>
 															<div class="purchases-page__icon"><svg class="purchases-page__svg" width="12" height="12" viewbox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
 																	<path d="M1.5 3.75L6 8.25L10.5 3.75" stroke="white" stroke-width="1.5"></path>
@@ -841,8 +892,8 @@
 														</div>
 														<div class="requests__col">
 															<div class="requests__wrapper">
-																<div class="purchases-page__label">Вагонов</div>
-																<div class="requests__text">32</div>
+																<div class="purchases-page__label">Референция</div>
+																<div class="requests__text">325362654</div>
 															</div><a class="link link--black" href="#">
 																<div class="link__icon"><svg class="link__svg" width="12" height="12" viewbox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
 																		<path d="M1.5 3.75L6 8.25L10.5 3.75" stroke="white" stroke-width="1.5"></path>
@@ -885,7 +936,7 @@
 														</div>
 														<div class="requests__col">
 															<div class="reuqests__wrapper">
-																<div class="requests__text">32</div>
+																<div class="requests__text">325362654</div>
 															</div>
 															<div class="purchases-page__icon"><svg class="purchases-page__svg" width="12" height="12" viewbox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
 																	<path d="M1.5 3.75L6 8.25L10.5 3.75" stroke="white" stroke-width="1.5"></path>
@@ -928,8 +979,8 @@
 														</div>
 														<div class="requests__col">
 															<div class="requests__wrapper">
-																<div class="purchases-page__label">Вагонов</div>
-																<div class="requests__text">32</div>
+																<div class="purchases-page__label">Референция</div>
+																<div class="requests__text">325362654</div>
 															</div><a class="link link--black" href="#">
 																<div class="link__icon"><svg class="link__svg" width="12" height="12" viewbox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
 																		<path d="M1.5 3.75L6 8.25L10.5 3.75" stroke="white" stroke-width="1.5"></path>
@@ -972,7 +1023,7 @@
 														</div>
 														<div class="requests__col">
 															<div class="reuqests__wrapper">
-																<div class="requests__text">32</div>
+																<div class="requests__text">325362654</div>
 															</div>
 															<div class="purchases-page__icon"><svg class="purchases-page__svg" width="12" height="12" viewbox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
 																	<path d="M1.5 3.75L6 8.25L10.5 3.75" stroke="white" stroke-width="1.5"></path>
@@ -1015,8 +1066,8 @@
 														</div>
 														<div class="requests__col">
 															<div class="requests__wrapper">
-																<div class="purchases-page__label">Вагонов</div>
-																<div class="requests__text">32</div>
+																<div class="purchases-page__label">Референция</div>
+																<div class="requests__text">325362654</div>
 															</div><a class="link link--black" href="#">
 																<div class="link__icon"><svg class="link__svg" width="12" height="12" viewbox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
 																		<path d="M1.5 3.75L6 8.25L10.5 3.75" stroke="white" stroke-width="1.5"></path>
@@ -1059,7 +1110,7 @@
 														</div>
 														<div class="requests__col">
 															<div class="reuqests__wrapper">
-																<div class="requests__text">32</div>
+																<div class="requests__text">325362654</div>
 															</div>
 															<div class="purchases-page__icon"><svg class="purchases-page__svg" width="12" height="12" viewbox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
 																	<path d="M1.5 3.75L6 8.25L10.5 3.75" stroke="white" stroke-width="1.5"></path>
@@ -1102,8 +1153,8 @@
 														</div>
 														<div class="requests__col">
 															<div class="requests__wrapper">
-																<div class="purchases-page__label">Вагонов</div>
-																<div class="requests__text">32</div>
+																<div class="purchases-page__label">Референция</div>
+																<div class="requests__text">325362654</div>
 															</div><a class="link link--black" href="#">
 																<div class="link__icon"><svg class="link__svg" width="12" height="12" viewbox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
 																		<path d="M1.5 3.75L6 8.25L10.5 3.75" stroke="white" stroke-width="1.5"></path>
@@ -1146,7 +1197,7 @@
 														</div>
 														<div class="requests__col">
 															<div class="reuqests__wrapper">
-																<div class="requests__text">32</div>
+																<div class="requests__text">325362654</div>
 															</div>
 															<div class="purchases-page__icon"><svg class="purchases-page__svg" width="12" height="12" viewbox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
 																	<path d="M1.5 3.75L6 8.25L10.5 3.75" stroke="white" stroke-width="1.5"></path>
@@ -1189,8 +1240,8 @@
 														</div>
 														<div class="requests__col">
 															<div class="requests__wrapper">
-																<div class="purchases-page__label">Вагонов</div>
-																<div class="requests__text">32</div>
+																<div class="purchases-page__label">Референция</div>
+																<div class="requests__text">325362654</div>
 															</div><a class="link link--black" href="#">
 																<div class="link__icon"><svg class="link__svg" width="12" height="12" viewbox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
 																		<path d="M1.5 3.75L6 8.25L10.5 3.75" stroke="white" stroke-width="1.5"></path>
@@ -1233,7 +1284,7 @@
 														</div>
 														<div class="requests__col">
 															<div class="reuqests__wrapper">
-																<div class="requests__text">32</div>
+																<div class="requests__text">325362654</div>
 															</div>
 															<div class="purchases-page__icon"><svg class="purchases-page__svg" width="12" height="12" viewbox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
 																	<path d="M1.5 3.75L6 8.25L10.5 3.75" stroke="white" stroke-width="1.5"></path>
@@ -1276,8 +1327,8 @@
 														</div>
 														<div class="requests__col">
 															<div class="requests__wrapper">
-																<div class="purchases-page__label">Вагонов</div>
-																<div class="requests__text">32</div>
+																<div class="purchases-page__label">Референция</div>
+																<div class="requests__text">325362654</div>
 															</div><a class="link link--black" href="#">
 																<div class="link__icon"><svg class="link__svg" width="12" height="12" viewbox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
 																		<path d="M1.5 3.75L6 8.25L10.5 3.75" stroke="white" stroke-width="1.5"></path>
